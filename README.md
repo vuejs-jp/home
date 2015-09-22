@@ -15,6 +15,9 @@ Vue.js に興味のある方でしたらどなたでもお気軽にご参加く�
 
 
 ## コミュニケーション
+- [Vue.js オフィシャルフォーラム](http://forum.vuejs.org)
+
+以下の discussion は現在使用されていません。
 - [discussion (日本語)](https://github.com/vuejs-jp/discussion)
 - [Discussion (英語)](https://github.com/vuejs/Discussion)
 
