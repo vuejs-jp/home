@@ -26,3 +26,21 @@ Vue.js に興味のある方でしたらどなたでもお気軽にご参加く�
 ## 活動
 - [日本語翻訳プロジェクト](https://github.com/vuejs/jp.vuejs.org)
 - [Vue.js Meetup イベント](http://vuejs-meetup.connpass.com)
+
+## ツールスポンサー
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="middle">
+        <a href="https://docs.esa.io/posts/239/" target="_blank">
+          <img width="196px" src="./assets/esa.png">
+        </a>
+      </td>
+      <td align="center" valign="middle">
+        <a href="http://slack.com/" target="_blank">
+          <img width="196px" src="./assets/slack.png">
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
