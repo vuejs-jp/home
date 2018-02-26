@@ -33,12 +33,12 @@ Vue.js に興味のある方でしたらどなたでもお気軽にご参加く�
     <tr>
       <td align="center" valign="middle">
         <a href="https://docs.esa.io/posts/239/" target="_blank">
-          <img width="196px" src="./assets/esa.png">
+          <img width="196px" src="https://raw.githubusercontent.com/vuejs-jp/home/master/assets/esa.png">
         </a>
       </td>
       <td align="center" valign="middle">
         <a href="http://slack.com/" target="_blank">
-          <img width="196px" src="./assets/slack.png">
+          <img width="196px" src="https://raw.githubusercontent.com/vuejs-jp/home/master/assets/slack.png">
         </a>
       </td>
     </tr>
