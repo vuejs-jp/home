@@ -24,7 +24,8 @@ Vue.js に興味のある方でしたらどなたでもお気軽にご参加く�
 
 
 ## 活動
-- [日本語翻訳プロジェクト](https://github.com/vuejs/jp.vuejs.org)
+- [Vue.js 公式ドキュメント 日本語翻訳プロジェクト](https://github.com/vuejs/jp.vuejs.org)
+- [Nuxt.js 公式ドキュメント 日本語翻訳プロジェクト](https://github.com/vuejs-jp/ja.docs.nuxtjs)
 - [Vue.js Meetup イベント](http://vuejs-meetup.connpass.com)
 
 ## ツールスポンサー
