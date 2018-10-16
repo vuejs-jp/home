@@ -58,7 +58,7 @@ https://app.v4x.co/project/join?id=d3ce54f4d4ceee163e308ae7cf68cecfda18eed923892
         </a>
       </td>
       <td align="center" valign="middle">
-        <a href="http://slack.com/" target="_blank">
+        <a href="https://v4x.co/" target="_blank">
           <img width="196px" src="https://raw.githubusercontent.com/vuejs-jp/home/master/assets/volvox.png">
         </a>
       </td>
