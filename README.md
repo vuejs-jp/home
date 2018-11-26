@@ -29,20 +29,6 @@ Vue.js に興味のある方でしたらどなたでもお気軽にご参加く�
 - [Vue.js Meetup イベント](http://vuejs-meetup.connpass.com)
 
 
-## 貢献の対価 (テスト試用中)
-OSS、そしてコミュニティを持続可能な状態にするべく、現在 DAO プラットフォーム [volvox](https://v4x.co/index.ja.html) という、貢献がトークンで分配されるサービスを利用しています。
-
-Vue.js 日本ユーザーグループが volvox に登録したプロジェクトにおいて、以下の GitHub リポジトリが対象となっています。
-
-- [vuejs/jp.vuejs.org: Vue.js 日本語公式サイトのドキュメント翻訳](https://github.com/vuejs/jp.vuejs.org)
-- [vuejs-jp/ja.docs.nuxtjs: Nuxt.js 日本語公式サイトのドキュメント翻訳](https://github.com/vuejs-jp/ja.docs.nuxtjs)
-- [vuejs-jp/vue-cli-locale-ja: Vue CLI UI の日本語ローカライゼーション](https://github.com/vuejs-jp/vue-cli-locale-ja)
-
-もし、volvox に興味があるようでしたら、以下 URL から volvox に登録したプロジェクトに参加して、上記リポジトリにぜひ貢献してください！
-
-https://app.v4x.co/project/join?id=d3ce54f4d4ceee163e308ae7cf68cecfda18eed9238920e1f70348ef21143a3f
-
-
 ## ツールスポンサー
 <table>
   <tbody>
@@ -55,11 +41,6 @@ https://app.v4x.co/project/join?id=d3ce54f4d4ceee163e308ae7cf68cecfda18eed923892
       <td align="center" valign="middle">
         <a href="http://slack.com/" target="_blank">
           <img width="196px" src="https://raw.githubusercontent.com/vuejs-jp/home/master/assets/slack.png">
-        </a>
-      </td>
-      <td align="center" valign="middle">
-        <a href="https://v4x.co/" target="_blank">
-          <img width="196px" src="https://raw.githubusercontent.com/vuejs-jp/home/master/assets/volvox.png">
         </a>
       </td>
     </tr>
