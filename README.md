@@ -46,3 +46,6 @@ Vue.js に興味のある方でしたらどなたでもお気軽にご参加く�
     </tr>
   </tbody>
 </table>
+
+## 行動規範
+Vue.js 日本ユーザーグループが掲げる[行動規範](https://github.com/vuejs-jp/home/blob/master/CODE_OF_CONDUCT.md)をご確認ください。
