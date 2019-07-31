@@ -1,5 +1,7 @@
 <p align="center"><a href="http://vuejs.org" target="_blank"><img width="100"src="http://vuejs.org/images/logo.png"></a></p>
 
+> **HEADS UP:** Vue.js 日本ユーザーグループの公式ウェブサイトの開発が始まっています。開発への参加に興味のある方は[Issue #9 Official Website Initial Release](https://github.com/vuejs-jp/home/issues/9)をご覧ください。
+
 # Vue.js 日本ユーザーグループ
 Vue.js 日本ユーザグループ へようこそ
 
