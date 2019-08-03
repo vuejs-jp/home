@@ -12,9 +12,11 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "ts-node": "^8.3.0"
   },
   "devDependencies": {
+    "@nuxt/typescript": "^2.8.1",
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^0.2.1",
     "babel-eslint": "^10.0.1",
