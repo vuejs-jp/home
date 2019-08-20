@@ -1,25 +1,24 @@
 {
-  "name": "vuejs-jp",
-  "version": "1.0.0",
-  "description": "vuejs.jp community site",
-  "author": "",
   "private": true,
   "scripts": {
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate"
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore --fix ."
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
-    "ts-node": "^8.3.0"
+    "nuxt": "^2.8.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3",
+    "webpack": "^4.39.2"
   },
   "devDependencies": {
     "@nuxt/typescript": "^2.8.1",
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^0.2.1",
-    "babel-eslint": "^10.0.1",
+    "@typescript-eslint/eslint-plugin": "^1.6.0",
+    "@typescript-eslint/parser": "^1.12.0",
     "eslint": "^5.15.1",
     "eslint-plugin-nuxt": ">=0.4.2",
     "nodemon": "^1.18.9"

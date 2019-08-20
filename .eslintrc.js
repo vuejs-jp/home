@@ -5,13 +5,14 @@ module.exports = {
     node: true
   },
   parserOptions: {
-    parser: 'babel-eslint'
+    parser: '@typescript-eslint/parser'
   },
   extends: [
     '@nuxtjs',
     'plugin:nuxt/recommended'
   ],
-  // add your custom rules here
+  plugins: ['@typescript-eslint'],
   rules: {
+    '@typescript-eslint/no-unused-vars': 'error'
   }
 }
