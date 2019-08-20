@@ -1,9 +1,18 @@
-import NuxtConfiguration from '@nuxt/config'
+import { Configuration } from '@nuxt/types'
 
-const config: NuxtConfiguration = {
+const config: Configuration = {
   mode: 'universal',
 
   srcDir: 'src/',
+
+  dir: {
+    assets: 'assets',
+    layouts: 'layouts',
+    middleware: 'middleware',
+    pages: 'pages',
+    static: 'static',
+    store: 'store'
+  },
 
   head: {
     titleTemplate: '%s | Vue.js 日本ユーザーグループ',
@@ -14,9 +23,7 @@ const config: NuxtConfiguration = {
     ]
   },
 
-  devModules: [
-    '@nuxtjs/eslint-module'
-  ]
+  buildModules: ['@nuxt/typescript-build']
 }
 
 export default config
