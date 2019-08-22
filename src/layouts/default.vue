@@ -1,8 +1,10 @@
 <template>
   <div class="App">
+    <Header />
     <div class="content">
       <Nuxt />
     </div>
+    <Footer />
   </div>
 </template>
 
@@ -17,3 +19,16 @@
   flex-grow: 1;
 }
 </style>
+
+<script>
+import Header from '@/components/Header'
+import Footer from '@/components/Footer'
+
+export default {
+  components: {
+    Header,
+    Footer
+  }
+}
+</script>
+
