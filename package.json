@@ -5,6 +5,7 @@
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
+    "lint:css": "stylelint \"src/**/*.{css,vue}\"",
     "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore --fix ."
   },
   "dependencies": {
@@ -20,6 +21,9 @@
     "@typescript-eslint/parser": "^2.0.0",
     "eslint": "^5.16.0",
     "eslint-plugin-nuxt": ">=0.4.2",
-    "nodemon": "^1.18.9"
+    "nodemon": "^1.18.9",
+    "stylelint": "^10.1.0",
+    "stylelint-config-recess-order": "^2.0.3",
+    "stylelint-webpack-plugin": "^0.10.5"
   }
 }
