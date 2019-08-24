@@ -18,9 +18,5 @@ export default Vue.extend({
 <style scoped>
 main{
   height: 2000px;
-  &__container{
-    max-width: 980px;
-    margin: 0 auto;
-  }
 }
 </style>
