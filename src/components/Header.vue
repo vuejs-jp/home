@@ -48,8 +48,6 @@ export default {
     justify-content: space-between;
     align-items: center;
     height: 32px;
-    max-width: 980px;
-    margin: 0 auto;
   }
   &__item{
     display: flex;

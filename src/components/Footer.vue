@@ -42,10 +42,6 @@ export default {
   a{
     text-decoration: underline;
   }
-  &__container{
-    max-width: 980px;
-    margin: 0 auto;
-  }
   &__menu{
     font-size: 0.9em;
     margin-top: 40px;

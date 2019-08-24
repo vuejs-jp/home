@@ -14,3 +14,8 @@ h1{
   font-size: 1.2em;
   letter-spacing: 2px;
 }
+
+.header__container, .footer__container{
+  max-width: 980px;
+  margin: 0 auto;
+}
