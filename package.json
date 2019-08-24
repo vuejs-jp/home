@@ -6,7 +6,8 @@
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
     "lint:css": "stylelint \"src/**/*.{css,vue}\"",
-    "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore --fix ."
+    "lint:ts": "eslint --ext .ts,.js,.vue --ignore-path .gitignore --fix .",
+    "lint": "yarn lint:ts && yarn lint:css"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.1.1",
