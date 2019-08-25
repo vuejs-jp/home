@@ -15,7 +15,7 @@ h1{
   letter-spacing: 2px;
 }
 
-.header__container, .footer__container{
-  max-width: 980px;
+.header__container, .footer__container {
+  max-width: var(--width-container-size);
   margin: 0 auto;
 }
