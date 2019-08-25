@@ -39,7 +39,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .header{
   padding-top: 24px;
   padding-left: 20px;
@@ -57,8 +57,7 @@ export default {
     }
     &--menu{
       display: flex;
-      align-items: center;
-      justify-content: start;
+      align-items: flex-start;
       width: 370px;
       font-size: 1.0em;
       letter-spacing: 1px;

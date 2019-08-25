@@ -35,7 +35,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .footer{
   padding: 80px 0 60px 20px;
   background-color: #FCFBFC;

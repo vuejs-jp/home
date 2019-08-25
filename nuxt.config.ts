@@ -47,8 +47,7 @@ const config: Configuration = {
 
   css: [
     'normalize.css',
-    '@/assets/styles/bootstrap.css',
-    '@/assets/css/layout.css'
+    '@/assets/styles/bootstrap.css'
   ]
 }
 
