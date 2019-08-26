@@ -10,19 +10,20 @@
 </template>
 
 <script>
+import Vue from 'vue'
 import ShareButtonTwitter from '@/components/ShareButtonTwitter'
 import ShareButtonNote from '@/components/ShareButtonNote'
 import ShareButtonYoutube from '@/components/ShareButtonYoutube'
 import ShareButtonGithub from '@/components/ShareButtonGithub'
 
-export default {
+export default Vue.extend({
   components: {
     ShareButtonTwitter,
     ShareButtonNote,
     ShareButtonYoutube,
     ShareButtonGithub
   }
-}
+})
 </script>
 
 <style lang="postcss" scoped>
