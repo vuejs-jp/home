@@ -31,12 +31,14 @@
 </template>
 
 <script>
+import Vue from 'vue'
 import ShareButtonGroup from '@/components/ShareButtonGroup'
-export default {
+
+export default Vue.extend({
   components: {
     ShareButtonGroup
   }
-}
+})
 </script>
 
 <style lang="postcss" scoped>

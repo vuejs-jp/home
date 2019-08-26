@@ -21,14 +21,15 @@
 </style>
 
 <script>
+import Vue from 'vue'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
-export default {
+export default Vue.extend({
   components: {
     Header,
     Footer
   }
-}
+})
 </script>
 
