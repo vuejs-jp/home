@@ -1,0 +1,271 @@
+html {
+  font-size: 16px;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--font-family-base);
+  letter-spacing: .4px;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--c-black);
+  background-color: var(--c-white);
+  overflow: hidden;
+  overflow-y: scroll;
+  direction: ltr;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/**
+ * Suppress the focus outline on elements that cannot be accessed via keyboard.
+ * This prevents an unwanted focus outline from appearing around elements that
+ * might still respond to pointer events.
+ *
+ * Credit: https://github.com/suitcss/base
+ */
+[tabindex="-1"]:focus {
+  outline: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+p {
+  margin: 0;
+}
+
+
+abbr[title],
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #999;
+}
+
+address {
+  margin: 0;
+}
+
+ol,
+ul,
+dl {
+  margin: 0;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+dd {
+  margin: 0;
+}
+
+blockquote {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+a:not([href]):not([tabindex]) {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+
+pre {
+  margin: 0;
+  overflow: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+[role="button"] {
+  cursor: pointer;
+}
+
+/**
+ * Avoid 300ms click delay on touch devices that support the `touch-action`
+ * CSS property.
+ *
+ * In particular, unlike most other browsers, IE11+Edge on Windows 10 on
+ * touch devices and IE Mobile 10-11 DON'T remove the click delay when
+ * `<meta name="viewport" content="width=device-width">` is present.
+ * However, they DO support removing the click delay via
+ * `touch-action: manipulation`.
+ *
+ * See:
+ * http://v4-alpha.getbootstrap.com/content/reboot/#click-delay-optimization-for-touch
+ * http://caniuse.com/#feat=css-touch-action
+ * http://patrickhlauke.github.io/touch/tests/results/#suppressing-300ms-delay
+ */
+a,
+area,
+button,
+[role="button"],
+input,
+label,
+select,
+summary,
+textarea {
+  touch-action: manipulation;
+}
+
+table {
+  border-collapse: collapse;
+  background-color: transparent;
+}
+
+caption {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: left;
+  caption-side: bottom;
+}
+
+th {
+  text-align: left;
+}
+
+label {
+  display: inline-block;
+  margin: 0;
+}
+
+button {
+  border: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  border-radius: 0;
+  line-height: inherit;
+}
+
+input,
+textarea {
+  border: 0;
+  font-family: var(--font-family-base);
+  font-weight: 400;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  -webkit-appearance: listbox;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="search"] {
+   -webkit-appearance: textfield;
+}
+
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+select {
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+output {
+  display: inline-block;
+}
+
+[hidden] {
+  display: none !important;
+}
