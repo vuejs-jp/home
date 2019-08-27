@@ -23,7 +23,9 @@ const config: Configuration = {
     ]
   },
 
-  buildModules: ['@nuxt/typescript-build']
+  buildModules: ['@nuxt/typescript-build'],
+
+  modules: ['@nuxtjs/markdownit'] 
 }
 
 export default config

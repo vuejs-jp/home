@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.1.1",
+    "@nuxtjs/markdownit": "^1.2.6",
     "nuxt": "^2.9.0",
     "typescript": "^3.5.3",
     "webpack": "^4.39.2"
