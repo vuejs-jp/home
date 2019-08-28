@@ -4,7 +4,7 @@
     <Slide />
     <Description />
     <History />
-    <Staff /> 
+    <Staff />
   </div>
 </template>
 
