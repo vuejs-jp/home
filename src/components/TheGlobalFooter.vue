@@ -12,7 +12,7 @@
           </NuxtLink>
         </li>
         <li class="legal-item">
-          <NuxtLink class="legal-link u-link-text" to="#">
+          <NuxtLink class="legal-link u-link-text" to="/code-of-conduct">
             Code of Conduct
           </NuxtLink>
         </li>
@@ -28,8 +28,9 @@
           &copy; 2019 Vue.js Japan Users Group some rights reserved.
         </p>
         <p class="copyright-text">
-          Vue.js artworks by <a class="u-link-text" href="https://github.com/yyx990803" target="_blank" rel="noopener noreferrer">Evan You</a> is licensed under a <a class="u-link-text" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 4.0 Internatinal Licence.</a><br>
-        </p><p class="copyright-text">
+          Vue.js artworks by <a class="u-link-text" href="https://github.com/yyx990803" target="_blank" rel="noopener noreferrer">Evan You</a> is licensed under a <a class="u-link-text" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 4.0 Internatinal Licence.</a>
+        </p>
+        <p class="copyright-text">
           Proudly created by Vue.js Japan User Group members, powered by <a class="u-link-text" href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">Vue.js</a>
         </p>
       </div>
