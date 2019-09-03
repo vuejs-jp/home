@@ -80,8 +80,7 @@ SFCでは `scoped` CSSを使用してください。また、以下のルール�
 
 - トップレベルのクラス名はコンポーネント名に沿ったCapitalCaseを使用してください。
   - これは親・子のコンポーネントでの不意な衝突を避けるためです。例えば `container` などありふれた名前を利用すると、思わぬところで衝突する可能性があります。
-- グローバルCSSと同じくBEMを用いますが、トップレベルクラス名のプリフィックスは省いてください。
-  - 名前衝突の問題はSFCのScoped CSSによって解決されているからです。
+- グローバルCSSと異なり、BEMスタイルは必要ありません。ただし、トップレベル以外のクラス名は全て小文字、ハイフンつなぎとしてください。
 
 ```vue
 <template>
@@ -89,8 +88,8 @@ SFCでは `scoped` CSSを使用してください。また、以下のルール�
     <div class="container">
       <h1 class="title">さぁ、チャンスはいま。</h1>
 
-      <button class="button button--secondary">もっと詳しく</button>
-      <button class="button button--primary">いますぐ申し込む</button>
+      <button class="button button-secondary">もっと詳しく</button>
+      <button class="button button-primary">いますぐ申し込む</button>
     </div>
   </div>
 </template>
@@ -113,14 +112,14 @@ SFCでは `scoped` CSSを使用してください。また、以下のルール�
 
 .button {
   border-radius: 4px;
+}
 
-  &--primary {
-    background-color: var(--c-primary);
-  }
+.button-primary {
+  background-color: var(--c-primary);
+}
 
-  &--secondary {
-    background-color: var(--c-secondary);
-  }
+.button-secondary {
+  background-color: var(--c-secondary);
 }
 </style>
 ```
