@@ -1,12 +1,27 @@
 <template>
   <div class="App">
-    <Header />
+    <TheGlobalHeader />
+
     <div class="content">
       <Nuxt />
     </div>
-    <Footer />
+
+    <TheGlobalFooter />
   </div>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+import TheGlobalHeader from '@/components/TheGlobalHeader'
+import TheGlobalFooter from '@/components/TheGlobalFooter'
+
+export default Vue.extend({
+  components: {
+    TheGlobalHeader,
+    TheGlobalFooter
+  }
+})
+</script>
 
 <style lang="postcss" scoped>
 .App {
@@ -19,17 +34,3 @@
   flex-grow: 1;
 }
 </style>
-
-<script>
-import Vue from 'vue'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
-
-export default Vue.extend({
-  components: {
-    Header,
-    Footer
-  }
-})
-</script>
-

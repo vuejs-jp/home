@@ -10,24 +10,18 @@
     "lint": "yarn lint:ts && yarn lint:css"
   },
   "dependencies": {
+    "@nuxt/typescript-build": "^0.2.0",
     "@nuxt/typescript-runtime": "^0.1.1",
     "normalize.css": "^8.0.1",
-    "nuxt": "^2.9.0",
+    "nuxt": "^2.9.2",
     "postcss-css-variables": "^0.13.0",
     "postcss-nested": "^4.1.2",
-    "typescript": "^3.5.3",
-    "webpack": "^4.39.2"
+    "typescript": "^3.6.2"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "^0.1.8",
     "@nuxtjs/eslint-config-typescript": "^0.1.2",
-    "@typescript-eslint/eslint-plugin": "^2.0.0",
-    "@typescript-eslint/parser": "^2.0.0",
     "eslint": "^5.16.0",
-    "eslint-plugin-nuxt": ">=0.4.2",
-    "nodemon": "^1.18.9",
     "stylelint": "^10.1.0",
-    "stylelint-config-recess-order": "^2.0.3",
-    "stylelint-webpack-plugin": "^0.10.5"
+    "stylelint-config-recess-order": "^2.0.3"
   }
 }

@@ -1,7 +1,5 @@
 <template>
-  <main>
-    <div class="Home" />
-  </main>
+  <div class="Home" />
 </template>
 
 <script lang="ts">
@@ -14,9 +12,3 @@ export default Vue.extend({
   }
 })
 </script>
-
-<style scoped>
-main{
-  height: 2000px;
-}
-</style>
