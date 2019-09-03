@@ -1,0 +1,9 @@
+.u-link-text {
+  text-decoration: underline;
+  transition: color 0.25s;
+
+  &:hover {
+    color: var(--c-gray);
+    text-decoration: underline;
+  }
+}

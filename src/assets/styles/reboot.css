@@ -218,7 +218,7 @@ textarea {
 input,
 textarea {
   font-family: var(--font-family-base);
-  font-weight: 400;
+  font-weight: 500;
   background-color: transparent;
   border: 0;
   -webkit-appearance: none;
