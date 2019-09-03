@@ -1,0 +1,21 @@
+body{
+  font-family: 'Source Sans Pro', 'Noto Sans JP', sans-serif;
+}
+
+body, a, p, div, span{
+  color: #242426;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1{
+  font-size: 1.2em;
+  letter-spacing: 2px;
+}
+
+.header__container, .footer__container {
+  max-width: var(--width-container-size);
+  margin: 0 auto;
+}
