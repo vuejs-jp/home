@@ -10,8 +10,8 @@
     "lint": "yarn lint:ts && yarn lint:css"
   },
   "dependencies": {
-    "@nuxt/typescript-build": "^0.2.0",
-    "@nuxt/typescript-runtime": "^0.1.1",
+    "@nuxt/typescript-build": "^0.2.1",
+    "@nuxt/typescript-runtime": "^0.1.5",
     "normalize.css": "^8.0.1",
     "nuxt": "^2.9.2",
     "postcss-css-variables": "^0.13.0",
