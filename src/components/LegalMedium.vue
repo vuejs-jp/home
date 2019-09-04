@@ -1,5 +1,5 @@
 <template>
-  <AppMount class="LegalMedium">
+  <StyleMount class="LegalMedium">
     <div class="container">
       <p class="title-ja">
         {{ titleJa }}
@@ -12,16 +12,16 @@
         <slot />
       </div>
     </div>
-  </AppMount>
+  </StyleMount>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import AppMount from './AppMount'
+import StyleMount from './StyleMount'
 
 export default Vue.extend({
   components: {
-    AppMount
+    StyleMount
   },
 
   props: {
@@ -50,9 +50,7 @@ export default Vue.extend({
   .title-ja,
   .title-en,
   .body {
-    opacity: 0;
     transition: opacity 0.5s, transform 0.5s;
-    transform: translateY(8px);
   }
 
   .title-ja { transition-delay: 0s; }
@@ -60,12 +58,12 @@ export default Vue.extend({
   .body     { transition-delay: 0.2s; }
 }
 
-.LegalMedium.mount-on {
+.LegalMedium.mount {
   .title-ja,
   .title-en,
   .body {
-    opacity: 1;
-    transform: translateY(0);
+    opacity: 0;
+    transform: translateY(8px);
   }
 }
 

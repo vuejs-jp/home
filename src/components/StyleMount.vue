@@ -1,5 +1,5 @@
 <template>
-  <div class="AppMount mount-active" :class="{ 'mount-on': mounted }">
+  <div class="AppMount mount-active" :class="{ mount }">
     <slot />
   </div>
 </template>
@@ -10,12 +10,12 @@ import Vue from 'vue'
 export default Vue.extend({
   data () {
     return {
-      mounted: false
+      mount: true
     }
   },
 
   mounted () {
-    setTimeout(() => { this.mounted = true }, 100)
+    setTimeout(() => { this.mount = false }, 100)
   }
 })
 </script>
