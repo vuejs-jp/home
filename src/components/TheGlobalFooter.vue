@@ -7,7 +7,7 @@
 
       <ul class="legal">
         <li class="legal-item">
-          <NuxtLink class="legal-link u-link-text" to="#">
+          <NuxtLink class="legal-link u-link-text" to="/privacy">
             Privacy Policy
           </NuxtLink>
         </li>
