@@ -4,7 +4,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import AppPage from '@/components/AppPage'
+import AppPage from '@/components/AppPage.vue'
 
 export default Vue.extend({
   components: {

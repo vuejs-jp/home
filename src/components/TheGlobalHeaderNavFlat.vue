@@ -17,7 +17,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import SocialLinkGroup from './SocialLinkGroup'
+import SocialLinkGroup from './SocialLinkGroup.vue'
 
 export default Vue.extend({
   components: {

@@ -12,8 +12,8 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import TheGlobalHeader from '@/components/TheGlobalHeader'
-import TheGlobalFooter from '@/components/TheGlobalFooter'
+import TheGlobalHeader from '@/components/TheGlobalHeader.vue'
+import TheGlobalFooter from '@/components/TheGlobalFooter.vue'
 
 export default Vue.extend({
   components: {

@@ -25,10 +25,10 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import IconTwitter from './IconTwitter'
-import IconNote from './IconNote'
-import IconYouTube from './IconYouTube'
-import IconGitHub from './IconGitHub'
+import IconTwitter from './IconTwitter.vue'
+import IconNote from './IconNote.vue'
+import IconYouTube from './IconYouTube.vue'
+import IconGitHub from './IconGitHub.vue'
 
 export default Vue.extend({
   components: {
