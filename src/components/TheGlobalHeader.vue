@@ -20,9 +20,9 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import HamburgerMenu from './HamburgerMenu'
-import TheGlobalHeaderNavFlat from './TheGlobalHeaderNavFlat'
-import TheGlobalHeaderNavScreen from './TheGlobalHeaderNavScreen'
+import HamburgerMenu from './HamburgerMenu.vue'
+import TheGlobalHeaderNavFlat from './TheGlobalHeaderNavFlat.vue'
+import TheGlobalHeaderNavScreen from './TheGlobalHeaderNavScreen.vue'
 
 export default Vue.extend({
   components: {

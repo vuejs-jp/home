@@ -104,8 +104,8 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import AppPage from '@/components/AppPage'
-import LegalMedium from '@/components/LegalMedium'
+import AppPage from '@/components/AppPage.vue'
+import LegalMedium from '@/components/LegalMedium.vue'
 
 export default Vue.extend({
   components: {

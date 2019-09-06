@@ -17,7 +17,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import StyleMount from './StyleMount'
+import StyleMount from './StyleMount.vue'
 
 export default Vue.extend({
   components: {
