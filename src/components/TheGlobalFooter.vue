@@ -1,5 +1,5 @@
 <template>
-  <StyleMount class="TheGlobalFooter" tag="footer">
+  <StyleMount class="TheGlobalFooter" :class="{ transitioning }" tag="footer">
     <div class="container">
       <div class="social">
         <SocialLinkGroup />
@@ -47,6 +47,26 @@ export default Vue.extend({
   components: {
     StyleMount,
     SocialLinkGroup
+  },
+
+  data () {
+    return {
+      transitioning: false
+    }
+  },
+
+  watch: {
+    $route () {
+      this.transition()
+    }
+  },
+
+  methods: {
+    transition (): void {
+      this.transitioning = true
+
+      setTimeout(() => { this.transitioning = false }, 500)
+    }
   }
 })
 </script>
@@ -84,6 +104,12 @@ export default Vue.extend({
   .container {
     transition-delay: 0.5s;
   }
+}
+
+.TheGlobalFooter.transitioning {
+  opacity: 0;
+  transition: opacity 0.1s, transform 0.1s;
+  transform: translateY(4px);
 }
 
 .container {
