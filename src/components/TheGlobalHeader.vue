@@ -1,5 +1,5 @@
 <template>
-  <StyleMount class="TheGlobalHeader" tag="header">
+  <StyleMount id="header" class="TheGlobalHeader" :class="{ transitioning }" tag="header">
     <TheGlobalHeaderNavScreen :active="isMenuOpen" @close="closeNav" />
 
     <div class="container">
@@ -24,6 +24,7 @@ import StyleMount from './StyleMount.vue'
 import HamburgerMenu from './HamburgerMenu.vue'
 import TheGlobalHeaderNavFlat from './TheGlobalHeaderNavFlat.vue'
 import TheGlobalHeaderNavScreen from './TheGlobalHeaderNavScreen.vue'
+import { scrollToTop } from '@/support/Screen'
 
 export default Vue.extend({
   components: {
@@ -35,7 +36,14 @@ export default Vue.extend({
 
   data () {
     return {
-      isMenuOpen: false
+      isMenuOpen: false,
+      transitioning: false
+    }
+  },
+
+  watch: {
+    $route () {
+      this.transition()
     }
   },
 
@@ -46,6 +54,20 @@ export default Vue.extend({
 
     toggleNav (): void {
       this.isMenuOpen = !this.isMenuOpen
+    },
+
+    transition (): void {
+      const header = document.getElementById('header') as HTMLElement
+      const headerHeight = header.offsetHeight
+      const scrollTop = document.documentElement.scrollTop
+
+      scrollTop > headerHeight ? this.performTransition() : scrollToTop()
+    },
+
+    performTransition (): void {
+      this.transitioning = true
+
+      setTimeout(() => { this.transitioning = false }, 500)
     }
   }
 })
@@ -75,6 +97,12 @@ export default Vue.extend({
 .TheGlobalHeader.mount {
   opacity: 0;
   transform: scale(1.1);
+}
+
+.TheGlobalHeader.transitioning {
+  opacity: 0;
+  transition: opacity 0.1s, transform 0.1s;
+  transform: translateY(-4px);
 }
 
 .container {
