@@ -1,5 +1,5 @@
 <template>
-  <footer class="TheGlobalFooter">
+  <StyleMount class="TheGlobalFooter" tag="footer">
     <div class="container">
       <div class="social">
         <SocialLinkGroup />
@@ -35,15 +35,17 @@
         </p>
       </div>
     </div>
-  </footer>
+  </StyleMount>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import StyleMount from './StyleMount.vue'
 import SocialLinkGroup from './SocialLinkGroup.vue'
 
 export default Vue.extend({
   components: {
+    StyleMount,
     SocialLinkGroup
   }
 })
@@ -62,6 +64,25 @@ export default Vue.extend({
 
   @media (min-width: 768px) {
     padding: 64px 48px 56px;
+  }
+}
+
+.TheGlobalFooter.mount-active {
+  &,
+  .container {
+    transition: opacity 1s, transform 1s var(--ease-out-quint);;
+  }
+}
+
+.TheGlobalFooter.mount {
+  &,
+  .container {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  .container {
+    transition-delay: 0.5s;
   }
 }
 

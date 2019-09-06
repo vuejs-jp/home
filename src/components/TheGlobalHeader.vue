@@ -1,5 +1,5 @@
 <template>
-  <header class="TheGlobalHeader">
+  <StyleMount class="TheGlobalHeader" tag="header">
     <TheGlobalHeaderNavScreen :active="isMenuOpen" @close="closeNav" />
 
     <div class="container">
@@ -15,17 +15,19 @@
 
       <TheGlobalHeaderNavFlat />
     </div>
-  </header>
+  </StyleMount>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
+import StyleMount from './StyleMount.vue'
 import HamburgerMenu from './HamburgerMenu.vue'
 import TheGlobalHeaderNavFlat from './TheGlobalHeaderNavFlat.vue'
 import TheGlobalHeaderNavScreen from './TheGlobalHeaderNavScreen.vue'
 
 export default Vue.extend({
   components: {
+    StyleMount,
     HamburgerMenu,
     TheGlobalHeaderNavFlat,
     TheGlobalHeaderNavScreen
@@ -64,6 +66,15 @@ export default Vue.extend({
   @media (min-width: 640px) {
     padding: 16px 32px;
   }
+}
+
+.TheGlobalHeader.mount-active {
+  transition: opacity 1s, transform 1s var(--ease-out-quint);
+}
+
+.TheGlobalHeader.mount {
+  opacity: 0;
+  transform: scale(1.1);
 }
 
 .container {

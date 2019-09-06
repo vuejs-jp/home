@@ -48,9 +48,9 @@
   --shadow-depth-5: 0 18px 56px rgba(0, 0, 0, 0.16), 0 4px 12px rgba(0, 0, 0, 0.16);
 
   /**
-   * Width
+   * Easings
    * --------------------------------------------------------------------- */
 
-  --width-container-size: 960px;
+  --ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
 
 }
