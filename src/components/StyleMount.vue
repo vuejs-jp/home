@@ -1,13 +1,17 @@
 <template>
-  <div class="AppMount mount-active" :class="{ mount }">
+  <Component :is="tag" class="AppMount mount-active" :class="{ mount }">
     <slot />
-  </div>
+  </Component>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 
 export default Vue.extend({
+  props: {
+    tag: { type: String, default: 'div' }
+  },
+
   data () {
     return {
       mount: true
