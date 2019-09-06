@@ -1,6 +1,7 @@
 <template>
   <AppPage class="Home">
     <PageHomeHero />
+    <PageHomeEvents />
   </AppPage>
 </template>
 
@@ -8,11 +9,13 @@
 import Vue from 'vue'
 import AppPage from '@/components/AppPage.vue'
 import PageHomeHero from '@/components/PageHomeHero.vue'
+import PageHomeEvents from '@/components/PageHomeEvents.vue'
 
 export default Vue.extend({
   components: {
     AppPage,
-    PageHomeHero
+    PageHomeHero,
+    PageHomeEvents
   },
 
   head: {
