@@ -36,19 +36,23 @@ export default Vue.extend({
 @import '@/assets/styles/variables';
 
 .PageHomeHero {
-  padding: 32px 24px 96px;
+  padding: 32px 24px;
   overflow: hidden;
 
   @media (min-width: 375px) {
-    padding: 32px 32px 96px;
+    padding: 32px;
   }
 
   @media (min-width: 560px) {
-    padding: 0 32px 96px;
+    padding: 0 32px 160px;
   }
 
   @media (min-width: 768px) {
-    padding: 0 48px 128px;
+    padding: 0 48px 192px;
+  }
+
+  @media (min-width: 1056px) {
+    padding: 32px 48px 224px;
   }
 }
 
@@ -163,7 +167,7 @@ export default Vue.extend({
 }
 
 .image {
-  padding-top: 32px;
+  padding-top: 56px;
   margin: 0 -24px;
   text-align: center;
 

@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "dev": "nuxt-ts",
+    "dev": "NUXT_HOST=0.0.0.0 nuxt-ts",
     "build": "nuxt-ts build",
     "start": "nuxt-ts start",
     "generate": "nuxt-ts generate",
