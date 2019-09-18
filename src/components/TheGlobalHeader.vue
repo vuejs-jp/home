@@ -88,6 +88,10 @@ export default Vue.extend({
   @media (min-width: 640px) {
     padding: 16px 32px;
   }
+
+  @media (min-width: 768px) {
+    padding: 16px 48px;
+  }
 }
 
 .TheGlobalHeader.mount-active {

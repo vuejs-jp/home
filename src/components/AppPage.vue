@@ -6,7 +6,7 @@
 
 <style lang="postcss" scoped>
 .AppPage.page-leave-active {
-  transition: opacity 0.1s, transform 0.1s;
+  transition: opacity 0.25s, transform 0.25s;
 }
 
 .AppPage.page-leave-to {

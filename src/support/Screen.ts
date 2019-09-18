@@ -2,7 +2,7 @@
  * Make smooth "Scroll to Top" animation on the current window.
  *
  * @param {number} duration The scroll animation duration in milliseconds.
- * @return void
+ * @return {void}
  */
 export function scrollToTop (duration: number = 100): void {
   const scrollHeight = window.scrollY
