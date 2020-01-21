@@ -31,13 +31,13 @@
   }
 
   a {
-    text-decoration: none;
     color: var(--c-vue-green);
+    text-decoration: none;
     transition: color 0.25s;
 
-  &:hover {
-     text-decoration: none;
-     color: var(--c-vue-green-light);
-   }
+    &:hover {
+      color: var(--c-vue-green-light);
+      text-decoration: none;
+    }
   }
 }

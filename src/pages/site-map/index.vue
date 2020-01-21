@@ -7,10 +7,14 @@
       <nav>
         <ul>
           <li>
-            <NuxtLink class="u-link-text" to="/">Home</NuxtLink>
+            <NuxtLink class="u-link-text" to="/">
+              Home
+            </NuxtLink>
           </li>
           <li>
-            <NuxtLink class="u-link-text" to="/about">About</NuxtLink>
+            <NuxtLink class="u-link-text" to="/about">
+              About
+            </NuxtLink>
           </li>
         </ul>
       </nav>
@@ -19,7 +23,9 @@
       <nav>
         <ul>
           <li>
-            <NuxtLink class="u-link-text" to="/contact">Contact</NuxtLink>
+            <NuxtLink class="u-link-text" to="/contact">
+              Contact
+            </NuxtLink>
           </li>
         </ul>
       </nav>
