@@ -1,48 +1,41 @@
 <p align="center"><a href="http://vuejs.org" target="_blank"><img width="100"src="http://vuejs.org/images/logo.png"></a></p>
 
-> **HEADS UP:** Vue.js 日本ユーザーグループの公式ウェブサイトの開発が始まっています。開発への参加に興味のある方は[Issue #9 Official Website Initial Release](https://github.com/vuejs-jp/home/issues/9)をご覧ください。
-
 # Vue.js 日本ユーザーグループ
-Vue.js 日本ユーザグループ へようこそ
 
-Vue.js 日本ユーザグループは、
+Vue.js 日本ユーザグループへようこそ。Vue.js 日本ユーザグループは、
 
-- 日本における Vue.js の普及
-- 日本語による Vue.js に関する情報の共有及びディスカッション
-- Vue.js への貢献
+- 日本におけるVue.jsの普及
+- 日本語によるVue.jsに関する情報の共有及びディスカッション
+- Vue.jsへの貢献
 
 を目的としたコミュニティです。
 
-Vue.js に興味のある方でしたらどなたでもお気軽にご参加ください。
-
+Vue.jsに興味のある方でしたらどなたでもお気軽にご参加ください。
 
 ## コミュニケーション
+
 - [Vue.js 日本ユーザーグループ向けslack](https://vuejs-jp-slackin.herokuapp.com)
 - [Vue.js オフィシャルフォーラム](http://forum.vuejs.org)
 
-以下の discussion は現在使用されていません。
-- [discussion (日本語)](https://github.com/vuejs-jp/discussion)
-- [Discussion (英語)](https://github.com/vuejs/Discussion)
-
-
 ## 活動
+
 - [Vue.js 公式ドキュメント 日本語翻訳プロジェクト](https://github.com/vuejs/jp.vuejs.org)
 - [Nuxt.js 公式ドキュメント 日本語翻訳プロジェクト](https://github.com/vuejs-jp/ja.docs.nuxtjs)
 - [Vue.js Meetup イベント](http://vuejs-meetup.connpass.com)
 
-
 ## ツールスポンサー
+
 <table>
   <tbody>
     <tr>
       <td align="center" valign="middle">
         <a href="https://docs.esa.io/posts/239/" target="_blank">
-          <img width="196px" src="https://raw.githubusercontent.com/vuejs-jp/home/master/assets/esa.png">
+          <img width="196px" src="https://raw.githubusercontent.com/vuejs-jp/home/develop/.github/assets/esa.png">
         </a>
       </td>
       <td align="center" valign="middle">
         <a href="http://slack.com/" target="_blank">
-          <img width="196px" src="https://raw.githubusercontent.com/vuejs-jp/home/master/assets/slack.png">
+          <img width="196px" src="https://raw.githubusercontent.com/vuejs-jp/home/develop/.github/assets/slack.png">
         </a>
       </td>
     </tr>
@@ -50,4 +43,9 @@ Vue.js に興味のある方でしたらどなたでもお気軽にご参加く�
 </table>
 
 ## 行動規範
+
 Vue.js 日本ユーザーグループが掲げる[行動規範](https://github.com/vuejs-jp/home/blob/master/CODE_OF_CONDUCT.md)をご確認ください。
+
+## ウェブサイト開発への参加
+
+Vue.js 日本ユーザーグループの公式ウェブサイトは、コミュニティの支援によって成り立っています。誰でも自由に開発に参加することができます。公式ウェブサイトの環境セットアップや開発の進め方については[コントリビューションガイド](https://github.com/vuejs-jp/home/blob/develop/.github/CONTRIBUTING.md)をご確認ください。

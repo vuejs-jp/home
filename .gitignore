@@ -1,3 +1,8 @@
-.DS_Store
+/.nuxt
+/dist
+/node_modules
 *.swp
 *~
+.DS_Store
+yarn-debug.log*
+yarn-error.log*
