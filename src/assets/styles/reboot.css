@@ -140,6 +140,10 @@ img {
   vertical-align: middle;
 }
 
+svg {
+  display: block;
+}
+
 [role='button'] {
   cursor: pointer;
 }

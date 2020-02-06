@@ -5,7 +5,7 @@
     <div class="container">
       <p class="logo">
         <NuxtLink class="logo-link" to="/">
-          Vue.js JP
+          <IconVuejsJpLogo class="logo-icon" /> Vue.js JP
         </NuxtLink>
       </p>
 
@@ -20,6 +20,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import IconVuejsJpLogo from './icons/IconVuejsJpLogo.vue'
 import StyleMount from './StyleMount.vue'
 import HamburgerMenu from './HamburgerMenu.vue'
 import TheGlobalHeaderNavFlat from './TheGlobalHeaderNavFlat.vue'
@@ -28,6 +29,7 @@ import { scrollToTop } from '@/support/Screen'
 
 export default Vue.extend({
   components: {
+    IconVuejsJpLogo,
     StyleMount,
     HamburgerMenu,
     TheGlobalHeaderNavFlat,
@@ -122,6 +124,22 @@ export default Vue.extend({
   font-size: 20px;
   font-weight: 600;
   line-height: 64px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  transition: opacity 0.25s;
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
 }
 
 .hamburger {
