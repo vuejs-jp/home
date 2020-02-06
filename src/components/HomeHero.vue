@@ -1,6 +1,6 @@
 <template>
   <StyleMount class="HomeHero">
-    <div class="container u-container">
+    <div class="u-relative u-container">
       <div class="content">
         <h1 class="title">
           <span class="u-nowrap">Welcome to</span> <span class="u-nowrap">Japan’s largest</span> <span class="u-nowrap">Vue.js Community.</span>
@@ -87,10 +87,6 @@ export default Vue.extend({
   .marker {
     background-size: 0 8px;
   }
-}
-
-.container {
-  position: relative;
 }
 
 .content {
