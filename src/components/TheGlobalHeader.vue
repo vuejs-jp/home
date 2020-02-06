@@ -20,12 +20,12 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { scrollToTop } from '@/support/Screen'
 import IconVuejsJpLogo from './icons/IconVuejsJpLogo.vue'
 import StyleMount from './StyleMount.vue'
 import HamburgerMenu from './HamburgerMenu.vue'
 import TheGlobalHeaderNavFlat from './TheGlobalHeaderNavFlat.vue'
 import TheGlobalHeaderNavScreen from './TheGlobalHeaderNavScreen.vue'
-import { scrollToTop } from '@/support/Screen'
 
 export default Vue.extend({
   components: {
