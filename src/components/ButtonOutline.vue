@@ -72,6 +72,7 @@ export default Vue.extend({
   color: var(--c-vue-green);
   text-align: center;
   letter-spacing: 0;
+  white-space: nowrap;
   border: 1px solid var(--c-vue-green);
   border-radius: 24px;
   transition: border-color 0.25s, color 0.25s;
