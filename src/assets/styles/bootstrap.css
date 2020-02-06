@@ -1,6 +1,7 @@
 @import './variables';
 @import './reboot';
 
+@import './utilities/u-container';
 @import './utilities/u-link';
 @import './utilities/u-medium';
 @import './utilities/u-nowrap';

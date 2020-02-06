@@ -1,6 +1,6 @@
 <template>
   <StyleMount class="HomeEvents" tag="section">
-    <div class="container">
+    <div class="container u-container">
       <div class="content u-section-content">
         <p class="u-section-content__heading">
           EVENTS
@@ -115,9 +115,6 @@ export default Vue.extend({
 }
 
 .container {
-  max-width: 960px;
-  margin: 0 auto;
-
   @media (min-width: 768px) {
     display: flex;
     align-items: center;

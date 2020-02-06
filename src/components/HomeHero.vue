@@ -1,6 +1,6 @@
 <template>
   <StyleMount class="HomeHero">
-    <div class="container">
+    <div class="container u-container">
       <div class="content">
         <h1 class="title">
           <span class="u-nowrap">Welcome to</span> <span class="u-nowrap">Japan’s largest</span> <span class="u-nowrap">Vue.js Community.</span>
@@ -91,8 +91,6 @@ export default Vue.extend({
 
 .container {
   position: relative;
-  max-width: 960px;
-  margin: 0 auto;
 }
 
 .content {
