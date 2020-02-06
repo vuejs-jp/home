@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #be003f;
+      }
+
+      .cls-2 {
+        fill: #35495e;
+      }
+
+      .cls-3 {
+        fill: #41b782;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="57.45" cy="36.36" r="6.55" />
+  <path class="cls-2" d="M48.73,56h0V29.82h8.72V47.31C57.45,51.64,53.09,56,48.73,56Z" />
+  <circle class="cls-2" cx="41.09" cy="52.73" r="3.27" />
+  <g id="Vue_Logo" data-name="Vue Logo">
+    <polygon class="cls-3" points="34.02 8 27.64 19.09 21.25 8 0 8 27.64 56 55.27 8 34.02 8" />
+    <polygon class="cls-2" points="34.02 8 27.64 19.09 21.25 8 11.05 8 27.64 36.8 44.22 8 34.02 8"/>
+  </g>
+</svg>
