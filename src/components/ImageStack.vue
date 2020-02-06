@@ -36,8 +36,8 @@
 
 <script lang="ts">
 import Vue, { PropOptions } from 'vue'
-import IconChevronLeft from './IconChevronLeft.vue'
-import IconChevronRight from './IconChevronRight.vue'
+import IconChevronLeft from './icons/IconChevronLeft.vue'
+import IconChevronRight from './icons/IconChevronRight.vue'
 
 interface Image {
   src: string

@@ -41,8 +41,8 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import IconConnpass from './icons/IconConnpass.vue'
 import StyleMount from './StyleMount.vue'
-import IconConnpass from './IconConnpass.vue'
 import ButtonOutline from './ButtonOutline.vue'
 import ImageStack from './ImageStack.vue'
 
