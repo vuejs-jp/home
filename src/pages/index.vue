@@ -1,21 +1,21 @@
 <template>
   <AppPage class="Home">
-    <PageHomeHero />
-    <PageHomeEvents />
+    <HomeHero />
+    <HomeEvents />
   </AppPage>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 import AppPage from '@/components/AppPage.vue'
-import PageHomeHero from '@/components/PageHomeHero.vue'
-import PageHomeEvents from '@/components/PageHomeEvents.vue'
+import HomeHero from '@/components/HomeHero.vue'
+import HomeEvents from '@/components/HomeEvents.vue'
 
 export default Vue.extend({
   components: {
     AppPage,
-    PageHomeHero,
-    PageHomeEvents
+    HomeHero,
+    HomeEvents
   },
 
   head: {
