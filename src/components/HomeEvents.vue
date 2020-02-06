@@ -1,5 +1,5 @@
 <template>
-  <StyleMount class="PageHomeEvents" tag="section">
+  <StyleMount class="HomeEvents" tag="section">
     <div class="container">
       <div class="content u-section-content">
         <p class="u-section-content__heading">
@@ -87,7 +87,7 @@ export default Vue.extend({
 <style lang="postcss" scoped>
 @import '@/assets/styles/variables';
 
-.PageHomeEvents {
+.HomeEvents {
   padding: 32px 24px;
   overflow: hidden;
 
@@ -104,12 +104,12 @@ export default Vue.extend({
   }
 }
 
-.PageHomeEvents.mount-active {
+.HomeEvents.mount-active {
   transition: opacity 0.5s, transform 0.5s;
   transition-delay: 0.75s;
 }
 
-.PageHomeEvents.mount {
+.HomeEvents.mount {
   opacity: 0;
   transform: translateY(8px);
 }

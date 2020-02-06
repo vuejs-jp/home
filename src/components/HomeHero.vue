@@ -1,5 +1,5 @@
 <template>
-  <StyleMount class="PageHomeHero">
+  <StyleMount class="HomeHero">
     <div class="container">
       <div class="content">
         <h1 class="title">
@@ -35,7 +35,7 @@ export default Vue.extend({
 <style lang="postcss" scoped>
 @import '@/assets/styles/variables';
 
-.PageHomeHero {
+.HomeHero {
   padding: 32px 24px;
   overflow: hidden;
 
@@ -56,7 +56,7 @@ export default Vue.extend({
   }
 }
 
-.PageHomeHero.mount-active {
+.HomeHero.mount-active {
   .title,
   .text,
   .image {
@@ -76,7 +76,7 @@ export default Vue.extend({
   .marker-3 { transition-delay: 1s; }
 }
 
-.PageHomeHero.mount {
+.HomeHero.mount {
   .title,
   .text,
   .image {
