@@ -4,13 +4,6 @@
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
-
-export default Vue.extend({})
-
-</script>
-
 <style lang="postcss" scoped>
   .AppPage.page-leave-active {
     transition: opacity 0.25s, transform 0.25s;
