@@ -2,17 +2,9 @@
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
     <defs>
       <style>
-        .vuejs-jp-logo-1 {
-          fill: #be003f;
-        }
-
-        .vuejs-jp-logo-2 {
-          fill: #35495e;
-        }
-
-        .vuejs-jp-logo-3 {
-          fill: #41b782;
-        }
+        .vuejs-jp-logo-1 { fill: #be003f; }
+        .vuejs-jp-logo-2 { fill: #35495e; }
+        .vuejs-jp-logo-3 { fill: #41b782; }
       </style>
     </defs>
     <ellipse class="vuejs-jp-logo-1" cx="86.16" cy="54.65" rx="9.84" ry="9.78" />

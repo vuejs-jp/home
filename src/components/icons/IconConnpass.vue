@@ -2,13 +2,8 @@
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
     <defs>
       <style>
-        .cls-1 {
-          fill: url('#linear-gradient');
-        }
-
-        .cls-2{
-          fill: #fff;
-        }
+        .cls-1 { fill: url('#linear-gradient'); }
+        .cls-2 { fill: #fff; }
       </style>
       <linearGradient
         id="linear-gradient"
