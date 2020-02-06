@@ -1,5 +1,5 @@
 <template>
-  <StyleMount class="HomeHero">
+  <StyleMount class="HomeHero u-wrapper">
     <div class="u-relative u-container">
       <div class="content">
         <h1 class="title">
@@ -36,23 +36,25 @@ export default Vue.extend({
 @import '@/assets/styles/variables';
 
 .HomeHero {
-  padding: 32px 24px;
-  overflow: hidden;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   @media (min-width: 375px) {
     padding: 32px;
   }
 
   @media (min-width: 560px) {
-    padding: 0 32px 160px;
+    padding-top: 0;
+    padding-bottom: 160px;
   }
 
   @media (min-width: 768px) {
-    padding: 0 48px 192px;
+    padding-bottom: 192px;
   }
 
   @media (min-width: 1056px) {
-    padding: 32px 48px 224px;
+    padding-top: 32px;
+    padding-bottom: 224px;
   }
 }
 

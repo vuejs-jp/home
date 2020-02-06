@@ -1,5 +1,5 @@
 <template>
-  <StyleMount class="HomeCommunications" tag="section">
+  <StyleMount class="HomeCommunications u-wrapper" tag="section">
     <div class="container u-container">
       <div class="content u-section-content">
         <p class="u-section-content__heading">
@@ -102,19 +102,17 @@ export default Vue.extend({
 @import '@/assets/styles/variables';
 
 .HomeCommunications {
-  padding: 32px 24px;
-  overflow: hidden;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   @media (min-width: 375px) {
-    padding: 48px 32px;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
 
   @media (min-width: 768px) {
-    padding: 96px 48px;
-  }
-
-  @media (min-width: 1088px) {
-    padding: 96px 48px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 }
 
