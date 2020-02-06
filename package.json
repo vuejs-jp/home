@@ -10,7 +10,8 @@
     "lint:ts": "eslint --fix --ext .ts,.js,.vue --ignore-path .gitignore .",
     "lint:ts:fail": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
     "lint:css": "stylelint --fix \"src/**/*.{css,vue}\"",
-    "lint:css:fail": "stylelint \"src/**/*.{css,vue}\""
+    "lint:css:fail": "stylelint \"src/**/*.{css,vue}\"",
+    "test": "jest --config test/jest.config.js"
   },
   "dependencies": {
     "@nuxt/typescript-build": "^0.5.6",
@@ -23,8 +24,13 @@
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^1.0.0",
+    "@types/jest": "^25.1.1",
+    "@vue/test-utils": "^1.0.0-beta.31",
     "eslint": "^6.8.0",
+    "jest": "^25.1.0",
     "stylelint": "^13.0.0",
-    "stylelint-config-recess-order": "^2.0.3"
+    "stylelint-config-recess-order": "^2.0.3",
+    "ts-jest": "^25.2.0",
+    "vue-jest": "^3.0.5"
   }
 }
