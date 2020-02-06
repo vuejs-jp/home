@@ -32,15 +32,15 @@
 }
 
 .u-section-content__actions {
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 40px;
-
-  @media (min-width: 1056px) {
-    display: flex;
-  }
+  margin: -8px;
 }
 
 .u-section-content__action {
   width: 256px;
+  padding: 8px;
 
   @media (min-width: 1056px) {
     width: 50%;
