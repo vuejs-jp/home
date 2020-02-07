@@ -48,7 +48,7 @@ export default Vue.extend({
 
 .HomeNews {
   padding-top: 64px;
-  padding-bottom: 64px;
+  padding-bottom: 96px;
   background-color: var(--c-white-soft);
   background-image: url('/img/home/japan-map.svg');
   background-repeat: no-repeat;
