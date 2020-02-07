@@ -85,16 +85,20 @@ export default Vue.extend({
 
 .HomeProjects {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 64px;
 
   @media (min-width: 375px) {
     padding-top: 48px;
-    padding-bottom: 48px;
+    padding-bottom: 96px;
   }
 
   @media (min-width: 768px) {
     padding-top: 96px;
-    padding-bottom: 96px;
+    padding-bottom: 160px;
+  }
+
+  @media (min-width: 1056px) {
+    padding-bottom: 256px;
   }
 }
 
