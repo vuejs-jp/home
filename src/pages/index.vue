@@ -3,6 +3,7 @@
     <HomeHero />
     <HomeEvents />
     <HomeCommunications />
+    <HomeProjects />
   </AppPage>
 </template>
 
@@ -12,13 +13,15 @@ import AppPage from '@/components/AppPage.vue'
 import HomeHero from '@/components/HomeHero.vue'
 import HomeEvents from '@/components/HomeEvents.vue'
 import HomeCommunications from '@/components/HomeCommunications.vue'
+import HomeProjects from '@/components/HomeProjects.vue'
 
 export default Vue.extend({
   components: {
     AppPage,
     HomeHero,
     HomeEvents,
-    HomeCommunications
+    HomeCommunications,
+    HomeProjects
   },
 
   head: {

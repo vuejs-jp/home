@@ -112,6 +112,10 @@ export default Vue.extend({
 
   @media (min-width: 768px) {
     padding-top: 96px;
+    padding-bottom: 64px;
+  }
+
+  @media (min-width: 1056px) {
     padding-bottom: 96px;
   }
 }
