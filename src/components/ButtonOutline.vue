@@ -1,7 +1,7 @@
 <template>
   <div class="ButtonOutline" role="button" :class="{ block }" @click="$emit('click')">
-    <Component :is="tag" class="button" :href="href" :target="target">
-      <Component :is="icon" class="icon" />
+    <Component :is="tag" class="button" :to="href" :href="href" :target="target">
+      <Component :is="icon" v-if="icon" class="icon" />
       <span class="label">{{ label }}</span>
     </Component>
   </div>
