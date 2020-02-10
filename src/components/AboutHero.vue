@@ -1,5 +1,5 @@
 <template>
-  <StyleMount class="HomeHero u-wrapper">
+  <StyleMount class="AboutHero u-wrapper">
     <div class="u-relative u-container">
       <div class="content">
         <h1 class="title">
@@ -48,22 +48,25 @@ export default Vue.extend({
 <style lang="postcss" scoped>
 @import '@/assets/styles/variables';
 
-.HomeHero {
+.AboutHero {
   padding-top: 32px;
-  padding-bottom: 64px;
+  padding-bottom: 96px;
 
   @media (min-width: 560px) {
     padding-top: 0;
-    padding-bottom: 160px;
   }
 
   @media (min-width: 768px) {
     padding-top: 32px;
-    padding-bottom: 192px;
+    padding-bottom: 128px;
+  }
+
+  @media (min-width: 1056px) {
+    padding-bottom: 160px;
   }
 }
 
-.HomeHero.mount-active {
+.AboutHero.mount-active {
   .title,
   .text,
   .image {
@@ -75,7 +78,7 @@ export default Vue.extend({
   .image  { transition-delay: 0.5s; }
 }
 
-.HomeHero.mount {
+.AboutHero.mount {
   .title,
   .text,
   .image {
