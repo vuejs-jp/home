@@ -1,14 +1,18 @@
 <template>
-  <AppPage class="About" />
+  <AppPage class="About">
+    <AboutHero />
+  </AppPage>
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
 import AppPage from '@/components/AppPage.vue'
+import AboutHero from '@/components/AboutHero.vue'
 
 export default Vue.extend({
   components: {
-    AppPage
+    AppPage,
+    AboutHero
   },
 
   head: {

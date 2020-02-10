@@ -115,6 +115,45 @@ export default Vue.extend({
 <style lang="postcss" scoped>
 @import '@/assets/styles/variables';
 
+.ImageStack.bottom {
+  .item { transform-origin: 50% 50%; }
+
+  .item-0 { transform: translateY(24px) scale(0.9); }
+  .item-1 { transform: translateY(12px) scale(0.95); }
+
+  .item-0.slide-enter,
+  .item-0.leave-to {
+    transform: translateY(48px) scale(0.85);
+  }
+
+  .item-2.slide-enter,
+  .item-2.slide-leave-to {
+    transform: translateY(-16px) scale(1.05);
+  }
+
+  .control { margin: 8px 8px 0; }
+
+  .caption.next-enter    { opacity: 0; transform: translateX(8px); }
+  .caption.next-leave-to { opacity: 0; transform: translateX(-8px); }
+
+  .caption.prev-enter    { opacity: 0; transform: translateX(-8px); }
+  .caption.prev-leave-to { opacity: 0; transform: translateX(8px); }
+
+  @media (min-width: 560px) {
+    .item-0 { transform: translateY(32px) scale(0.9); }
+    .item-1 { transform: translateY(16px) scale(0.95); }
+
+    .control { margin: 16px 16px 0; }
+  }
+
+  @media (min-width: 768px) {
+    .item-0 { transform: translateY(48px) scale(0.9); }
+    .item-1 { transform: translateY(24px) scale(0.95); }
+
+    .control { margin: 16px 24px 0; }
+  }
+}
+
 .ImageStack.right {
   .item { transform-origin: 100% 50%; }
 
@@ -176,7 +215,7 @@ export default Vue.extend({
   border-radius: 8px;
   box-shadow: var(--shadow-depth-5);
   transition: opacity 0.5s, transform 0.5s, filter 0.5s;
-  transform: translateX(0) scale(1);
+  transform: translate(0, 0) scale(1);
 }
 
 .item-0 .figure { filter: blur(32px); }
