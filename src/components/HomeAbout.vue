@@ -22,7 +22,7 @@
             <ButtonOutline
               tag="nuxt-link"
               :block="true"
-              href="https://vuejs-jp-slackin.herokuapp.com/"
+              href="/about"
               label="Vue.js JPについて"
             />
           </div>

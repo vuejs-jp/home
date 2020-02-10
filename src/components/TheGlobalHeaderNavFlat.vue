@@ -2,7 +2,7 @@
   <div class="TheGlobalHeaderNavFlat">
     <ul class="list">
       <li class="item">
-        <NuxtLink class="link" to="/">
+        <NuxtLink class="link" to="/about">
           About
         </NuxtLink>
       </li>
