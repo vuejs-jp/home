@@ -23,12 +23,12 @@
     "typescript": "^3.7.5"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config-typescript": "^1.0.0",
-    "@types/jest": "^25.1.1",
+    "@nuxtjs/eslint-config-typescript": "^1.0.2",
+    "@types/jest": "^25.1.2",
     "@vue/test-utils": "^1.0.0-beta.31",
     "eslint": "^6.8.0",
     "jest": "^25.1.0",
-    "stylelint": "^13.0.0",
+    "stylelint": "^13.1.0",
     "stylelint-config-recess-order": "^2.0.3",
     "ts-jest": "^25.2.0",
     "vue-jest": "^3.0.5"
