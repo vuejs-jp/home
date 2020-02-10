@@ -11,7 +11,9 @@ const config: Configuration = {
         'postcss-nested': {},
         'postcss-css-variables': {}
       }
-    }
+    },
+
+    extractCSS: process.env.NODE_ENV === 'production'
   },
 
   buildModules: ['@nuxt/typescript-build'],
