@@ -6,6 +6,7 @@
     <HomeProjects />
     <HomeNews />
     <HomeAbout />
+    <HomeSponsors />
   </AppPage>
 </template>
 
@@ -18,6 +19,7 @@ import HomeCommunications from '@/components/HomeCommunications.vue'
 import HomeProjects from '@/components/HomeProjects.vue'
 import HomeNews from '@/components/HomeNews.vue'
 import HomeAbout from '@/components/HomeAbout.vue'
+import HomeSponsors from '@/components/HomeSponsors.vue'
 
 export default Vue.extend({
   components: {
@@ -27,7 +29,8 @@ export default Vue.extend({
     HomeCommunications,
     HomeProjects,
     HomeNews,
-    HomeAbout
+    HomeAbout,
+    HomeSponsors
   },
 
   head: {
