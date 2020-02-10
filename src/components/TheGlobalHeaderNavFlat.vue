@@ -7,7 +7,7 @@
         </NuxtLink>
       </li>
       <li class="item">
-        <NuxtLink class="link" to="/">
+        <NuxtLink class="link" to="/contact">
           Contact
         </NuxtLink>
       </li>
@@ -59,7 +59,8 @@ export default Vue.extend({
   display: block;
   transition: color 0.25s;
 
-  &:hover {
+  &:hover,
+  &.nuxt-link-active {
     color: var(--c-gray);
   }
 }
