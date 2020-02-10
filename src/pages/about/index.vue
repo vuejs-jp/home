@@ -19,7 +19,7 @@ export default Vue.extend({
   },
 
   head: {
-    title: 'About | Vue.js 日本ユーザーグループ',
+    title: 'About',
     meta: [
       { hid: 'description', name: 'description', content: 'Vue.js Vue.js 日本ユーザーグループは、Vue.js を愛するあらゆる人々を支援する、日本最大の Vue.js コミュニティです。各地でのイベントサポートやドキュメントの翻訳プロジェクトを通じて、日本中に Vue.js を普及させるとともに、世界中の Vue.js エコシステム発展に貢献します。' }
     ]
