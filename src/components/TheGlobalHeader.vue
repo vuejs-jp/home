@@ -20,12 +20,12 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { scrollToTop } from '@/support/Screen'
 import IconVuejsJpLogo from './icons/IconVuejsJpLogo.vue'
 import StyleMount from './StyleMount.vue'
 import HamburgerMenu from './HamburgerMenu.vue'
 import TheGlobalHeaderNavFlat from './TheGlobalHeaderNavFlat.vue'
 import TheGlobalHeaderNavScreen from './TheGlobalHeaderNavScreen.vue'
+import { scrollToTop } from '@/support/Screen'
 
 export default Vue.extend({
   components: {
@@ -120,10 +120,11 @@ export default Vue.extend({
 }
 
 .logo {
-  font-family: var(--font-family-en);
+  font-family: var(--font-family-dosis);
   font-size: 20px;
   font-weight: 600;
   line-height: 64px;
+  letter-spacing: 1.2px;
 }
 
 .logo-link {
