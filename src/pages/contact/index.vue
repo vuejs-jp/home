@@ -1,6 +1,6 @@
 <template>
   <AppPage class="Contact u-wrapper">
-    <div class="u-container">
+    <StyleMount class="container u-container">
       <div class="info">
         <h1 class="title">
           We’d loved to hear <span class="u-nowrap">from you.</span>
@@ -35,7 +35,7 @@
           </ul>
         </section>
       </div>
-    </div>
+    </StyleMount>
   </AppPage>
 </template>
 
@@ -45,13 +45,15 @@ import IconChevronRight from '@/components/icons/IconChevronRight.vue'
 import IconSlack from '@/components/icons/IconSlack.vue'
 import IconTwitter from '@/components/icons/IconTwitter.vue'
 import AppPage from '@/components/AppPage.vue'
+import StyleMount from '@/components/StyleMount.vue'
 
 export default Vue.extend({
   components: {
-    AppPage,
     IconChevronRight,
     IconSlack,
-    IconTwitter
+    IconTwitter,
+    AppPage,
+    StyleMount
   },
 
   head: {
@@ -71,6 +73,30 @@ export default Vue.extend({
 
   @media (min-width: 768px) {
     padding-top: 48px;
+  }
+}
+
+.container.mount-active {
+  .title,
+  .lead,
+  .social,
+  .form {
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .title  { transition-delay: 0.1s; }
+  .lead   { transition-delay: 0.2s; }
+  .social { transition-delay: 0.3s; }
+  .form   { transition-delay: 0.5s; }
+}
+
+.container.mount {
+  .title,
+  .lead,
+  .social,
+  .form {
+    opacity: 0;
+    transform: translateY(8px);
   }
 }
 
