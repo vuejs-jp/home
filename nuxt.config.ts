@@ -41,6 +41,10 @@ const config: Configuration = {
   css: [
     'normalize.css',
     '@/assets/styles/bootstrap.css'
+  ],
+
+  plugins: [
+    { src: '@/plugins/vuelidate' }
   ]
 }
 

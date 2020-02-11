@@ -11,6 +11,7 @@
 </template>
 
 <script lang="ts">
+import Vue from 'vue'
 import AppPage from '@/components/AppPage.vue'
 import HomeHero from '@/components/HomeHero.vue'
 import HomeEvents from '@/components/HomeEvents.vue'

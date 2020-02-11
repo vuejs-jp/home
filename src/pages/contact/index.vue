@@ -256,6 +256,10 @@ export default Vue.extend({
     margin: 0 -24px;
   }
 
+  @media (min-width: 560px) {
+    margin: 0;
+  }
+
   @media (min-width: 1056px) {
     width: calc((100% / 5) * 3);
     padding-top: 0;
