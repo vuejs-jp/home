@@ -43,6 +43,10 @@ const config: Configuration = {
     '@/assets/styles/bootstrap.css'
   ],
 
+  modules: [
+    'portal-vue/nuxt'
+  ],
+
   plugins: [
     { src: '@/plugins/vuelidate' }
   ]

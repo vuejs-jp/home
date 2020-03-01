@@ -48,6 +48,7 @@ import Vue from 'vue'
 import { required, email } from 'vuelidate/lib/validators'
 import InputText from './InputText.vue'
 import InputTextarea from './InputTextarea.vue'
+import { sleep } from '@/support/Time'
 
 interface Errors {
   name: string | null
@@ -63,6 +64,8 @@ export default Vue.extend({
 
   data () {
     return {
+      sending: false,
+
       form: {
         name: '',
         email: '',
@@ -118,12 +121,65 @@ export default Vue.extend({
       }
     },
 
+    reset (): void {
+      this.$v.$reset()
+
+      this.form = {
+        name: '',
+        email: '',
+        message: ''
+      }
+    },
+
     send (): void {
+      if (this.sending) {
+        return
+      }
+
       this.$v.$touch()
 
       if (this.$v.$invalid) {
-
+        return
       }
+
+      this.performSend()
+    },
+
+    async performSend (): Promise<void> {
+      this.openDialog()
+
+      // TODO: Do the actual API call.
+      await sleep(1000)
+
+      // If success, open sucess alert.
+      this.openSuccessAlert()
+
+      // If failed, open error alert.
+      // this.openErrorAlert()
+
+      this.reset()
+    },
+
+    openDialog (): void {
+      this.$store.dispatch('dialog/open', {
+        title: 'お問い合わせ内容を送信しています。'
+      })
+    },
+
+    openSuccessAlert (): void {
+      this.$store.dispatch('alert/open', {
+        type: 'success',
+        title: 'お問い合わせいただき、ありがとうございます。',
+        text: 'お問い合わせ内容の送信が完了しました。内容を確認の上、追ってスタッフよりご連絡させていただきますので、今しばらくお待ちください。'
+      })
+    },
+
+    openErrorAlert (): void {
+      this.$store.dispatch('alert/open', {
+        type: 'error',
+        title: 'お問い合わせの送信に失敗しました。',
+        text: 'お問い合わせ内容を送信できませんでした。大変申し訳ありませんが、時間を置いて再度お試しください。'
+      })
     }
   }
 })
