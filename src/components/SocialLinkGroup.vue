@@ -1,7 +1,7 @@
 <template>
   <ul class="SocialLinkGroup">
     <li class="item item-twitter">
-      <a class="link link-twitter" href="https://www.youtube.com/channel/UC6KPwA1kZJtQYdlh8_2hxCA" target="_blank" rel="noopener noreferrer">
+      <a class="link link-twitter" href="https://twitter.com/vuefes" target="_blank" rel="noopener noreferrer">
         <IconTwitter class="icon icon-twitter" />
       </a>
     </li>
@@ -11,7 +11,7 @@
       </a>
     </li>
     <li class="item item-youtube">
-      <a class="link link-youtube" href="#" target="_blank" rel="noopener noreferrer">
+      <a class="link link-youtube" href="https://www.youtube.com/channel/UC6KPwA1kZJtQYdlh8_2hxCA" target="_blank" rel="noopener noreferrer">
         <IconYouTube class="icon icon-youtube" />
       </a>
     </li>

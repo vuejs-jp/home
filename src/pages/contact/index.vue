@@ -19,14 +19,14 @@
 
           <ul class="actions">
             <li class="action">
-              <a class="action-link" href="#" target="_blank">
+              <a class="action-link" href="https://vuejs-jp-slackin.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                 <IconSlack class="action-icon slack" />
                 Slackで質問する
                 <IconChevronRight class="action-chevron" />
               </a>
             </li>
             <li class="action">
-              <a class="action-link" href="#" target="_blank">
+              <a class="action-link" href="https://twitter.com/vuefes" target="_blank" rel="noopener noreferrer">
                 <IconTwitter class="action-icon twitter" />
                 Twitterで質問する
                 <IconChevronRight class="action-chevron" />

@@ -14,11 +14,11 @@
         </p>
 
         <div class="actions">
-          <a class="action" href="#">
+          <a class="action" href="https://twitter.com/vuefes" target="_blank" rel="noopener noreferrer">
             <IconTwitter class="icon twitter" />
             Vue.js JP 公式 Twitter
           </a>
-          <a class="action" href="https://note.com/vuejs_jp" target="_blank">
+          <a class="action" href="https://note.com/vuejs_jp" target="_blank" rel="noopener noreferrer">
             <IconNote class="icon note" />
             Vue.js JP 公式 Note
           </a>
