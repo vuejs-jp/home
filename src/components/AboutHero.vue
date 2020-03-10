@@ -23,6 +23,7 @@
 import Vue from 'vue'
 import StyleMount from './StyleMount.vue'
 import ImageStack from './ImageStack.vue'
+import AboutHeroPhotos from '@/data/about_hero_photos'
 
 export default Vue.extend({
   components: {
@@ -32,14 +33,7 @@ export default Vue.extend({
 
   data () {
     return {
-      images: [
-        { src: '/img/about/about-image-001.jpg', alt: 'Example alt description for image 001.' },
-        { src: '/img/about/about-image-002.jpg', alt: 'Example alt description for image 002 With long text that break the line.' },
-        { src: '/img/about/about-image-003.jpg', alt: 'Example alt description for image 003.' },
-        { src: '/img/about/about-image-004.jpg', alt: 'Example alt description for image 004.' },
-        { src: '/img/about/about-image-005.jpg', alt: 'Example alt description for image 005.' },
-        { src: '/img/about/about-image-006.jpg', alt: 'Example alt description for image 006.' }
-      ]
+      images: AboutHeroPhotos
     }
   }
 })
