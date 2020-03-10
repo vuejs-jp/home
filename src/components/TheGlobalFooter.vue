@@ -24,12 +24,6 @@
       </ul>
 
       <div class="copyright">
-        <div class="copyright-badge">
-          <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">
-            <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploys by Netlify">
-          </a>
-        </div>
-
         <p class="copyright-text">
           &copy; 2020 Vue.js Japan Users Group some rights reserved.
         </p>
@@ -42,6 +36,12 @@
         <p class="copyright-text">
           Proudly created by Vue.js Japan User Group members, powered by <a class="u-link-text" href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">Vue.js</a>.
         </p>
+
+        <div class="copyright-badge">
+          <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploys by Netlify">
+          </a>
+        </div>
       </div>
     </div>
   </StyleMount>
@@ -129,7 +129,7 @@ export default Vue.extend({
 .legal {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 8px;
+  padding-top: 16px;
 }
 
 .legal-item {
@@ -163,11 +163,7 @@ export default Vue.extend({
 }
 
 .copyright {
-  padding-top: 14px;
-}
-
-.copyright-badge {
-  padding-bottom: 16px;
+  padding-top: 6px;
 }
 
 .copyright-text {
@@ -179,5 +175,9 @@ export default Vue.extend({
   & + & {
     padding-top: 8px;
   }
+}
+
+.copyright-badge {
+  padding-top: 16px;
 }
 </style>
