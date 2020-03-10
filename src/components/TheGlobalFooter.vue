@@ -24,6 +24,12 @@
       </ul>
 
       <div class="copyright">
+        <div class="copyright-badge">
+          <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">
+            <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploys by Netlify">
+          </a>
+        </div>
+
         <p class="copyright-text">
           &copy; 2020 Vue.js Japan Users Group some rights reserved.
         </p>
@@ -123,7 +129,7 @@ export default Vue.extend({
 .legal {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 24px;
+  padding-top: 8px;
 }
 
 .legal-item {
@@ -157,7 +163,11 @@ export default Vue.extend({
 }
 
 .copyright {
-  padding-top: 8px;
+  padding-top: 14px;
+}
+
+.copyright-badge {
+  padding-bottom: 16px;
 }
 
 .copyright-text {
