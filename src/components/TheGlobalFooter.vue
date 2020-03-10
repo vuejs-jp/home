@@ -17,7 +17,7 @@
           </NuxtLink>
         </li>
         <li class="legal-item">
-          <NuxtLink class="legal-link u-link-text" to="#">
+          <NuxtLink class="legal-link u-link-text" to="/sitemap">
             Site Map
           </NuxtLink>
         </li>
