@@ -45,6 +45,7 @@ import IconConnpass from './icons/IconConnpass.vue'
 import StyleMount from './StyleMount.vue'
 import ButtonOutline from './ButtonOutline.vue'
 import ImageStack from './ImageStack.vue'
+import HomeEventPhotos from '@/data/home_event_photos'
 
 export default Vue.extend({
   components: {
@@ -56,17 +57,8 @@ export default Vue.extend({
   data () {
     return {
       iconConnpass: IconConnpass,
-
       stackImageTo: 'right',
-
-      images: [
-        { src: '/img/home/event-image-001.jpg', alt: 'Example alt description for image 001.' },
-        { src: '/img/home/event-image-002.jpg', alt: 'Example alt description for image 002 With long text that break the line.' },
-        { src: '/img/home/event-image-003.jpg', alt: 'Example alt description for image 003.' },
-        { src: '/img/home/event-image-004.jpg', alt: 'Example alt description for image 004.' },
-        { src: '/img/home/event-image-005.jpg', alt: 'Example alt description for image 005.' },
-        { src: '/img/home/event-image-006.jpg', alt: 'Example alt description for image 006.' }
-      ]
+      images: HomeEventPhotos
     }
   },
 
