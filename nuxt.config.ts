@@ -8,8 +8,8 @@ const config: Configuration = {
   build: {
     postcss: {
       plugins: {
-        'postcss-nested': {},
-        'postcss-css-variables': {}
+        'postcss-custom-properties': {},
+        'postcss-nested': {}
       }
     },
 
