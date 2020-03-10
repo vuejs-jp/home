@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="128" src="https://raw.githubusercontent.com/vuejs-jp/home/develop/.github/assets/vuejs-jp.png" alt="Vue.js Japan User Group">
+  <img width="128" src="https://raw.githubusercontent.com/vuejs-jp/home/master/.github/assets/vuejs-jp.png" alt="Vue.js Japan User Group">
 </p>
 
 <h1 align="center">Vue.js 日本ユーザーグループ</h1>
@@ -8,7 +8,7 @@
   <a href="https://github.com/vuejs-jp/home/actions">
     <img src="https://github.com/vuejs-jp/home/workflows/Test/badge.svg" alt="GitHub Actions">
   </a>
-  <a href="https://github.com/vuejs-jp/home/blob/develop/.github/CODE_OF_CONDUCT.md">
+  <a href="https://github.com/vuejs-jp/home/blob/master/.github/CODE_OF_CONDUCT.md">
     <img src="https://img.shields.io/npm/l/vue.svg" alt="License">
   </a>
 </p>
@@ -45,12 +45,12 @@ Vue.js に興味のある方でしたらどなたでもお気軽にご参加く�
     <tr>
       <td align="center" valign="middle">
         <a href="https://docs.esa.io/posts/239/" target="_blank">
-          <img width="196px" src="https://raw.githubusercontent.com/vuejs-jp/home/develop/.github/assets/esa.png" alt="esa">
+          <img width="196px" src="https://raw.githubusercontent.com/vuejs-jp/home/master/.github/assets/esa.png" alt="esa">
         </a>
       </td>
       <td align="center" valign="middle">
         <a href="http://slack.com/" target="_blank">
-          <img width="196px" src="https://raw.githubusercontent.com/vuejs-jp/home/develop/.github/assets/slack.png" alt="Slack">
+          <img width="196px" src="https://raw.githubusercontent.com/vuejs-jp/home/master/.github/assets/slack.png" alt="Slack">
         </a>
       </td>
     </tr>
@@ -59,8 +59,8 @@ Vue.js に興味のある方でしたらどなたでもお気軽にご参加く�
 
 ## 行動規範
 
-Vue.js 日本ユーザーグループが掲げる[行動規範](https://github.com/vuejs-jp/home/blob/develop/.github/CODE_OF_CONDUCT.md)をご確認ください。
+Vue.js 日本ユーザーグループが掲げる[行動規範](https://github.com/vuejs-jp/home/blob/master/.github/CODE_OF_CONDUCT.md)をご確認ください。
 
 ## ウェブサイト開発への参加
 
-Vue.js 日本ユーザーグループの公式ウェブサイトは、コミュニティの支援によって成り立っています。誰でも自由に開発に参加することができます。公式ウェブサイトの環境セットアップや開発の進め方については[コントリビューションガイド](https://github.com/vuejs-jp/home/blob/develop/.github/CONTRIBUTING.md)をご確認ください。
+Vue.js 日本ユーザーグループの公式ウェブサイトは、コミュニティの支援によって成り立っています。誰でも自由に開発に参加することができます。公式ウェブサイトの環境セットアップや開発の進め方については[コントリビューションガイド](https://github.com/vuejs-jp/home/blob/master/.github/CONTRIBUTING.md)をご確認ください。
