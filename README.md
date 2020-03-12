@@ -8,7 +8,7 @@
   <a href="https://github.com/vuejs-jp/home/actions">
     <img src="https://github.com/vuejs-jp/home/workflows/Test/badge.svg" alt="GitHub Actions">
   </a>
-  <a href="https://github.com/vuejs-jp/home/blob/master/.github/CODE_OF_CONDUCT.md">
+  <a href="https://github.com/vuejs-jp/home/blob/master/LICENSE">
     <img src="https://img.shields.io/npm/l/vue.svg" alt="License">
   </a>
 </p>
