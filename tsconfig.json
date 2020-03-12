@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "es2018",
     "module": "esnext",
     "moduleResolution": "node",
     "lib": [
@@ -14,16 +14,18 @@
     "strict": true,
     "noEmit": true,
     "baseUrl": ".",
+    "noImplicitThis": true,
     "paths": {
       "~/*": [
-        "./*"
+        "./src/*"
       ],
       "@/*": [
-        "./*"
+        "./src/*"
       ]
     },
     "types": [
       "@types/node",
+      "@types/jest",
       "@nuxt/types"
     ]
   },

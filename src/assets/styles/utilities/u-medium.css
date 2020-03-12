@@ -1,0 +1,43 @@
+.u-medium {
+  p {
+    margin: 28px 0;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  h2 {
+    margin: 56px 0 28px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+
+  ol {
+    padding-left: 22px;
+    margin: 28px 0;
+  }
+
+  li {
+    line-height: 28px;
+  }
+
+  li + li {
+    padding-top: 8px;
+  }
+
+  li > ol {
+    padding-top: 8px;
+    margin: 0;
+  }
+
+  a {
+    color: var(--c-vue-green);
+    text-decoration: none;
+    transition: color 0.25s;
+
+    &:hover {
+      color: var(--c-vue-green-light);
+      text-decoration: none;
+    }
+  }
+}
