@@ -1,5 +1,13 @@
 <template>
-  <form class="ContactForm" @submit.prevent>
+  <form
+    class="ContactForm"
+    name="contact"
+    method="post"
+    data-netlify="true"
+    data-netlify-honeypost="bot-field"
+    @submit.prevent="send"
+  >
+    <input type="hidden" name="form-name" value="contact">
     <div class="group">
       <InputText
         v-model="form.name"
@@ -36,7 +44,7 @@
     </div>
 
     <div class="action">
-      <button class="button" @click="send">
+      <button class="button">
         送信する
       </button>
     </div>
@@ -48,12 +56,15 @@ import Vue from 'vue'
 import { required, email } from 'vuelidate/lib/validators'
 import InputText from './InputText.vue'
 import InputTextarea from './InputTextarea.vue'
-import { sleep } from '@/support/Time'
 
 interface Errors {
   name: string | null
   email: string | null
   message: string | null
+}
+
+interface RequestBody {
+  [key: string]: string
 }
 
 export default Vue.extend({
@@ -145,19 +156,36 @@ export default Vue.extend({
       this.performSend()
     },
 
-    async performSend (): Promise<void> {
+    performSend (): Promise<void> {
       this.openDialog()
 
-      // TODO: Do the actual API call.
-      await sleep(1000)
+      const body = this.createRequestBody()
 
-      // If success, open sucess alert.
-      this.openSuccessAlert()
+      return fetch('/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: this.encode(body)
+      })
+        .then(() => this.openSuccessAlert())
+        .catch(() => this.openErrorAlert())
+        .finally(() => this.reset())
+    },
 
-      // If failed, open error alert.
-      // this.openErrorAlert()
+    createRequestBody (): RequestBody {
+      return {
+        'form-name': 'contact',
+        name: this.form.name,
+        email: this.form.email,
+        message: this.form.message
+      }
+    },
 
-      this.reset()
+    encode (requestBody: RequestBody): string {
+      return Object.keys(requestBody)
+        .map(
+          key => `${encodeURIComponent(key)}=${encodeURIComponent(requestBody[key])}`
+        )
+        .join('&')
     },
 
     openDialog (): void {
