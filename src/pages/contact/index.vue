@@ -72,8 +72,8 @@ export default Vue.extend({
       title,
       meta: [
         { hid: 'description', name: 'description', content: description },
-        { hid: 'og:title', name: 'og:title', content: title },
-        { hid: 'og:url', name: 'og:url', content: this.$url() },
+        { hid: 'og:title', property: 'og:title', content: title },
+        { hid: 'og:url', property: 'og:url', content: this.$url() },
         { hid: 'og:description', property: 'og:description', content: description }
       ]
     }
