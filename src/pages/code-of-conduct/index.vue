@@ -33,11 +33,19 @@ export default Vue.extend({
     LegalMedium
   },
 
-  head: {
-    title: 'Code of Conduct',
-    meta: [
-      { hid: 'description', name: 'description', content: 'Vue.js 日本ユーザーグループが掲げる行動規範をご確認ください。' }
-    ]
+  head (): object {
+    const title = 'Code of Conduct'
+    const description = 'Vue.js 日本ユーザーグループが掲げる行動規範をご確認ください。'
+
+    return {
+      title,
+      meta: [
+        { hid: 'description', name: 'description', content: description },
+        { hid: 'og:title', name: 'og:title', content: title },
+        { hid: 'og:url', name: 'og:url', content: this.$url() },
+        { hid: 'og:description', property: 'og:description', content: description }
+      ]
+    }
   }
 })
 </script>

@@ -64,11 +64,19 @@ export default Vue.extend({
     ContactForm
   },
 
-  head: {
-    title: 'Contact',
-    meta: [
-      { hid: 'description', name: 'description', content: 'Vue.js 日本ユーザーグループへのご質問・ご相談は、フォームよりお気軽にお問い合わせください。' }
-    ]
+  head (): object {
+    const title = 'Contact'
+    const description = 'Vue.js 日本ユーザーグループへのご質問・ご相談は、フォームよりお気軽にお問い合わせください。'
+
+    return {
+      title,
+      meta: [
+        { hid: 'description', name: 'description', content: description },
+        { hid: 'og:title', name: 'og:title', content: title },
+        { hid: 'og:url', name: 'og:url', content: this.$url() },
+        { hid: 'og:description', property: 'og:description', content: description }
+      ]
+    }
   }
 })
 </script>

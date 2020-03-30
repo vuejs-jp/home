@@ -27,7 +27,12 @@ const config: Configuration = {
 
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Vue.js 日本ユーザーグループ' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:image', property: 'og:image', content: 'https://vuejs.org/img/og/og-default.png' },
+      { hid: 'og:image:width', property: 'og:image:width', content: '1200' },
+      { hid: 'og:image:height', property: 'og:image:height', content: '630' }
     ],
 
     link: [
@@ -48,7 +53,8 @@ const config: Configuration = {
   ],
 
   plugins: [
-    { src: '@/plugins/vuelidate' }
+    { src: '@/plugins/vuelidate' },
+    { src: '@/plugins/application' }
   ]
 }
 

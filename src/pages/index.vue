@@ -33,12 +33,20 @@ export default Vue.extend({
     HomeSponsors
   },
 
-  head: {
-    title: 'Vue.js 日本ユーザーグループ',
-    titleTemplate: '%s',
-    meta: [
-      { hid: 'description', name: 'description', content: 'Vue.js 日本ユーザーグループは、年に一度の大規模カンファレンス“Vue Fes Japan”の運営や、Vue.js公式ドキュメントの日本語翻訳をはじめ、日本におけるVue.jsの普及と、Vue.jsエコシステムへの貢献を行っている日本最大のVue.jsコミュニティです。' }
-    ]
+  head (): object {
+    const title = 'Vue.js 日本ユーザーグループ'
+    const description = 'Vue.js 日本ユーザーグループは、年に一度の大規模カンファレンス“Vue Fes Japan”の運営や、Vue.js公式ドキュメントの日本語翻訳をはじめ、日本におけるVue.jsの普及と、Vue.jsエコシステムへの貢献を行っている日本最大のVue.jsコミュニティです。'
+
+    return {
+      title,
+      titleTemplate: '%s',
+      meta: [
+        { hid: 'description', name: 'description', content: description },
+        { hid: 'og:title', name: 'og:title', content: title },
+        { hid: 'og:url', name: 'og:url', content: this.$url() },
+        { hid: 'og:description', property: 'og:description', content: description }
+      ]
+    }
   }
 })
 </script>

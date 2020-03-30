@@ -56,11 +56,19 @@ export default Vue.extend({
     StyleMount
   },
 
-  head: {
-    title: 'Site Map',
-    meta: [
-      { hid: 'description', name: 'description', content: 'Vue.js 日本ユーザーグループの Web サイトのサイトマップを掲載しています。' }
-    ]
+  head (): object {
+    const title = 'Site Map'
+    const description = 'Vue.js 日本ユーザーグループの Web サイトのサイトマップを掲載しています。'
+
+    return {
+      title,
+      meta: [
+        { hid: 'description', name: 'description', content: description },
+        { hid: 'og:title', name: 'og:title', content: title },
+        { hid: 'og:url', name: 'og:url', content: this.$url() },
+        { hid: 'og:description', property: 'og:description', content: description }
+      ]
+    }
   }
 })
 </script>

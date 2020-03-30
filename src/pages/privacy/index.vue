@@ -113,11 +113,19 @@ export default Vue.extend({
     LegalMedium
   },
 
-  head: {
-    title: 'Privacy Policy',
-    meta: [
-      { hid: 'description', name: 'description', content: 'Vue.js 日本ユーザーグループが個人情報をどのように収集、利用、開示、移転、および保存するのかについてご確認ください。' }
-    ]
+  head (): object {
+    const title = 'Privacy Policy'
+    const description = 'Vue.js 日本ユーザーグループが個人情報をどのように収集、利用、開示、移転、および保存するのかについてご確認ください。'
+
+    return {
+      title,
+      meta: [
+        { hid: 'description', name: 'description', content: description },
+        { hid: 'og:title', name: 'og:title', content: title },
+        { hid: 'og:url', name: 'og:url', content: this.$url() },
+        { hid: 'og:description', property: 'og:description', content: description }
+      ]
+    }
   }
 })
 </script>
