@@ -9,6 +9,8 @@
     <TheGlobalFooter />
 
     <ThePortalModals />
+
+    <CookieAgreementPopup />
   </div>
 </template>
 
@@ -17,12 +19,14 @@ import Vue from 'vue'
 import TheGlobalHeader from '@/components/TheGlobalHeader.vue'
 import TheGlobalFooter from '@/components/TheGlobalFooter.vue'
 import ThePortalModals from '@/components/ThePortalModals.vue'
+import CookieAgreementPopup from '@/components/CookieAgreementPopup.vue'
 
 export default Vue.extend({
   components: {
     TheGlobalHeader,
     TheGlobalFooter,
-    ThePortalModals
+    ThePortalModals,
+    CookieAgreementPopup
   }
 })
 </script>

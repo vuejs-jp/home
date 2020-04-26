@@ -27,7 +27,8 @@
     "types": [
       "@types/node",
       "@types/jest",
-      "@nuxt/types"
+      "@nuxt/types",
+      "cookie-universal-nuxt/types"
     ]
   },
   "exclude": [
