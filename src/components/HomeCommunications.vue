@@ -74,7 +74,7 @@ export default Vue.extend({
           alt: 'Avatar 001',
           name: 'Arisa Miyake',
           time: '3:12 PM',
-          body: 'Vue.js 3 RFC の Function-based Component みた！？ すごいねー！ 新しい感じ。みんなどう思う？'
+          body: 'Vue.js 3 RFC の Composition API みた！？ すごいねー！ 新しい感じ。みんなどう思う？'
         },
         {
           direction: 'right',
