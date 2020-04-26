@@ -32,6 +32,12 @@ export default Vue.extend({
     return {
       loaded: false
     }
+  },
+
+  mounted () {
+    // In case the image load event would not fire, we'll force displaying
+    // the image after 3 sec.
+    setTimeout(() => { this.loaded = true }, 3000)
   }
 })
 </script>
@@ -47,6 +53,11 @@ export default Vue.extend({
   left: 0;
   z-index: 20;
   background-color: var(--c-white);
+  transition: opacity 0.5s;
+}
+
+.loader.loaded {
+  opacity: 0;
 }
 
 .loader-icon {
@@ -55,12 +66,7 @@ export default Vue.extend({
   left: 50%;
   width: 48px;
   height: 48px;
-  transition: opacity 0.5s;
   transform: translate(-50%);
-}
-
-.loader.loaded {
-  opacity: 0;
 }
 
 .figure {
