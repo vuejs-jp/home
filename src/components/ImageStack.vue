@@ -3,9 +3,7 @@
     <ul class="list" :style="{ paddingBottom: `${aspectRatio}%` }" role="button" @click="next">
       <TransitionGroup name="slide">
         <li v-for="(stack, i) in stacks" :key="stack.src" class="item" :class="`item-${i}`">
-          <figure class="figure">
-            <img class="img" :src="stack.src" :alt="stack.alt">
-          </figure>
+          <ImageStackItem :image="stack" />
         </li>
       </TransitionGroup>
     </ul>
@@ -38,6 +36,7 @@
 import Vue, { PropOptions } from 'vue'
 import IconChevronLeft from './icons/IconChevronLeft.vue'
 import IconChevronRight from './icons/IconChevronRight.vue'
+import ImageStackItem from './ImageStackItem.vue'
 
 interface Image {
   src: string
@@ -53,7 +52,8 @@ interface Classes {
 export default Vue.extend({
   components: {
     IconChevronLeft,
-    IconChevronRight
+    IconChevronRight,
+    ImageStackItem
   },
 
   props: {
@@ -218,8 +218,8 @@ export default Vue.extend({
   transform: translate(0, 0) scale(1);
 }
 
-.item-0 .figure { filter: blur(32px); }
-.item-1 .figure { filter: blur(16px); }
+.item-0 >>> .figure { filter: blur(32px); }
+.item-1 >>> .figure { filter: blur(16px); }
 
 .item-0.slide-enter,
 .item-0.slide-leave-to,
@@ -227,18 +227,6 @@ export default Vue.extend({
 .item-2.slide-leave-to {
   filter: blur(16px);
   opacity: 0;
-}
-
-.figure {
-  filter: blur(0);
-  transition: filter 0.75s;
-}
-
-.img {
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  object-fit: cover;
 }
 
 .control {
