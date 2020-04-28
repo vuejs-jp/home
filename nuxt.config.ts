@@ -16,7 +16,10 @@ const config: Configuration = {
     extractCSS: process.env.NODE_ENV === 'production'
   },
 
-  buildModules: ['@nuxt/typescript-build'],
+  buildModules: [
+    '@nuxt/typescript-build',
+    '@nuxtjs/google-analytics'
+  ],
 
   head: {
     htmlAttrs: {
@@ -56,7 +59,11 @@ const config: Configuration = {
   plugins: [
     { src: '@/plugins/vuelidate' },
     { src: '@/plugins/application' }
-  ]
+  ],
+
+  googleAnalytics: {
+    id: 'UA-162346547-1'
+  }
 }
 
 export default config
