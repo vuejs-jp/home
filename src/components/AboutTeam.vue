@@ -73,6 +73,7 @@ export default Vue.extend({
   }
 
   .container{
+    position: relative;
     width: 300px;
     height: 450px;
     padding: 40px;
