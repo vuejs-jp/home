@@ -14,6 +14,9 @@
     "test": "jest --config test/jest.config.js"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/vue-fontawesome": "^2.0.0",
     "@nuxt/typescript-build": "^0.6.6",
     "@nuxt/typescript-runtime": "^0.4.6",
     "@nuxtjs/google-analytics": "^2.2.3",
@@ -21,6 +24,7 @@
     "cookie-universal-nuxt": "^2.1.3",
     "normalize.css": "^8.0.1",
     "nuxt": "^2.12.2",
+    "nuxt-fontawesome": "^0.4.0",
     "portal-vue": "^2.1.7",
     "postcss-custom-properties": "^9.1.1",
     "postcss-nested": "^4.2.1",

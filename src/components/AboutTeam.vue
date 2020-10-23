@@ -35,12 +35,12 @@
         <!--  work  -->
         <div v-if="member.work">
           <div v-if="member.work.orgUrl">
-            <div>{{member.work.role}}
+            <div><font-awesome-icon icon = "briefcase" />{{member.work.role}}
               <a class="member-org" :href="member.work.orgUrl" target="_blank">@{{member.work.org}}</a>
             </div>
           </div>
           <div v-else>
-            <span>{{member.work.role}}</span>
+            <span><font-awesome-icon icon = "briefcase" />{{member.work.role}}</span>
             <span v-if="member.work.org">@</span>
             <span>{{member.work.org}}</span>
           </div>
@@ -48,6 +48,7 @@
 
         <!--  language    -->
         <div v-if=" member.languages">
+          <font-awesome-icon icon = "globe" />
           <span class="lang" v-for="lang in member.languages">
             <span v-if="lang==='en'">English</span>
             <span v-else-if="lang==='zh'">中文</span>
@@ -59,6 +60,7 @@
 
         <!--    location    -->
         <div v-if=" member.city">
+          <font-awesome-icon icon = "map-marker" />
           <span v-for="city in member.city">
             <span class="city">{{city}}</span>
           </span>
@@ -66,6 +68,7 @@
 
         <!--   link    -->
         <div v-if=" member.links">
+          <font-awesome-icon icon = "link" />
           <span v-for="link in member.links">
             <span class="link"><a :href="link" target="_blank">{{link}}</a></span>
           </span>
@@ -82,6 +85,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import team from '@/data/about_team_list'
+
 
 export default Vue.extend({
   data () {
@@ -110,8 +114,9 @@ export default Vue.extend({
   }
 
   .member-name{
-    font-size: 16px;
+    font-size: 24px;
     font-weight: bold;
+    margin:  10px 0;
   }
 
   .team-area{
@@ -148,8 +153,11 @@ export default Vue.extend({
   }
 
   .lang{
-    margin-left: 5px;
+    margin-right: 5px;
   }
 
+  svg{
+    margin:  0 6px 0 0;
+  }
 
 </style>
