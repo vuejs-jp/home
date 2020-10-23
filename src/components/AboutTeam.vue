@@ -8,18 +8,72 @@
     </div>
 
     <div class="container">
-      <div v-for="member in team" :key="member.id" style="display: inline-block;">
-        <figure class="avatar">
-          <img class="avatar-img" :src="member.icon" alt="">
-        </figure>
+      <div v-for="member in team" :key="member.id" class="member-card">
+        <div class="avatar">
+          <img class="avatar-img" :src="`https://github.com/${member.github}.png`" alt="">
+        </div>
         <div class="member-name">
           {{ member.name }}
         </div>
-        <div class="work-for" v-html=" member.workFor " />
-        <div class="desc" v-html="member.desc" />
 
-        <a class="social-github" :href="member.github" target="_blank"><img class="social-icon" src="https://user-images.githubusercontent.com/12625278/94401123-10526900-01a5-11eb-9701-9d68b4e698ce.png" alt="github"></a>
-        <a class="social-twitter" :href="member.twitter" target="_blank"><img class="social-icon" src="https://user-images.githubusercontent.com/12625278/94402630-41339d80-01a7-11eb-9540-65cd5700eb02.png" alt="twitter"></a>
+        <!--  core focus   -->
+        <div class="core-focus" v-if="member.reposOfficial">
+          CORE FOCUS
+          <span v-for="focus in member.reposOfficial">
+            <span class="focus-item">{{focus}}</span>
+          </span>
+        </div>
+
+        <!--  personal  project    -->
+        <div v-if=" member.reposPersonal">
+          ECOSYSTEM
+          <span v-for="focus in member.reposPersonal">
+            <span class="focus-item">{{focus}}</span>
+          </span>
+        </div>
+
+        <!--  work  -->
+        <div v-if="member.work">
+          <div v-if="member.work.orgUrl">
+            <div>{{member.work.role}}
+              <a class="member-org" :href="member.work.orgUrl" target="_blank">@{{member.work.org}}</a>
+            </div>
+          </div>
+          <div v-else>
+            <span>{{member.work.role}}</span>
+            <span v-if="member.work.org">@</span>
+            <span>{{member.work.org}}</span>
+          </div>
+        </div>
+
+        <!--  language    -->
+        <div v-if=" member.languages">
+          <span class="lang" v-for="lang in member.languages">
+            <span v-if="lang==='en'">English</span>
+            <span v-else-if="lang==='zh'">中文</span>
+            <span v-else-if="lang==='jp'">日本語</span>
+            <span v-else-if="lang==='fr'">Français</span>
+            <span v-else-if="lang==='es'">Español</span>
+          </span>
+        </div>
+
+        <!--    location    -->
+        <div v-if=" member.city">
+          <span v-for="city in member.city">
+            <span class="city">{{city}}</span>
+          </span>
+        </div>
+
+        <!--   link    -->
+        <div v-if=" member.links">
+          <span v-for="link in member.links">
+            <span class="link"><a :href="link" target="_blank">{{link}}</a></span>
+          </span>
+        </div>
+
+        <a class="social-github" :href="`https://github.com/${member.github}`" target="_blank"><img class="social-icon" src="https://user-images.githubusercontent.com/12625278/94401123-10526900-01a5-11eb-9701-9d68b4e698ce.png" alt="github"></a>
+        <a class="social-twitter" :href="`https://twitter.com/${member.twitter}`" target="_blank"><img class="social-icon" src="https://user-images.githubusercontent.com/12625278/94402630-41339d80-01a7-11eb-9540-65cd5700eb02.png" alt="twitter"></a>
+
       </div>
     </div>
   </div>
@@ -27,12 +81,12 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import AboutTeam from '@/data/about_team_list'
+import team from '@/data/about_team_list'
 
 export default Vue.extend({
   data () {
     return {
-      team: AboutTeam
+      team: team
     }
   }
 })
@@ -43,42 +97,10 @@ export default Vue.extend({
 
   .avatar {
     flex-shrink: 0;
+    margin: 10px;
     width: 48px;
     height: 48px;
     transform: translateY(-16px);
-
-    @media (min-width: 560px) {
-      width: 64px;
-      height: 64px;
-      transform: translateY(-24px);
-    }
-  }
-
-  .team-area{
-    margin-bottom: 150px;
-    margin-left: 21%;
-  }
-
-  .main-title{
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-  }
-
-  .sub-title{
-    margin-top: 10px;
-    margin-bottom: 50px;
-    font-size: 12px;
-    color: grey;
-  }
-
-  .container{
-    position: relative;
-    width: 300px;
-    height: 450px;
-    padding: 40px;
-    background: white;
-    box-shadow: 1px 1px 1px 1px lightgrey;
   }
 
   .avatar-img {
@@ -87,36 +109,47 @@ export default Vue.extend({
     box-shadow: var(--shadow-depth-3);
   }
 
-  .social-github{
-    position: absolute;
-    bottom: 40px;
-    left: 30px;
+  .member-name{
+    font-size: 16px;
+    font-weight: bold;
   }
 
-  .social-twitter{
-    position: absolute;
-    bottom: 40px;
-    left: 80px;
+  .team-area{
+    margin-left: 480px;
+    margin-top: 50px;
+  }
+
+  .container{
+    margin-top: 50px;
+  }
+
+  .member-card{
+    border-bottom: 1px dotted #ddd;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+  }
+
+  .focus-item{
+    color: #41b983;
+    padding-left: 5px;
+  }
+  .member-org{
+    color: #41b983;
+  }
+  .link{
+    color: #41b983;
   }
 
   .social-icon{
     width: 24px;
     height: 24px;
-    margin: 0 15px;
+    margin: 20px 5px;
 
   }
 
-  .member-name{
-    margin: 10px 0;
-    font-size: 25px;
-    font-weight: bold;
+  .lang{
+    margin-left: 5px;
   }
 
-  .work-for{
-  }
-
-  .desc {
-    margin: 30px 0;
-  }
 
 </style>
