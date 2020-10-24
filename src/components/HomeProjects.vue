@@ -30,7 +30,7 @@
             </article>
           </a>
 
-          <a class="project" href="https://github.com/vuejs-jp/ja.docs.nuxtjs" target="_blank">
+          <a class="project" href="https://github.com/vuejs-jp/ja.nuxtjs.org/wiki" target="_blank">
             <article class="project-box">
               <i class="project-type">
                 <IconEdit3 class="project-icon" />
