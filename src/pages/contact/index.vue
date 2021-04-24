@@ -19,7 +19,7 @@
 
           <ul class="actions">
             <li class="action">
-              <a class="action-link" href="https://vuejs-jp-slackin.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+              <a class="action-link" href="https://join.slack.com/t/vuejs-jp/shared_invite/zt-pcpd1rnq-QTaoQ0U_gRiewCsyO6NH8Q" target="_blank" rel="noopener noreferrer">
                 <IconSlack class="action-icon slack" />
                 Slackで質問する
                 <IconChevronRight class="action-chevron" />
