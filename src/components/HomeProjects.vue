@@ -16,7 +16,7 @@
 
       <div class="projects">
         <div class="projects-container">
-          <a class="project" href="https://github.com/vuejs/jp.vuejs.org" target="_blank">
+          <a class="project" href="https://github.com/vuejs-jp/ja.vuejs.org" target="_blank">
             <article class="project-box">
               <i class="project-type">
                 <IconEdit3 class="project-icon" />
