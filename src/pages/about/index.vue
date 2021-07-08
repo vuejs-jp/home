@@ -2,6 +2,7 @@
   <AppPage class="About">
     <AboutHero />
     <AboutDescription />
+    <AboutTeam />
   </AppPage>
 </template>
 
@@ -10,12 +11,14 @@ import Vue from 'vue'
 import AppPage from '@/components/AppPage.vue'
 import AboutHero from '@/components/AboutHero.vue'
 import AboutDescription from '@/components/AboutDescription.vue'
+import AboutTeam from '@/components/AboutTeam.vue'
 
 export default Vue.extend({
   components: {
     AppPage,
     AboutHero,
-    AboutDescription
+    AboutDescription,
+    AboutTeam
   },
 
   head (): object {

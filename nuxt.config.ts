@@ -53,8 +53,17 @@ const config: Configuration = {
 
   modules: [
     'portal-vue/nuxt',
-    'cookie-universal-nuxt'
+    'cookie-universal-nuxt',
+    'nuxt-fontawesome',
   ],
+  fontawesome: {
+    imports: [
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['fas']
+      }
+    ]
+  },
 
   plugins: [
     { src: '@/plugins/vuelidate' },
