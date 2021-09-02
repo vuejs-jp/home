@@ -1,11 +1,25 @@
-import { Configuration } from '@nuxt/types'
+import { NuxtConfig } from '@nuxt/types'
+// import { TsconfigPathsPlugin } from 'tsconfig-paths-webpack-plugin'
 
-const config: Configuration = {
-  mode: 'universal',
+const config: NuxtConfig = {
+  // mode: 'universal',
 
-  srcDir: 'src/',
+  // srcDir: 'src/',
 
   build: {
+    // extend (config, _) {
+    //   if (!config.resolve) {
+    //     config.resolve = {}
+    //   }
+    //   if (!config.resolve.plugins) {
+    //     config.resolve.plugins = []
+    //   }
+    //   console.log('fff', config.resolve.extensions)
+    //   config.resolve.plugins.push(
+    //     new TsconfigPathsPlugin({ configFile: './tsconfig.json' })
+    //   )
+    // },
+
     postcss: {
       plugins: {
         'postcss-custom-properties': {},
@@ -57,8 +71,8 @@ const config: Configuration = {
   ],
 
   plugins: [
-    { src: '@/plugins/vuelidate' },
-    { src: '@/plugins/application' }
+    { src: '@/plugins/vuelidate.js' },
+    { src: '@/plugins/application.js' }
   ],
 
   googleAnalytics: {

@@ -22,7 +22,8 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropOptions } from 'vue'
+import Vue from 'vue'
+import type { PropOptions } from 'vue'
 
 interface Chat {
   direction: 'left' | 'right'

@@ -26,7 +26,7 @@
 </template>
 
 <script lang="ts">
-import Vue, { Component } from 'vue'
+import Vue from 'vue'
 import IconCheckCircle from './icons/IconCheckCircle.vue'
 import IconXCircle from './icons/IconXCircle.vue'
 import AppModal from './AppModal.vue'
@@ -59,7 +59,7 @@ export default Vue.extend({
       }
     },
 
-    icon (): Component {
+    icon () {
       if (this.data.type === 'error') {
         return IconXCircle
       }
