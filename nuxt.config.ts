@@ -1,9 +1,7 @@
-import { Configuration } from '@nuxt/types'
+import { NuxtConfig } from '@nuxt/types'
 
-const config: Configuration = {
-  mode: 'universal',
-
-  srcDir: 'src/',
+const config: NuxtConfig = {
+  target: 'static',
 
   build: {
     postcss: {
@@ -57,8 +55,8 @@ const config: Configuration = {
   ],
 
   plugins: [
-    { src: '@/plugins/vuelidate' },
-    { src: '@/plugins/application' }
+    { src: '@/plugins/vuelidate.js' },
+    { src: '@/plugins/application.js' }
   ],
 
   googleAnalytics: {

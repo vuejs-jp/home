@@ -1,4 +1,4 @@
-import { ActionTree, ActionContext } from 'vuex'
+import type { ActionTree, ActionContext } from 'vuex'
 
 export interface PayloadOpen {
   type: 'success' | 'error'

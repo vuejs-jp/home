@@ -1,4 +1,4 @@
-import Url from '@/support/Url'
+import Url from '../support/Url'
 
 describe('unit/support/Url', () => {
   describe('isExternalLink', () => {

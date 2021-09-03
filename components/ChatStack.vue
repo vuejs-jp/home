@@ -7,8 +7,10 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropOptions } from 'vue'
+import Vue from 'vue'
+import type { PropOptions } from 'vue'
 import ChatStackItem from './ChatStackItem.vue'
+
 
 interface Chat {
   direction: 'left' | 'right'

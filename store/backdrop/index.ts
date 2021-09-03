@@ -1,4 +1,4 @@
-import { ActionTree, ActionContext, MutationTree } from 'vuex'
+import type { ActionTree, ActionContext, MutationTree } from 'vuex'
 
 export interface State {
   show: boolean
