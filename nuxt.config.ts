@@ -1,25 +1,9 @@
 import { NuxtConfig } from '@nuxt/types'
-// import { TsconfigPathsPlugin } from 'tsconfig-paths-webpack-plugin'
 
 const config: NuxtConfig = {
-  // mode: 'universal',
-
-  // srcDir: 'src/',
+  target: 'static',
 
   build: {
-    // extend (config, _) {
-    //   if (!config.resolve) {
-    //     config.resolve = {}
-    //   }
-    //   if (!config.resolve.plugins) {
-    //     config.resolve.plugins = []
-    //   }
-    //   console.log('fff', config.resolve.extensions)
-    //   config.resolve.plugins.push(
-    //     new TsconfigPathsPlugin({ configFile: './tsconfig.json' })
-    //   )
-    // },
-
     postcss: {
       plugins: {
         'postcss-custom-properties': {},
