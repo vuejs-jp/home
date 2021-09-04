@@ -47,6 +47,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { mergeMeta } from '../../support/meta'
 import AppPage from '@/components/AppPage.vue'
 import StyleMount from '@/components/StyleMount.vue'
 
@@ -57,18 +58,11 @@ export default Vue.extend({
   },
 
   head (): object {
-    const title = 'Site Map'
-    const description = 'Vue.js 日本ユーザーグループの Web サイトのサイトマップを掲載しています。'
+    const title = this.$i18n.t('pages.sitemap.title') as string
+    const description = this.$i18n.t('pages.sitemap.description') as string
+    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
 
-    return {
-      title,
-      meta: [
-        { hid: 'description', name: 'description', content: description },
-        { hid: 'og:title', property: 'og:title', content: title },
-        { hid: 'og:url', property: 'og:url', content: this.$url() },
-        { hid: 'og:description', property: 'og:description', content: description }
-      ]
-    }
+    return mergeMeta({ title, description, url: this.$url() }, i18nHead)
   }
 })
 </script>

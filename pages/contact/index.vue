@@ -47,6 +47,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { mergeMeta } from '../../support/meta'
 import IconChevronRight from '@/components/icons/IconChevronRight.vue'
 import IconSlack from '@/components/icons/IconSlack.vue'
 import IconTwitter from '@/components/icons/IconTwitter.vue'
@@ -65,18 +66,11 @@ export default Vue.extend({
   },
 
   head (): object {
-    const title = 'Contact'
-    const description = 'Vue.js 日本ユーザーグループへのご質問・ご相談は、フォームよりお気軽にお問い合わせください。'
+    const title = this.$i18n.t('pages.contact.title') as string
+    const description = this.$i18n.t('pages.contact.description') as string
+    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
 
-    return {
-      title,
-      meta: [
-        { hid: 'description', name: 'description', content: description },
-        { hid: 'og:title', property: 'og:title', content: title },
-        { hid: 'og:url', property: 'og:url', content: this.$url() },
-        { hid: 'og:description', property: 'og:description', content: description }
-      ]
-    }
+    return mergeMeta({ title, description, url: this.$url() }, i18nHead)
   }
 })
 </script>
