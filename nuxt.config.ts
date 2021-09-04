@@ -66,14 +66,14 @@ const config: NuxtConfig = {
 
   i18n: {
     locales: [
-      { code: 'en', iso: 'en-US', file: 'en-US.json' },
-      { code: 'ja', iso: 'ja-JP', file: 'ja-JP.json' }
+      { code: 'en', iso: 'en-US', name: 'English', file: 'en-US.json' },
+      { code: 'ja', iso: 'ja-JP', name: '日本語', file: 'ja-JP.json' }
     ],
     lazy: true,
     langDir: 'locales/',
-    defaultLocale: 'en',
+    defaultLocale: 'ja',
     vueI18n: {
-      fallbackLocale: 'en'
+      fallbackLocale: 'ja'
     }
   }
 }

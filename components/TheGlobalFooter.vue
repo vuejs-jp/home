@@ -7,17 +7,17 @@
 
       <ul class="legal">
         <li class="legal-item">
-          <NuxtLink class="legal-link u-link-text" to="/privacy">
+          <NuxtLink class="legal-link u-link-text" :to="localePath('/privacy')">
             Privacy Policy
           </NuxtLink>
         </li>
         <li class="legal-item">
-          <NuxtLink class="legal-link u-link-text" to="/code-of-conduct">
+          <NuxtLink class="legal-link u-link-text" :to="localePath('/code-of-conduct')">
             Code of Conduct
           </NuxtLink>
         </li>
         <li class="legal-item">
-          <NuxtLink class="legal-link u-link-text" to="/sitemap">
+          <NuxtLink class="legal-link u-link-text" :to="localePath('/sitemap')">
             Site Map
           </NuxtLink>
         </li>

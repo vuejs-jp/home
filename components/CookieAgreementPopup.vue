@@ -7,7 +7,7 @@
         </p>
 
         <p class="note">
-          詳細については <NuxtLink class="link" to="/privacy" @click.native="hide">
+          詳細については <NuxtLink class="link" :to="localePath('/privacy')" @click.native="hide">
             Privacy Policy
           </NuxtLink> をご参照ください。
         </p>

@@ -13,12 +13,12 @@
           <nav class="nav">
             <ul class="list">
               <li class="item">
-                <NuxtLink class="link" to="/">
+                <NuxtLink class="link" :to="localePath('/')">
                   Home
                 </NuxtLink>
               </li>
               <li>
-                <NuxtLink class="link" to="/about">
+                <NuxtLink class="link" :to="localePath('/about')">
                   About
                 </NuxtLink>
               </li>
@@ -33,7 +33,7 @@
           <nav class="nav">
             <ul class="list">
               <li class="item">
-                <NuxtLink class="link" to="/contact">
+                <NuxtLink class="link" :to="localePath('/contact')">
                   Contact
                 </NuxtLink>
               </li>
