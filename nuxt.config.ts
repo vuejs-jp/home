@@ -51,7 +51,8 @@ const config: NuxtConfig = {
 
   modules: [
     'portal-vue/nuxt',
-    'cookie-universal-nuxt'
+    'cookie-universal-nuxt',
+    '@nuxtjs/i18n'
   ],
 
   plugins: [
@@ -61,6 +62,19 @@ const config: NuxtConfig = {
 
   googleAnalytics: {
     id: 'UA-162346547-1'
+  },
+
+  i18n: {
+    locales: [
+      { code: 'en', iso: 'en-US', file: 'en-US.json' },
+      { code: 'ja', iso: 'ja-JP', file: 'ja-JP.json' }
+    ],
+    lazy: true,
+    langDir: 'locales/',
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en'
+    }
   }
 }
 

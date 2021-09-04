@@ -26,6 +26,7 @@
     "types": [
       "@types/node",
       "@nuxt/types",
+      "@nuxtjs/i18n",
       "@types/jest",
       "@types/vuelidate",
       "cookie-universal-nuxt/types"
