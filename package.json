@@ -49,8 +49,8 @@
     "lint:css": "stylelint --fix \"./**/*.{css,vue}\" --ignore-path .gitignore",
     "lint:css:fail": "stylelint \"./**/*.{css,vue}\" --ignore-path .gitignore",
     "lint:fail": "yarn lint:ts:fail && yarn lint:css:fail",
-    "lint:ts": "eslint --fix --ext .ts,.js,.vue --ignore-path .gitignore .",
-    "lint:ts:fail": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
+    "lint:ts": "eslint --fix --ext .ts,.js,.vue,.json --ignore-path .gitignore .",
+    "lint:ts:fail": "eslint --ext .ts,.js,.vue,.json --ignore-path .gitignore .",
     "start": "nuxt start",
     "test": "jest --config ./jest.config.js"
   }
