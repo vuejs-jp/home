@@ -24,11 +24,9 @@ const config: NuxtConfig = {
       htmlAttrs: {
         lang: 'ja'
       },
-      titleTemplate: `%s | ${this.$i18n.t('vuejs-jp-ug')}`,
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'og:site_name', property: 'og:site_name', content: this.$i18n.t('vuejs-jp-ug') },
         { hid: 'og:type', property: 'og:type', content: 'website' },
         { hid: 'og:image', property: 'og:image', content: 'https://vuejs-jp.org/img/og/og-default.png' },
         { hid: 'og:image:width', property: 'og:image:width', content: '1200' },

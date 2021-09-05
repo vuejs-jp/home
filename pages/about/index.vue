@@ -20,11 +20,12 @@ export default Vue.extend({
   },
 
   head (): object {
+    const name = this.$i18n.t('vuejs-jp-ug') as string
     const title = this.$i18n.t('pages.about.title') as string
     const description = this.$i18n.t('pages.about.description') as string
     const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
 
-    return mergeMeta({ title, description, url: this.$url() }, i18nHead)
+    return mergeMeta({ name, title, description, url: this.$url() }, i18nHead)
   }
 })
 </script>
