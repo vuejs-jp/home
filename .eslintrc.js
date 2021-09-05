@@ -20,6 +20,6 @@ module.exports = {
   },
   // add your custom rules here
   rules: {
-    '@intlify/vue-i18n/no-unused-keys': 'error'
+    '@intlify/vue-i18n/no-unused-keys': 'warn'
   }
 }
