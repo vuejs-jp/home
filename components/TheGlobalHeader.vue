@@ -5,7 +5,7 @@
     <div class="container">
       <p class="logo">
         <NuxtLink class="logo-link" :to="localePath('/')">
-          <IconVuejsJpLogo class="logo-icon" /> Vue.js JP
+          <IconVuejsJpLogo class="logo-icon" /> {{ $t('logo-text') }}
         </NuxtLink>
       </p>
 

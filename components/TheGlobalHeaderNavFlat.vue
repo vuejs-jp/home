@@ -3,12 +3,12 @@
     <ul class="list">
       <li class="item">
         <NuxtLink class="link" :to="localePath('/about')">
-          About
+          {{ $t('menu.about') }}
         </NuxtLink>
       </li>
       <li class="item">
         <NuxtLink class="link" :to="localePath('/contact')">
-          Contact
+          {{ $t('menu.contact') }}
         </NuxtLink>
       </li>
       <li class="item">

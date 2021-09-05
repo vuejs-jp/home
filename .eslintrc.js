@@ -20,6 +20,20 @@ module.exports = {
   },
   // add your custom rules here
   rules: {
-    '@intlify/vue-i18n/no-unused-keys': 'warn'
+    '@intlify/vue-i18n/no-raw-text': [
+      'warn',
+      {
+        ignoreNodes: ['style']
+      }
+    ],
+    '@intlify/vue-i18n/no-duplicate-keys-in-locale': 'warn',
+    '@intlify/vue-i18n/no-missing-keys-in-other-locales': 'warn',
+    '@intlify/vue-i18n/key-format-style': ['warn', 'kebab-case'],
+    '@intlify/vue-i18n/no-unused-keys': [
+      'warn',
+      {
+        extensions: ['.js', '.ts', '.vue']
+      }
+    ]
   }
 }

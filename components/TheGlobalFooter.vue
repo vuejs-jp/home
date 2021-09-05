@@ -8,38 +8,49 @@
       <ul class="legal">
         <li class="legal-item">
           <NuxtLink class="legal-link u-link-text" :to="localePath('/privacy')">
-            Privacy Policy
+            {{ $t('menu.privacy') }}
           </NuxtLink>
         </li>
         <li class="legal-item">
           <NuxtLink class="legal-link u-link-text" :to="localePath('/code-of-conduct')">
-            Code of Conduct
+            {{ $t('menu.code-of-conduct') }}
           </NuxtLink>
         </li>
         <li class="legal-item">
           <NuxtLink class="legal-link u-link-text" :to="localePath('/sitemap')">
-            Site Map
+            {{ $t('menu.sitemap') }}
           </NuxtLink>
         </li>
       </ul>
 
       <div class="copyright">
-        <p class="copyright-text">
-          &copy; 2020 Vue.js Japan Users Group some rights reserved.
-        </p>
-        <p class="copyright-text">
-          Released under the <a class="u-link-text" href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License</a>.
-        </p>
-        <p class="copyright-text">
-          Vue.js artworks by <a class="u-link-text" href="https://github.com/yyx990803" target="_blank" rel="noopener noreferrer">Evan You</a> is licensed under a <a class="u-link-text" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 4.0 Internatinal Licence.</a>
-        </p>
-        <p class="copyright-text">
-          Proudly created by Vue.js Japan User Group members, powered by <a class="u-link-text" href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">Vue.js</a>.
-        </p>
+        <p class="copyright-text">{{ $t('footer.copyright') }}</p>
+        <i18n tag="p" path="footer.license-text" class="copyright-text">
+          <template #license>
+            <!-- eslint-disable-next-line @intlify/vue-i18n/no-raw-text NOTE: ライセンス表記は英語表記が一般的なので ignore -->
+            <a class="u-link-text" href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License</a>.
+          </template>
+        </i18n>
+        <i18n tag="p" path="footer.author-text" class="copyright-text">
+          <template #author>
+            <!-- eslint-disable-next-line @intlify/vue-i18n/no-raw-text NOTE: 名前表記はそのままにするため ignore -->
+            <a class="u-link-text" href="https://github.com/yyx990803" target="_blank" rel="noopener noreferrer">Evan You</a>
+          </template>
+          <template #license>
+            <!-- eslint-disable-next-line @intlify/vue-i18n/no-raw-text NOTE: ライセンス表記は英語表記が一般的なので ignore -->
+            <a class="u-link-text" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 4.0 Internatinal Licence.</a> 
+          </template>
+        </i18n>
+        <i18n tag="p" path="footer.site-text" class="copyright-text">
+          <template #powered>
+            <!-- eslint-disable-next-line @intlify/vue-i18n/no-raw-text NOTE: 固有名で英語以外でもそのまま使うので ignore -->
+            <a class="u-link-text" href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">Vue.js</a>
+          </template>
+        </i18n>
 
         <div class="copyright-badge">
           <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">
-            <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" alt="Deploys by Netlify">
+            <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" :alt="$t('footer.deploy')">
           </a>
         </div>
       </div>

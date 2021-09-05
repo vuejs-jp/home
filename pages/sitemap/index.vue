@@ -1,41 +1,29 @@
 <template>
   <AppPage class="Sitemap u-wrapper">
     <StyleMount class="container u-container">
-      <h1 class="title">
-        Site Map
-      </h1>
+      <h1 class="title">{{ $t('menu.sitemap') }}</h1>
 
       <div class="contents">
         <section class="section">
-          <h2 class="section-title">
-            Vue.js JPについて
-          </h2>
+          <h2 class="section-title">{{ $t('sitemap.about') }}</h2>
           <nav class="nav">
             <ul class="list">
               <li class="item">
-                <NuxtLink class="link" :to="localePath('/')">
-                  Home
-                </NuxtLink>
+                <NuxtLink class="link" :to="localePath('/')">{{ $t('menu.home') }}</NuxtLink>
               </li>
               <li>
-                <NuxtLink class="link" :to="localePath('/about')">
-                  About
-                </NuxtLink>
+                <NuxtLink class="link" :to="localePath('/about')">{{ $t('menu.about') }}</NuxtLink>
               </li>
             </ul>
           </nav>
         </section>
 
         <section class="section">
-          <h2 class="section-title">
-            お問い合わせ
-          </h2>
+          <h2 class="section-title">{{ $t('sitemap.contact') }}</h2>
           <nav class="nav">
             <ul class="list">
               <li class="item">
-                <NuxtLink class="link" :to="localePath('/contact')">
-                  Contact
-                </NuxtLink>
+                <NuxtLink class="link" :to="localePath('/contact')">{{ $t('menu.contact') }}</NuxtLink>
               </li>
             </ul>
           </nav>
@@ -59,8 +47,8 @@ export default Vue.extend({
 
   head (): object {
     const name = this.$i18n.t('vuejs-jp-ug') as string
-    const title = this.$i18n.t('pages.sitemap.title') as string
-    const description = this.$i18n.t('pages.sitemap.description') as string
+    const title = this.$i18n.t('menu.sitemap') as string
+    const description = this.$i18n.t('pages.sitemap') as string
     const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
 
     return mergeMeta({ name, title, description, url: this.$url() }, i18nHead)

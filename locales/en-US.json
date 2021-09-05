@@ -1,30 +1,11 @@
 {
-  "welcome": "Welcome！",
-  "foo": "ff",
   "vuejs-jp-ug": "Vue.js Japan User Group",
   "pages": {
-    "top": {
-      "description": "Vue.js Japan User Group is the largest Vue.js community in Japan, orgnaizing the annual large-scale conference \"Vue Fes Japan\", translating Vue.js official documents into Japanese, and contributing to the spread of Vue.js in Japan and the Vue.js ecosystem. We are the largest Vue.js community in Japan."
-    },
-    "about": {
-      "title": "About",
-      "description": "Vue.js Japan User Group is the largest Vue.js community in Japan, supporting everyone who loves Vue.js. Through local event support and documentation translation projects, we are working to spread the use of Vue.js throughout Japan and contribute to the development of the Vue.js ecosystem around the world."
-    },
-    "contact": {
-      "title": "Contact",
-      "description": "If you have any questions or concerns about the Vue.js Japan User Group, please feel free to contact us using the form."
-    },
-    "privacy": {
-      "title": "Privacy Policy",
-      "description": "Please check about how the Vue.js Japan User Group collects, uses, discloses, transfers, and stores your personal information."
-    },
-    "code-of-conduct": {
-      "title": "Code of Conduct",
-      "description": "Please check to the code of conduct set forth by the Vue.js Japan User Group."
-    },
-    "sitemap": {
-      "title": "Site Map",
-      "description": "Site map for the Vue.js Japan User Group website is available here."
-    }
+    "top": "Vue.js Japan User Group is the largest Vue.js community in Japan, orgnaizing the annual large-scale conference \"Vue Fes Japan\", translating Vue.js official documents into Japanese, and contributing to the spread of Vue.js in Japan and the Vue.js ecosystem. We are the largest Vue.js community in Japan.",
+    "about": "Vue.js Japan User Group is the largest Vue.js community in Japan, supporting everyone who loves Vue.js. Through local event support and documentation translation projects, we are working to spread the use of Vue.js throughout Japan and contribute to the development of the Vue.js ecosystem around the world.",
+    "contact": "If you have any questions or concerns about the Vue.js Japan User Group, please feel free to contact us using the form.",
+    "privacy": "Please check about how the Vue.js Japan User Group collects, uses, discloses, transfers, and stores your personal information.",
+    "code-of-conduct": "Please check to the code of conduct set forth by the Vue.js Japan User Group.",
+    "sitemap": "Site map for the Vue.js Japan User Group website is available here."
   }
 }

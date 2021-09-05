@@ -1,30 +1,40 @@
 {
-  "welcome": "ようこそ！",
-  "foo": "off",
   "vuejs-jp-ug": "Vue.js 日本ユーザーグループ",
-  "pages": {
-    "top": {
-      "description": "Vue.js 日本ユーザーグループは、年に一度の大規模カンファレンス“Vue Fes Japan”の運営や、Vue.js公式ドキュメントの日本語翻訳をはじめ、日本におけるVue.jsの普及と、Vue.jsエコシステムへの貢献を行っている日本最大のVue.jsコミュニティです。"
-    },
-    "about": {
-      "title": "サイトについて",
-      "description": "Vue.js Vue.js 日本ユーザーグループは、Vue.js を愛するあらゆる人々を支援する、日本最大の Vue.js コミュニティです。各地でのイベントサポートやドキュメントの翻訳プロジェクトを通じて、日本中に Vue.js を普及させるとともに、世界中の Vue.js エコシステム発展に貢献します。"
-    },
-    "contact": {
-      "title": "連絡",
-      "description": "Vue.js 日本ユーザーグループへのご質問・ご相談は、フォームよりお気軽にお問い合わせください。"
-    },
-    "privacy": {
-      "title": "プライバシーポリシー",
-      "description": "Vue.js 日本ユーザーグループが個人情報をどのように収集、利用、開示、移転、および保存するのかについてご確認ください。"
-    },
-    "code-of-conduct": {
-      "title": "行動規範",
-      "description": "Vue.js 日本ユーザーグループが掲げる行動規範をご確認ください。"
-    },
-    "sitemap": {
-      "title": "サイトマップ",
-      "description": "Vue.js 日本ユーザーグループの Web サイトのサイトマップを掲載しています。"
+  "logo-text": "Vue.js JP",
+  "menu": {
+    "home": "トップ",
+    "about": "サイトについて",
+    "contact": "連絡",
+    "privacy": "プライバシーポリシー",
+    "code-of-conduct": "行動規範",
+    "sitemap": "サイトマップ"
+  },
+  "sitemap": {
+    "about": "Vue.js JPについて",
+    "contact": "お問い合わせ"
+  },
+  "footer": {
+    "copyright": "© 2020 Vue.js Japan Users Group some rights reserved.",
+    "license-text": "Released under the {license}.",
+    "author-text": "Vue.js artworks by {author} is licensed under a {license}.",
+    "site-text": "Proudly created by Vue.js Japan User Group members, powered by {powered}.",
+    "deploy": "Deploys by Netlify"
+  },
+  "components": {
+    "HomeHero": {
+      "title": "",
+      "message": "",
+      "vue-fes-japan": "",
+      "docs-translation": "",
+      "communitfy": ""
     }
+  },
+  "pages": {
+    "top": "Vue.js 日本ユーザーグループは、年に一度の大規模カンファレンス“Vue Fes Japan”の運営や、Vue.js公式ドキュメントの日本語翻訳をはじめ、日本におけるVue.jsの普及と、Vue.jsエコシステムへの貢献を行っている日本最大のVue.jsコミュニティです。",
+    "about": "Vue.js Vue.js 日本ユーザーグループは、Vue.js を愛するあらゆる人々を支援する、日本最大の Vue.js コミュニティです。各地でのイベントサポートやドキュメントの翻訳プロジェクトを通じて、日本中に Vue.js を普及させるとともに、世界中の Vue.js エコシステム発展に貢献します。",
+    "contact": "Vue.js 日本ユーザーグループへのご質問・ご相談は、フォームよりお気軽にお問い合わせください。",
+    "privacy": "Vue.js 日本ユーザーグループが個人情報をどのように収集、利用、開示、移転、および保存するのかについてご確認ください。",
+    "code-of-conduct": "Vue.js 日本ユーザーグループが掲げる行動規範をご確認ください。",
+    "sitemap": "Vue.js 日本ユーザーグループの Web サイトのサイトマップを掲載しています。"
   }
 }
