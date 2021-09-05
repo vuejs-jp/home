@@ -49,7 +49,8 @@ const config: NuxtConfig = {
   modules: [
     'portal-vue/nuxt',
     'cookie-universal-nuxt',
-    '@nuxtjs/i18n'
+    '@nuxtjs/i18n',
+    '@nuxt/content'
   ],
 
   plugins: [

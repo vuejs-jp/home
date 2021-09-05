@@ -1,6 +1,7 @@
 {
   "name": "vuejs-jp.org",
   "dependencies": {
+    "@nuxt/content": "^1.14.0",
     "@nuxt/typescript-runtime": "^2.1.0",
     "@nuxtjs/google-analytics": "^2.2.3",
     "@nuxtjs/i18n": "^7.0.3",
