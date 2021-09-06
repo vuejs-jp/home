@@ -19,7 +19,7 @@
         </section>
 
         <section class="section">
-          <h2 class="section-title">{{ $t('sitemap.contact') }}</h2>
+          <h2 class="section-title">{{ $t('sitemap.inquiry') }}</h2>
           <nav class="nav">
             <ul class="list">
               <li class="item">

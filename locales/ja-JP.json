@@ -11,7 +11,7 @@
   },
   "sitemap": {
     "about": "Vue.js JPについて",
-    "contact": "お問い合わせ"
+    "inquiry": "お問い合わせ"
   },
   "footer": {
     "copyright": "© 2020 Vue.js Japan Users Group some rights reserved.",
@@ -21,6 +21,17 @@
     "deploy": "Deploys by Netlify"
   },
   "components": {
+    "AboutHero": {
+      "vuejs": "Vue.js",
+      "title": "日本全土にすべての人へ{newline}{vuejs} エコシステムを潤す。",
+      "text": "Vue.js 日本ユーザーグループは、Vue.js を愛するあらゆる人々を支援する、{newline}日本最大の Vue.js コミュニティです。各地でのイベントサポートや{newline}ドキュメントの翻訳プロジェクトを通じて、日本中に Vue.js を{newline}普及させると共に、世界中の Vue.js エコシステム発展に貢献します。"
+    },
+    "AboutDescription": {
+      "message1": "Vue.js 日本ユーザーグループは、2015年5月に kazupon と有志によって立ち上げられました。当時、Vue.js には Nuxt.js や Vuetify といったエコシステムも存在せず、コミュニティもそれほど大きくはありませんでした。それでも、Vue.js のシンプルさと拡張性に未来を感じ、Vue.js コミュニティの立ち上げに至りました。 それから4年、Vue.js の発展とともに当コミュニティも大きく成長してきました。",
+      "message2": "2018年には Vue.js クリエイターである Evan You も来日した日本最大の Vue.js カンファレンス、“Vue Fes Japan”を開催。定期的に行われる Meetup イベントは、いまでは東京だけでなく日本全国で開催されるなど、日本の Vue.js コミュニティはますます盛り上がりを見せてます。",
+      "message3": "Vue.js コミュニティの活況は日本だけにとどまらず、世界各地でカンファレンスが開催されています。 世界中ではもちろん、日本国内でも、ニュース、EC、広告など、幾多の分野に渡って現場での Vue.js 採用・導入実績が増え続けており、今後も伸びていくと考えています。",
+      "message4": "私たち Vue.js 日本ユーザーグループは、今後も引き続き、Vue.js の発展のために、日本全国、そして世界のために活動を続けていきます。"
+    },
     "AppAlert": {
       "close": "閉じる"
     },

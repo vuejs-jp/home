@@ -11,7 +11,7 @@
   },
   "sitemap": {
     "about": "About Vue.js JP",
-    "contact": "Contact"
+    "inquiry": "Inquiry"
   },
   "footer": {
     "copyright": "© 2020 Vue.js Japan Users Group some rights reserved.",
@@ -21,6 +21,17 @@
     "deploy": "Deploys by Netlify"
   },
   "components": {
+    "AboutHero": {
+      "vuejs": "Enrich Vue.js",
+      "title": "{vuejs} ecosystem for everyone, all over Japan.",
+      "text": "Vue.js Japan User Group is the largest Vue.js community in Japan,{newline}supporting everyone who loves Vue.js community in Japan.{newline}We support events in various locations and and document translation projects,{newline}we are working to spread Vue.js throughout Japan,{newline}and Vue.js ecosystem around the world."
+    },
+    "AboutDescription": {
+      "message1": "The Vue.js Japan User Group was founded in May 2015 by kazupon and a group of volunteers. At the time, Vue.js didn't have an ecosystem like Nuxt.js or Vuetify, and the community wasn't very large. Nevertheless, we saw the future in Vue.js simplicity and extensibility, which organize to start the Vue.js community. In the four years since then, as Vue.js has grown, so has our community.",
+      "message2": "In 2018, Vue.js creator Evan You visited Japan and held Japan's largest Vue.js conference \"Vue Fes Japan\". Regular Meetup events are now being held not only in Tokyo, but all over Japan, and the Vue.js community in Japan is becoming more and more active.",
+      "message3": "The vitality of the Vue.js community is not limited to Japan, with conferences being held all over the world. Not only around the world, but also in Japan, Vue.js is being adopted and implemented in a growing number of fields such as news, e-commerce, and advertising, and we believe that it will continue to grow in the future.",
+      "message4": "The Vue.js Japan User Group will continue to work for the development of Vue.js, for all of Japan, and for the world."
+    },
     "AppAlert": {
       "close": "Close"
     },
