@@ -61,9 +61,9 @@ export default Vue.extend({
 }
 
 .title {
+  padding-bottom: 32px;
   font-size: 20px;
   font-weight: 700;
-  padding-bottom: 32px;
 
   @media (min-width: 375px) {
     font-size: 24px;
