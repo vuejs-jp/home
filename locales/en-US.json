@@ -1,9 +1,74 @@
 {
   "vuejs-jp-ug": "Vue.js Japan User Group",
+  "logo-text": "Vue.js JP",
+  "menu": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact",
+    "privacy": "Privacy Policy",
+    "code-of-conduct": "Code Of Conduct",
+    "sitemap": "Sitemap"
+  },
+  "sitemap": {
+    "about": "About Vue.js JP",
+    "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "© 2020 Vue.js Japan Users Group some rights reserved.",
+    "license-text": "Released under the {license}.",
+    "author-text": "Vue.js artworks by {author} is licensed under a {license}.",
+    "site-text": "Proudly created by Vue.js Japan User Group members, powered by {powered}.",
+    "deploy": "Deploys by Netlify"
+  },
+  "components": {
+    "AppAlert": {
+      "close": "Close"
+    },
+    "ContactForm": {
+      "form": {
+        "name": {
+          "label": "Name",
+          "require-input": "Please input a name."
+        },
+        "email": {
+          "require-address": "Please input an email address.",
+          "invalid-address": "The format of the email address is incorrect."
+        },
+        "message": {
+          "label": "Details of your inquiry",
+          "placeholder": "Please fill in the details of your inquiry.",
+          "require-message": "Please input the details of your inquiry."
+        },
+        "button": "Send"
+      },
+      "states": {
+        "progress": "Your inquiry has been sent...",
+        "fail": {
+          "title": "Thank you for your inquiry.",
+          "text": "Your inquiry has been successfully sent. Our staff will contact you as soon as possible after confirming the contents."
+        },
+        "success": {
+          "title": "Failed to send your inquiry.",
+          "text": "We are sorry, but we were unable to send your inquiry. We apologize for the inconvenience, but please try again in a few minutes."
+        }
+      }
+    }
+  },
   "pages": {
     "top": "Vue.js Japan User Group is the largest Vue.js community in Japan, orgnaizing the annual large-scale conference \"Vue Fes Japan\", translating Vue.js official documents into Japanese, and contributing to the spread of Vue.js in Japan and the Vue.js ecosystem. We are the largest Vue.js community in Japan.",
     "about": "Vue.js Japan User Group is the largest Vue.js community in Japan, supporting everyone who loves Vue.js. Through local event support and documentation translation projects, we are working to spread the use of Vue.js throughout Japan and contribute to the development of the Vue.js ecosystem around the world.",
-    "contact": "If you have any questions or concerns about the Vue.js Japan User Group, please feel free to contact us using the form.",
+    "contact": {
+      "title": "We’d loved to {newline}hear {from}",
+      "from": "from you.",
+      "head": "If you have any questions or concerns about the Vue.js Japan User Group, please feel free to contact us using the form.",
+      "lead": "If you have any questions or concerns about the Vue.js Japan User Group, please feel free to contact us using the form.",
+      "social": {
+        "title": "More feel free to contact",
+        "lead": "We also accept inquiries in Slack and Twitter. Please don't hesitate to contact us if you have a concern or a quick question.",
+        "slack": "Ask a question in Slack",
+        "twitter": "Ask a question in Twitter"
+      }
+    },
     "privacy": "Please check about how the Vue.js Japan User Group collects, uses, discloses, transfers, and stores your personal information.",
     "code-of-conduct": "Please check to the code of conduct set forth by the Vue.js Japan User Group.",
     "sitemap": "Site map for the Vue.js Japan User Group website is available here."

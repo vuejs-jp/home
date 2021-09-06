@@ -2,33 +2,32 @@
   <AppPage class="Contact u-wrapper">
     <StyleMount class="container u-container">
       <div class="info">
-        <h1 class="title">
-          We’d loved to <br>hear <span class="u-nowrap">from you.</span>
-        </h1>
-        <p class="lead">
-          Vue.js 日本ユーザーグループへの<br>ご質問・ご相談は、フォームより<br>お気軽にお問い合わせください。
-        </p>
+        <i18n tag="h1" path="pages.contact.title" class="title">
+          <template #newline><br></template>
+          <template #from>
+            <span class="u-nowrap">{{ $t('pages.contact.from') }}</span>
+          </template>
+        </i18n>
+        <i18n tag="p" path="pages.contact.lead" class="lead">
+          <template #newline><br></template>
+        </i18n>
 
         <section class="social">
-          <h2 class="social-title">
-            もっと気軽に相談する
-          </h2>
-          <p class="social-lead">
-            SlackやTwitterからもお問い合わせを受けつけています。気になることや、ちょっとしたご質問がある場合には、遠慮なくご連絡ください。
-          </p>
+          <h2 class="social-title">{{ $t('pages.contact.social.title') }}</h2>
+          <p class="social-lead">{{ $t('pages.contact.social.lead') }}</p>
 
           <ul class="actions">
             <li class="action">
               <a class="action-link" href="https://join.slack.com/t/vuejs-jp/shared_invite/zt-pcpd1rnq-QTaoQ0U_gRiewCsyO6NH8Q" target="_blank" rel="noopener noreferrer">
                 <IconSlack class="action-icon slack" />
-                Slackで質問する
+                {{ $t('pages.contact.social.slack') }}
                 <IconChevronRight class="action-chevron" />
               </a>
             </li>
             <li class="action">
               <a class="action-link" href="https://twitter.com/vuefes" target="_blank" rel="noopener noreferrer">
                 <IconTwitter class="action-icon twitter" />
-                Twitterで質問する
+                {{ $t('pages.contact.social.twitter') }}
                 <IconChevronRight class="action-chevron" />
               </a>
             </li>
@@ -68,7 +67,7 @@ export default Vue.extend({
   head (): object {
     const name = this.$i18n.t('vuejs-jp-ug') as string
     const title = this.$i18n.t('menu.contact') as string
-    const description = this.$i18n.t('pages.contact') as string
+    const description = this.$i18n.t('pages.contact.head') as string
     const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
 
     return mergeMeta({ name, title, description, url: this.$url() }, i18nHead)

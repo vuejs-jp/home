@@ -28,7 +28,6 @@ module.exports = {
     ],
     '@intlify/vue-i18n/no-duplicate-keys-in-locale': 'warn',
     '@intlify/vue-i18n/no-missing-keys-in-other-locales': 'warn',
-    '@intlify/vue-i18n/key-format-style': ['warn', 'kebab-case'],
     '@intlify/vue-i18n/no-unused-keys': [
       'warn',
       {

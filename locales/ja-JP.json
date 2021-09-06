@@ -21,18 +21,54 @@
     "deploy": "Deploys by Netlify"
   },
   "components": {
-    "HomeHero": {
-      "title": "",
-      "message": "",
-      "vue-fes-japan": "",
-      "docs-translation": "",
-      "communitfy": ""
+    "AppAlert": {
+      "close": "閉じる"
+    },
+    "ContactForm": {
+      "form": {
+        "name": {
+          "label": "お名前",
+          "require-input": "お名前を入力してください。"
+        },
+        "email": {
+          "require-address": "Emailアドレスを入力してください。",
+          "invalid-address": "Emailアドレスの形式が正しくありません。"
+        },
+        "message": {
+          "label": "お問い合わせ内容",
+          "placeholder": "お問い合わせ内容をご記入ください。",
+          "require-message": "お問い合わせ内容を入力してください。"
+        },
+        "button": "送信する"
+      },
+      "states": {
+        "progress": "お問い合わせ内容を送信しています。",
+        "fail": {
+          "title": "お問い合わせいただき、ありがとうございます。",
+          "text": "お問い合わせ内容の送信が完了しました。内容を確認の上、追ってスタッフよりご連絡させていただきますので、今しばらくお待ちください。"
+        },
+        "success": {
+          "title": "お問い合わせの送信に失敗しました。",
+          "text": "お問い合わせ内容を送信できませんでした。大変申し訳ありませんが、時間を置いて再度お試しください。"
+        }
+      }
     }
   },
   "pages": {
     "top": "Vue.js 日本ユーザーグループは、年に一度の大規模カンファレンス“Vue Fes Japan”の運営や、Vue.js公式ドキュメントの日本語翻訳をはじめ、日本におけるVue.jsの普及と、Vue.jsエコシステムへの貢献を行っている日本最大のVue.jsコミュニティです。",
     "about": "Vue.js Vue.js 日本ユーザーグループは、Vue.js を愛するあらゆる人々を支援する、日本最大の Vue.js コミュニティです。各地でのイベントサポートやドキュメントの翻訳プロジェクトを通じて、日本中に Vue.js を普及させるとともに、世界中の Vue.js エコシステム発展に貢献します。",
-    "contact": "Vue.js 日本ユーザーグループへのご質問・ご相談は、フォームよりお気軽にお問い合わせください。",
+    "contact": {
+      "title": "ご意見を{newline}お聞かせください。",
+      "from": "あなたから",
+      "head": "Vue.js 日本ユーザーグループへのご質問・ご相談は、フォームよりお気軽にお問い合わせください。",
+      "lead": "Vue.js 日本ユーザーグループへの{newline}ご質問・ご相談は、フォームより{newline}お気軽にお問い合わせください。",
+      "social": {
+        "title": "もっと気軽に相談する",
+        "lead": "SlackやTwitterからもお問い合わせを受けつけています。気になることや、ちょっとしたご質問がある場合には、遠慮なくご連絡ください。",
+        "slack": "Slackで質問する",
+        "twitter": "Twitterで質問する"
+      }
+    },
     "privacy": "Vue.js 日本ユーザーグループが個人情報をどのように収集、利用、開示、移転、および保存するのかについてご確認ください。",
     "code-of-conduct": "Vue.js 日本ユーザーグループが掲げる行動規範をご確認ください。",
     "sitemap": "Vue.js 日本ユーザーグループの Web サイトのサイトマップを掲載しています。"
