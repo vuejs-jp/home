@@ -32,6 +32,11 @@
       "message3": "The vitality of the Vue.js community is not limited to Japan, with conferences being held all over the world. Not only around the world, but also in Japan, Vue.js is being adopted and implemented in a growing number of fields such as news, e-commerce, and advertising, and we believe that it will continue to grow in the future.",
       "message4": "The Vue.js Japan User Group will continue to work for the development of Vue.js, for all of Japan, and for the world."
     },
+    "CookieAgreementPopup": {
+      "message": "This website stores cookies and other data to help us with analytics and other purposes. By staying on this website, you agree to the use of these cookies.",
+      "format": "For more details, please see {privacy}.",
+      "ok": "OK"
+    },
     "AppAlert": {
       "close": "Close"
     },
