@@ -2,20 +2,16 @@
   <StyleMount class="HomeCommunications u-wrapper" tag="section">
     <div class="container u-container">
       <div class="content u-section-content">
-        <p class="u-section-content__heading">
-          COMMUNICATIONS
-        </p>
-        <h2 class="title u-section-content__title">
-          いつでも、どこにいても。<br><span class="u-nowrap">みんなが</span><span class="u-nowrap">あなたを</span><span class="u-nowrap">待って</span><span class="u-nowrap">います。</span>
-        </h2>
-
-        <p class="u-section-content__body">
-          Vue.js 日本ユーザーグループの Slack では、3,000人を超えるメンバーが日々楽しいディスカッションを行なっています。複雑な質問や、じっくり意見を交わしたいあなたのために、Vue Forum には日本語カテゴリも用意しました。
-        </p>
-
-        <p class="u-section-content__body">
-          誰でも自由に、どこからでも、いますぐ参加できます。日本中のコミュニティメンバーがあなたを暖かく迎え入れてくれます。
-        </p>
+        <p class="u-section-content__heading">{{ $t('components.HomeCommunications.heading') }}</p>
+        <i18n tag="h2" path="components.HomeCommunications.title" class="title u-section-content__title">
+          <template #newline><br></template>
+          <template #everyone>{{ $t('components.HomeCommunications.everyone') }}</template>
+          <template #you>{{ $t('components.HomeCommunications.you') }}</template>
+          <template #wait>{{ $t('components.HomeCommunications.wait') }}</template>
+          <template #online>{{ $t('components.HomeCommunications.online') }}</template>
+        </i18n>
+        <p class="u-section-content__body">{{ $t('components.HomeCommunications.body1') }}</p>
+        <p class="u-section-content__body">{{ $t('components.HomeCommunications.body2') }}</p>
 
         <div class="u-section-content__actions">
           <div class="u-section-content__action">
@@ -24,7 +20,7 @@
               :block="true"
               href="https://join.slack.com/t/vuejs-jp/shared_invite/zt-pcpd1rnq-QTaoQ0U_gRiewCsyO6NH8Q"
               :icon="iconSlack"
-              label="Slackに参加する"
+              :label="$t('components.HomeCommunications.slack')"
             />
           </div>
 
@@ -34,7 +30,7 @@
               :block="true"
               href="https://forum.vuejs.org/c/japanese"
               :icon="iconVue"
-              label="Forumで質問する"
+              :label="$t('components.HomeCommunications.forum')"
             />
           </div>
         </div>
@@ -63,6 +59,7 @@ export default Vue.extend({
   },
 
   data () {
+    const $t = this.$t.bind(this)
     return {
       iconSlack: IconSlack,
       iconVue: IconVue,
@@ -74,7 +71,7 @@ export default Vue.extend({
           alt: 'Avatar 001',
           name: 'Arisa Miyake',
           time: '3:12 PM',
-          body: 'Vue.js 3 RFC の Composition API みた！？ すごいねー！ 新しい感じ。みんなどう思う？'
+          body: $t('components.HomeCommunications.chats.user1')
         },
         {
           direction: 'right',
@@ -82,7 +79,7 @@ export default Vue.extend({
           alt: 'Avatar 002',
           name: 'Kenji Yamadera',
           time: '3:19 PM',
-          body: 'Vue.js 2で試せるプラグイン出てるよ。どんな感じか使ってみて、記事でも書いてみようかな。'
+          body: $t('components.HomeCommunications.chats.user2')
         },
         {
           direction: 'left',
@@ -90,7 +87,7 @@ export default Vue.extend({
           alt: 'Avatar 003',
           name: 'Ai Nakagawa',
           time: '3:25 PM',
-          body: 'すごい！ これは賛否両論ありそうだけど、今後どうなっていくのかめっちゃきになる！'
+          body: $t('components.HomeCommunications.chats.user3')
         }
       ]
     }

@@ -2,20 +2,12 @@
   <StyleMount class="HomeEvents u-wrapper" tag="section">
     <div class="container u-container">
       <div class="content u-section-content">
-        <p class="u-section-content__heading">
-          EVENTS
-        </p>
-        <h2 class="title u-section-content__title">
-          日本中のVue.jsコミュニティが、あなたに会えるのを楽しみに<br>しています。
-        </h2>
-
-        <p class="u-section-content__body">
-          Vue.jsの作者であるEvan Youも参加する日本最大のカンファレンス“Vue Fes Japan”、定期的に開催されVue.jsユーザーの人気を集める勉強会“v-tokyo Meetup”をはじめ、日本各地で多くのイベントを運営しています。
-        </p>
-
-        <p class="u-section-content__body">
-          Vue.js 3.0を含む最新のVue.js情報から、日々の開発をもっと楽しくする驚きのTips、美味しい食事と楽しいお酒で大盛り上がりのDrink Up Partyまで。さぁ、最高峰のメンバー達と繋がる準備はできましたか？
-        </p>
+        <p class="u-section-content__heading">{{ $t('components.HomeEvents.heading') }}</p>
+        <i18n tag="h2" path="components.HomeEvents.title" class="title u-section-content__title">
+          <template #newline><br></template>
+        </i18n>
+        <p class="u-section-content__body">{{ $t('components.HomeEvents.body1') }}</p>
+        <p class="u-section-content__body">{{ $t('components.HomeEvents.body2') }}</p>
 
         <div class="u-section-content__actions">
           <div class="u-section-content__action">
@@ -24,7 +16,7 @@
               :block="true"
               href="https://vuejs-meetup.connpass.com/"
               :icon="iconConnpass"
-              label="直近のイベントをみる"
+              :label="$t('components.HomeEvents.connpass')"
             />
           </div>
         </div>

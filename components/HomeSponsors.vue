@@ -2,16 +2,9 @@
   <StyleMount class="HomeSponsors u-wrapper" tag="section">
     <div class="u-container">
       <div class="content u-section-content u-section-content--center">
-        <p class="u-section-content__heading">
-          SPONSORS
-        </p>
-        <h2 class="title u-section-content__title">
-          素晴らしい企業のみなさまによって、支えられています。
-        </h2>
-
-        <p class="u-section-content__body">
-          日々のコミュニケーションやイベントの運営まで、Vue.js 日本ユーザーグループの活動に用いられる様々なツールについて多くのご支援をいただいています。
-        </p>
+        <p class="u-section-content__heading">{{ $t('components.HomeSponsors.heading') }}</p>
+        <h2 class="title u-section-content__title">{{ $t('components.HomeSponsors.title') }}</h2>
+        <p class="u-section-content__body">{{ $t('components.HomeSponsors.body') }}</p>
       </div>
 
       <ul class="sponsors">

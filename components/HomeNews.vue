@@ -2,25 +2,23 @@
   <StyleMount class="HomeNews u-wrapper" tag="section">
     <div class="container u-container">
       <div class="content u-section-content">
-        <p class="u-section-content__heading">
-          NEWS
-        </p>
-        <h2 class="title u-section-content__title">
-          もっとも身近な Vue.js <span class="u-nowrap">情報</span>を<br><span class="u-nowrap">どうか、</span>お見逃し<span class="u-nowrap">なく。</span>
-        </h2>
-
-        <p class="u-section-content__body">
-          Vue.js の最新情報や、各種イベント情報、Vue.js 日本ユーザーグループの活動状況に関するニュースをSNSやブログを通じて発信しています。いますぐフォローして、日本の Vue.js 事情を追いかけよう！
-        </p>
+        <p class="u-section-content__heading">{{ $t('components.HomeNews.heading') }}</p>
+        <i18n tag="h2" path="components.HomeNews.title" class="title u-section-content__title">
+          <template #newline><br></template>
+          <template #infowrap>{{ $t('components.HomeNews.info') }}</template>
+          <template #kindlywrap>{{ $t('components.HomeNews.kindly') }}</template>
+          <template #misswrap>{{ $t('components.HomeNews.miss') }}</template>
+        </i18n>
+        <p class="u-section-content__body">{{ $t('components.HomeNews.body') }}</p>
 
         <div class="actions">
           <a class="action" href="https://twitter.com/vuefes" target="_blank" rel="noopener noreferrer">
             <IconTwitter class="icon twitter" />
-            Vue.js JP 公式 Twitter
+            {{ $t('components.HomeNews.twitter') }}
           </a>
           <a class="action" href="https://note.com/vuejs_jp" target="_blank" rel="noopener noreferrer">
             <IconNote class="icon note" />
-            Vue.js JP 公式 Note
+            {{ $t('components.HomeNews.note') }}
           </a>
         </div>
       </div>

@@ -2,12 +2,30 @@
   <StyleMount class="HomeHero u-wrapper">
     <div class="u-relative u-container">
       <div class="content">
-        <h1 class="title">
-          <span class="u-nowrap">Welcome to</span> <span class="u-nowrap">Japan’s largest</span> <span class="u-nowrap">Vue.js Community.</span>
-        </h1>
-        <p class="text">
-          Vue.js 日本ユーザーグループへようこそ。私たちは、<br>年に一度の大規模カンファレンス<span class="marker marker-1">“Vue Fes Japan”</span>の<br>運営や、<span class="marker marker-2">Vue.js公式ドキュメントの日本語翻訳</span>をはじめ、<br>日本におけるVue.jsの普及と、Vue.jsエコシステムへの<br>貢献を行っている<span class="marker marker-3">日本最大のVue.jsコミュニティ</span>です。
-        </p>
+        <i18n tag="h1" path="components.HomeHero.title" class="title">
+          <template #newline><br></template>
+          <template #welcome>{{ $t('components.HomeHero.welcome') }}</template>
+          <template #japan>{{ $t('components.HomeHero.japan') }}</template>
+          <template #community>{{ $t('components.HomeHero.community') }}</template>
+        </i18n>
+        <i18n tag="p" path="components.HomeHero.text" class="text">
+          <template #newline><br></template>
+          <template #vuefes>
+            <span class="marker marker-1">
+              {{ $t('components.HomeHero.vuefes') }}
+            </span>
+          </template>
+          <template #docs>
+            <span class="marker marker-2">
+              {{ $t('components.HomeHero.docs') }}
+            </span>
+          </template>
+          <template #largest-community>
+            <span class="marker marker-3">
+              {{ $t('components.HomeHero.largest-community') }}
+            </span>
+          </template>
+        </i18n>
       </div>
 
       <div class="image">

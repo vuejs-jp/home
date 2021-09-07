@@ -21,6 +21,92 @@
     "deploy": "Deploys by Netlify"
   },
   "components": {
+    "HomeHero": {
+      "welcome": "Welcome to",
+      "japan": "Japan’s largest",
+      "community": "Vue.js Community",
+      "title": "{welcome} {japan} {community}.",
+      "vuefes": "Vue Fes Japan",
+      "docs": "translating official Vue.js documentation into Japanese",
+      "largest-community": "largest Vue.js community in Japan",
+      "text": "Welcome to the Vue.js Japan User Group. {newline}We are the {largest-community},{newline}organizing the annual {vuefes},{newline}{docs},{newline}and contributing to the spread of Vue.js in Japan {newline}and the Vue.js ecosystem."
+    },
+    "HomeEvents": {
+      "heading": "EVENTS",
+      "title": "The Vue.js community in Japan is looking forward to meet you.",
+      "body1": "Vue.js creator Evan You also participates in Japan largest conference \"Vue Fes Japan\" as well as the regularly held and popular Vue.js user study group, \"v-tokyo Meetup\", and many other events around Japan.",
+      "body2": "From the latest Vue.js information including Vue.js 3.0, to amazing tips to make your daily development more fun, to a Drink Up Party with delicious food and fun drinks. So, are you ready to connect with the best of the best?",
+      "connpass": "See events"
+    },
+    "HomeCommunications": {
+      "heading": "COMMUNICATIONS",
+      "everyone": "Everyone",
+      "you": "you",
+      "wait": "is waiting",
+      "online": "for",
+      "title": "Anytime, anywhere, {newline}{everyone} {wait} {online} {you}.",
+      "body1": "In the Vue.js Japan User Group Slack, we have over 4,000 members having fun discussions every day. For those of you who have complex questions or just want to discuss things in depth, we've prepared a Japanese category in the Vue Forum.",
+      "body2": "Anyone can join now, freely, from anywhere. You will be warmly welcomed by community members from all over Japan.",
+      "slack": "Join Slack",
+      "forum": "Join Forum",
+      "chats": {
+        "user1": "Have you seen the Composition API in Vue.js 3 RFC? It's amazing! It looks new. What do you guys think?",
+        "user2": "There's a plugin for Vue.js 2 that you can try out. I think I'll try it out and write an article about it.",
+        "user3": "It's amazing! I know this is going to be controversial, but I'm really curious to see what happens next!"
+      }
+    },
+    "HomeProjects": {
+      "heading": "PROJECTS",
+      "title": "Anyone can contribute to the growth of {newline}the Vue.js ecosystem.",
+      "nowrap": "documentation.",
+      "body": "The Vue.js Japan User Group is contributing to the Vue.js ecosystem through a variety of projects, including translating the official Vue.js {nowrap} No matter how small it is, it can be a big help to everyone.",
+      "projects": {
+        "vue": {
+          "title": "Vue.js{newline}{nowrap}",
+          "official": "Official Document Translation",
+          "body": "Translating the official Vue.js documentation, which is updated daily, is one of the most important roles of the Vue.js Japan User Group.",
+          "link": "Contribute with translation"
+        },
+        "nuxt": {
+          "title": "Nuxt.js{newline}{nowrap}",
+          "official": "Official Document Translation",
+          "body": "Nuxt.js is getting more and more attention in Japan, why don't you help us bring this cutting-edge front-end framework to the whole of Japan?",
+          "link": "Contribute with translation"
+        },
+        "vuejsjp": {
+          "title": "Vue.js JP{newline}{nowrap}",
+          "official": "Official Website Development",
+          "body": "This website is also being developed with the help of community members. Do you have a good idea? We'd love to hear from you on GitHub.",
+          "link": "Contribute with development"
+        }
+      }
+    },
+    "HomeNews": {
+      "heading": "NEWS",
+      "info" :"Information!",
+      "kindly": "Please",
+      "miss": "miss",
+      "title": "{kindlywrap} don't {misswrap} out on {newline}the most accessible Vue.js {infowrap}",
+      "body": "The latest information on Vue.js, various events, and news on the activities of the Vue.js Japan User Group are posted on our SNS and blog. Follow us now and keep up with what's happening with Vue.js in Japan!",
+      "twitter": "Vue.js JP Official Twitter",
+      "note": "Vue.js JP Official Note"
+    },
+    "HomeAbout": {
+      "heading": "ABOUT",
+      "title": "It is a community of everyone,{newline}by everyone, {nowrap}",
+      "title_nowrap": "for everyone.",
+      "body1": "Vue.js is a product with a wide range of community connections, including documentation in various languages, all of which are made possible by the cooperation of volunteers. The Vue.js Japan User Group also places great importance on community connections.",
+      "body2": "We believe that we can contribute to the Vue.js community not only in Japan, but also around the world through our various projects and activities to promote Vue.js in Japan.",
+      "vuejs-jp": "About Vue.js JP",
+      "code-of-conduct": "See Code of Conduct",
+      "author": "Linustock",
+      "copyright": "Illustration by {author}"
+    },
+    "HomeSponsors": {
+      "heading": "SPONSORS",
+      "title": "We are supported by many awesome companies.",
+      "body": "We have received a lot of support for the some tools used in the activities of the Vue.js Japan User Group, from day-to-day communication to event organaizing."
+    },
     "AboutHero": {
       "vuejs": "Enrich Vue.js",
       "title": "{vuejs} ecosystem for everyone, all over Japan.",
