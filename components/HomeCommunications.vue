@@ -10,7 +10,7 @@
           <template #wait>{{ $t('components.HomeCommunications.wait') }}</template>
           <template #online>{{ $t('components.HomeCommunications.online') }}</template>
         </i18n>
-        <p class="u-section-content__body">{{ $t('components.HomeCommunications.body1') }}</p>
+        <p class="u-section-content__body">{{ $t('components.HomeCommunications.body1', { users: $n(4000) }) }}</p>
         <p class="u-section-content__body">{{ $t('components.HomeCommunications.body2') }}</p>
 
         <div class="u-section-content__actions">

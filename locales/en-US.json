@@ -28,8 +28,8 @@
       "title": "{welcome} {japan} {community}.",
       "vuefes": "Vue Fes Japan",
       "docs": "translating official Vue.js documentation into Japanese",
-      "largest-community": "largest Vue.js community in Japan",
-      "text": "Welcome to the Vue.js Japan User Group. {newline}We are the {largest-community},{newline}organizing the annual {vuefes},{newline}{docs},{newline}and contributing to the spread of Vue.js in Japan {newline}and the Vue.js ecosystem."
+      "largest-community": "the largest Vue.js community in Japan",
+      "text": "Welcome to the Vue.js Japan User Group. {newline}We are {largest-community},{newline}organizing the annual {vuefes},{newline}{docs},{newline}and contributing to the spread of Vue.js in Japan {newline}and the Vue.js ecosystem."
     },
     "HomeEvents": {
       "heading": "EVENTS",
@@ -45,7 +45,7 @@
       "wait": "is waiting",
       "online": "for",
       "title": "Anytime, anywhere, {newline}{everyone} {wait} {online} {you}.",
-      "body1": "In the Vue.js Japan User Group Slack, we have over 4,000 members having fun discussions every day. For those of you who have complex questions or just want to discuss things in depth, we've prepared a Japanese category in the Vue Forum.",
+      "body1": "In the Vue.js Japan User Group Slack, we have over {users} members having fun discussions every day. For those of you who have complex questions or just want to discuss things in depth, we've prepared a Japanese category in the Vue Forum.",
       "body2": "Anyone can join now, freely, from anywhere. You will be warmly welcomed by community members from all over Japan.",
       "slack": "Join Slack",
       "forum": "Join Forum",
