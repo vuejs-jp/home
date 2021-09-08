@@ -989,10 +989,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.0.tgz#87de7af9c231826fdd68ac7258f77c429e0e5fcf"
   integrity sha512-wdppn25U8z/2yiaT6YGquE6X8sSv7hNMWSXYSSU1jGv/yd6XqjXgTDJ8KP4NgjTXfJ3GbRjeeb8RTV7a/VpM+w==
 
-"@intlify/eslint-plugin-vue-i18n@^0.13.0":
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/@intlify/eslint-plugin-vue-i18n/-/eslint-plugin-vue-i18n-0.13.0.tgz#1d9f59c66ed43778cec57624a6c009a880224ab8"
-  integrity sha512-AZIYma6RgjIbmg2tDHPgYFQzK+NmI6Qe0wZ6USTbMeG8/AfJ61lAr9p7rGXMZzMUyy2+uc2dEbyz4gHDnwJYjw==
+"@intlify/eslint-plugin-vue-i18n@^0.14.0":
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/@intlify/eslint-plugin-vue-i18n/-/eslint-plugin-vue-i18n-0.14.0.tgz#3d30d322ad789e140e74f5707869ddf3159819a6"
+  integrity sha512-OWXtQLRySTlksK2VpguqepK3MuT1lv7O3uQLK6tm2esAqhJVEF4XjqCqC5vI2Xoziu49W4eMZbywicWtATw6wg==
   dependencies:
     "@eslint/eslintrc" "^0.4.2"
     "@intlify/message-compiler" "^9.1.6"
