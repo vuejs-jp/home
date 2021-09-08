@@ -1,17 +1,17 @@
-Vue.js 日本ユーザーグループでは、性別、性別の表現、性的指向、障害の有無、外見、身体の大きさ、人種、民族、宗教、技術選択にかかわりなく、すべての参加者がハラスメント行為なくミートアップなどのイベント、Slack などのコミュニティに参加できる環境の提供に最善を尽くします。
+The Vue.js Japan User Group will do our best to provide an environment where all participants, regardless of gender, gender expression, sexual orientation, disability, appearance, physical size, race, ethnicity, religion, or technology choice, can participate in meetups and other events, as well as communities such as Slack, without harassment. We will do our best to provide an environment where all participants, regardless of appearance, size, race, ethnicity, religion, or technology choice, can participate in meetups, other events, and communities such as Slack without harassment.
 
-Vue.js 日本ユーザーグループは参加者によるハラスメント行為を一切容認しません。性的な言葉や画像は会話、ワークショップ、懇親会、パーティ、Twitter などのオンラインメディアやソーシャル・ネットワーク・サービスなどにおける発言などイベントやコミュニティに関連するあらゆる場面、場所に不適切であり、これらの規則に違反している参加者は Vue.js 日本ユーザーグループの判断により Vue.js コミュニティ内での行動を制限、または 参加費の払い戻しなく退席をしていただく場合があります。
+The Vue.js Japan User Group will not tolerate any form of harassment by participants. Sexual language and images are inappropriate in all settings and places related to the event and community, including conversations, workshops, social gatherings, parties, online media such as Twitter, and social network services. js Japan User Group reserves the right to restrict behavior within the Vue.js community, or to ask participants to leave without a refund of participation fees.
 
-ハラスメント行為には、性別、性同一性、性別の表現、性的指向による差別、障害の有無による差別、外見、身体の大きさによる差別、人種、民族、宗教による差別、技術選択による差別、公共空間での性的な映像表現、意図的な脅迫、ストーカー行為、つきまとい、写真撮影や録音などによる嫌がらせ、トークやその他のイベントなどに対して繰り返して意図的に中断させる行為、不適切な身体接触、そして望まれない性的な注意を引きつける行為を含みます。
+Harassment includes discrimination based on gender, gender identity, gender expression, sexual orientation, disability, appearance, size, race, ethnicity, religion, technology choice, sexual images in public spaces, intentional intimidation, stalking, harassment by following, photographing, recording, etc. harassment, repeated and intentional disruptions to talks or other events, inappropriate physical contact, and unwanted sexual attention.
 
-参加者は、これらのハラスメント行為を止めるように求められた場合、すみやかに従わなければなりません。
+Participants must promptly comply with any request to stop these harassing behaviors.
 
-スポンサーもまた、ハラスメント防止ポリシーの対象です。特に、スポンサーは性的な関心を引き起こすような映像表現、活動、資料、あるいはその他の物品を使用すべきではありません。ボランティアを含め、ブースのスタッフは、性的な関心を引き起こすような服装 / 制服 / コスチュームを使用すべきではありませんし、その他の手段で性的な関心を引き起こす様な環境を作るべきではありません。
+Sponsors are also subject to the Anti-Harassment Policy. In particular, sponsors should not use visual representations, activities, materials, or other items that may cause sexual interest. Booth staff, including volunteers, should not use sexually suggestive clothing/uniforms/costumes or otherwise create an environment that is sexually suggestive.
 
-参加者がハラスメント行為を行っている場合、Vue.js 日本ユーザーグループは当該行為を行っている者に対して我々が適切と判断した範囲で、警告や参加費の払い戻しなく退席していただくなどの措置を講じることがあります。
+In the event that a participant engages in harassment, the Vue.js Japan User Group reserves the right to take any action we deem appropriate, such as asking the participant to leave without warning or refunding the participation fee.
 
-もしあなたがハラスメント行為を受けている場合や、誰かがハラスメント行為を受けていることに気づいた場合、またはその懸念がある場合は、すぐに Vue.js 日本ユーザーグループに連絡してください。
+If you are being harassed, become aware that someone is being harassed, or have concerns about it, please contact the Vue.js Japan User Group immediately.
 
-Vue.js 日本ユーザーグループは、ハラスメント行為を受けた人に安全な環境を守るためにホテル・会場の警備や警察に連絡すること、付き添い人の提供、およびその他のあらゆる支援を行います。私達にとってあなたの参加が何もよりも大切なことであり、常に私たちはハラスメント行為を受けた人の味方でありつづけます。
+The Vue.js Japan User Group will provide hotel/venue security, contact police, provide chaperones, and any other assistance to ensure a safe environment for those who have been harassed. Your participation is of the utmost importance to us, and we will always be an advocate for those who have been harassed.
 
-私たちは、すべての参加者が会場やワークショップ、Vue.js 日本ユーザーグループが企画・運営するソーシャルイベントにて、これらのルールに従うことを期待しています。
+We expect all participants to follow these rules at venues, workshops, and social events planned and managed by the Vue.js Japan User Group.

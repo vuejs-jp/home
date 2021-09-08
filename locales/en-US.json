@@ -171,8 +171,14 @@
         "twitter": "Ask a question in Twitter"
       }
     },
-    "privacy": "Please check about how the Vue.js Japan User Group collects, uses, discloses, transfers, and stores your personal information.",
-    "code-of-conduct": "Please check to the code of conduct set forth by the Vue.js Japan User Group.",
+    "privacy": {
+      "head": "Please check about how the Vue.js Japan User Group collects, uses, discloses, transfers, and stores your personal information.",
+      "title": "Privacy Policy"
+    },
+    "code-of-conduct": {
+      "head": "Please check to the code of conduct set forth by the Vue.js Japan User Group.",
+      "title": "Code of Conduct"
+    },
     "sitemap": "Site map for the Vue.js Japan User Group website is available here."
   }
 }
