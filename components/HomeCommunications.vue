@@ -22,7 +22,7 @@
             <ButtonOutline
               tag="a"
               :block="true"
-              href="https://join.slack.com/t/vuejs-jp/shared_invite/zt-pcpd1rnq-QTaoQ0U_gRiewCsyO6NH8Q"
+              href="https://join.slack.com/t/vuejs-jp/shared_invite/zt-vmg3iysl-~CPGAxFMWwa0Fnu2IqtMdQ"
               :icon="iconSlack"
               label="Slackに参加する"
             />
