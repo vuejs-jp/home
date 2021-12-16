@@ -18,6 +18,16 @@ module.exports = {
       messageSyntaxVersion: '^8.25.0'
     }
   },
+  overrides: [
+    {
+      files: ['*.json', '*.json5'],
+      extends: ['plugin:@intlify/vue-i18n/recommended'],
+    },
+    {
+      files: ['*.yaml', '*.yml'],
+      extends: ['plugin:@intlify/vue-i18n/recommended'],
+    },
+  ],
   // add your custom rules here
   rules: {
     '@intlify/vue-i18n/no-raw-text': [
