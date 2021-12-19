@@ -28,7 +28,7 @@ Vue.js に興味のある方でしたらどなたでもお気軽にご参加く�
 ## コミュニケーション
 
 - [Vue.js オフィシャルフォーラム](http://forum.vuejs.org)
-- [Vue.js 日本ユーザーグループ 公式 Slack](https://join.slack.com/t/vuejs-jp/shared_invite/zt-pcpd1rnq-QTaoQ0U_gRiewCsyO6NH8Q)
+- [Vue.js 日本ユーザーグループ 公式 Slack](https://join.slack.com/t/vuejs-jp/shared_invite/zt-vmg3iysl-~CPGAxFMWwa0Fnu2IqtMdQ)
 - [Vue.js 日本ユーザーグループ 公式 Twitter](https://twitter.com/vuefes)
 - [Vue.js 日本ユーザーグループ 公式 note](https://note.com/vuejs_jp)
 
