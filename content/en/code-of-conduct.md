@@ -6,7 +6,7 @@ Harassment includes discrimination based on gender, gender identity, gender expr
 
 Anyone who is found to be engaging in harassment must promptly comply with any request to stop such harassment.
 
-Sponsors are also subject to this anti-garassment policy. In particular, sponsors should not use visual representations, activities, materials, or other items that may provoke sexual interest. Booth staff, including volunteers, should not use sexually suggestive clothing/uniforms/costumes.
+Sponsors are also subject to this anti-garassment policy. In particular, sponsors should not use visual representations, activities, materials, or other items that may provoke sexual interest. Booth staff, including volunteers, should not use sexually suggestive clothing / uniforms / costumes.
 
 If a participant is engaging in harassment, the Vue.js Japan User Group reserves the right to take whatever action we deem appropriate against the person(s) engaging in the harassment, such as removing them from the event without warning or refunding their participation fee.
 
