@@ -12,7 +12,7 @@
       <InputText
         v-model="form.name"
         name="name"
-        label="お名前"
+        :label="$t('components.ContactForm.form.name.label')"
         placeholder="John Doe"
         :error="errors.name"
         @blur="$v.form.name.$touch"
@@ -35,8 +35,8 @@
       <InputTextarea
         v-model="form.message"
         name="message"
-        label="お問い合わせ内容"
-        placeholder="お問い合わせ内容をご記入ください。"
+        :label="$t('components.ContactForm.form.message.label')"
+        :placeholder="$t('components.ContactForm.form.message.placeholder')"
         :rows="5"
         :error="errors.message"
         @blur="$v.form.message.$touch"
@@ -44,9 +44,7 @@
     </div>
 
     <div class="action">
-      <button class="button">
-        送信する
-      </button>
+      <button class="button">{{ $t('components.ContactForm.form.button') }}</button>
     </div>
   </form>
 </template>
@@ -108,7 +106,7 @@ export default Vue.extend({
       const name = (this.$v.form as any).name
 
       if (name.$error) {
-        return 'お名前を入力してください。'
+        return this.$t('components.ContactForm.form.name.require-input') as string;
       }
     },
 
@@ -116,11 +114,11 @@ export default Vue.extend({
       const email = (this.$v.form as any).email
 
       if (email.$error && !email.required) {
-        return 'Emailアドレスを入力してください。'
+        return this.$t('components.ContactForm.form.email.require-address') as string;
       }
 
       if (email.$error && !email.email) {
-        return 'Emailアドレスの形式が正しくありません。'
+        return this.$t('components.ContactForm.form.email.invalid-address') as string;
       }
     },
 
@@ -128,7 +126,7 @@ export default Vue.extend({
       const message = (this.$v.form as any).message
 
       if (message.$error) {
-        return 'お問い合わせ内容を入力してください。'
+        return this.$t('components.ContactForm.form.message.require-message') as string;
       }
     },
 
@@ -190,23 +188,23 @@ export default Vue.extend({
 
     openDialog (): void {
       this.$store.dispatch('dialog/open', {
-        title: 'お問い合わせ内容を送信しています。'
+        title: this.$t('components.ContactForm.states.progress')
       })
     },
 
     openSuccessAlert (): void {
       this.$store.dispatch('alert/open', {
         type: 'success',
-        title: 'お問い合わせいただき、ありがとうございます。',
-        text: 'お問い合わせ内容の送信が完了しました。内容を確認の上、追ってスタッフよりご連絡させていただきますので、今しばらくお待ちください。'
+        title: this.$t('components.ContactForm.states.success.title'),
+        text: this.$t('components.ContactForm.states.success.text')
       })
     },
 
     openErrorAlert (): void {
       this.$store.dispatch('alert/open', {
         type: 'error',
-        title: 'お問い合わせの送信に失敗しました。',
-        text: 'お問い合わせ内容を送信できませんでした。大変申し訳ありませんが、時間を置いて再度お試しください。'
+        title: this.$t('components.ContactForm.states.fail.title'),
+        text: this.$t('components.ContactForm.states.fail.text')
       })
     }
   }

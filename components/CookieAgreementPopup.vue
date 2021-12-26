@@ -2,19 +2,15 @@
   <transition name="fade">
     <div v-if="show" class="CookieAgreementPopup">
       <div class="container">
-        <p class="body">
-          当ウェブサイトではCookieなどのデータを保管することで、アナリティクスなどに役立てています。当ウェブサイトに留まることで、本Cookieの利用に同意したものとみなします。
-        </p>
+        <p class="body">{{ $t('components.CookieAgreementPopup.message') }}</p>
 
-        <p class="note">
-          詳細については <NuxtLink class="link" to="/privacy" @click.native="hide">
-            Privacy Policy
-          </NuxtLink> をご参照ください。
-        </p>
+        <i18n tag="p" path="components.CookieAgreementPopup.format" class="note">
+          <template #privacy>
+            <NuxtLink class="link" :to="localePath('/privacy')" @click.native="hide">{{ $t('menu.privacy') }}</NuxtLink>
+          </template>
+        </i18n>
 
-        <button class="button" @click="hide">
-          OK
-        </button>
+        <button class="button" @click="hide">{{ $t('components.CookieAgreementPopup.ok') }}</button>
       </div>
     </div>
   </transition>

@@ -4,10 +4,10 @@
       <div class="container">
         <ul class="list">
           <li class="item">
-            <a class="link" href="/about" @click.prevent="jump('/about')">About</a>
+            <a class="link" :href="localePath('/about')" @click.prevent="jump('/about')">{{ $t('menu.about') }}</a>
           </li>
           <li class="item">
-            <a class="link" href="/contact" @click.prevent="jump('/contact')">Contact</a>
+            <a class="link" :href="localePath('/contact')" @click.prevent="jump('/contact')">{{ $t('menu.contact') }}</a>
           </li>
         </ul>
 

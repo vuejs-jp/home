@@ -1,41 +1,29 @@
 <template>
   <AppPage class="Sitemap u-wrapper">
     <StyleMount class="container u-container">
-      <h1 class="title">
-        Site Map
-      </h1>
+      <h1 class="title">{{ $t('menu.sitemap') }}</h1>
 
       <div class="contents">
         <section class="section">
-          <h2 class="section-title">
-            Vue.js JPについて
-          </h2>
+          <h2 class="section-title">{{ $t('sitemap.about') }}</h2>
           <nav class="nav">
             <ul class="list">
               <li class="item">
-                <NuxtLink class="link" to="/">
-                  Home
-                </NuxtLink>
+                <NuxtLink class="link" :to="localePath('/')">{{ $t('menu.home') }}</NuxtLink>
               </li>
               <li>
-                <NuxtLink class="link" to="/about">
-                  About
-                </NuxtLink>
+                <NuxtLink class="link" :to="localePath('/about')">{{ $t('menu.about') }}</NuxtLink>
               </li>
             </ul>
           </nav>
         </section>
 
         <section class="section">
-          <h2 class="section-title">
-            お問い合わせ
-          </h2>
+          <h2 class="section-title">{{ $t('sitemap.inquiry') }}</h2>
           <nav class="nav">
             <ul class="list">
               <li class="item">
-                <NuxtLink class="link" to="/contact">
-                  Contact
-                </NuxtLink>
+                <NuxtLink class="link" :to="localePath('/contact')">{{ $t('menu.contact') }}</NuxtLink>
               </li>
             </ul>
           </nav>
@@ -47,6 +35,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { mergeMeta } from '../../support/meta'
 import AppPage from '@/components/AppPage.vue'
 import StyleMount from '@/components/StyleMount.vue'
 
@@ -57,18 +46,12 @@ export default Vue.extend({
   },
 
   head (): object {
-    const title = 'Site Map'
-    const description = 'Vue.js 日本ユーザーグループの Web サイトのサイトマップを掲載しています。'
+    const name = this.$i18n.t('vuejs-jp-ug') as string
+    const title = this.$i18n.t('menu.sitemap') as string
+    const description = this.$i18n.t('pages.sitemap') as string
+    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
 
-    return {
-      title,
-      meta: [
-        { hid: 'description', name: 'description', content: description },
-        { hid: 'og:title', property: 'og:title', content: title },
-        { hid: 'og:url', property: 'og:url', content: this.$url() },
-        { hid: 'og:description', property: 'og:description', content: description }
-      ]
-    }
+    return mergeMeta({ name, title, description, url: this.$url() }, i18nHead)
   }
 })
 </script>

@@ -12,6 +12,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { mergeMeta } from '../support/meta'
 import AppPage from '@/components/AppPage.vue'
 import HomeHero from '@/components/HomeHero.vue'
 import HomeEvents from '@/components/HomeEvents.vue'
@@ -34,19 +35,13 @@ export default Vue.extend({
   },
 
   head (): object {
-    const title = 'Vue.js 日本ユーザーグループ'
-    const description = 'Vue.js 日本ユーザーグループは、年に一度の大規模カンファレンス“Vue Fes Japan”の運営や、Vue.js公式ドキュメントの日本語翻訳をはじめ、日本におけるVue.jsの普及と、Vue.jsエコシステムへの貢献を行っている日本最大のVue.jsコミュニティです。'
+    const name = this.$i18n.t('vuejs-jp-ug') as string
+    const title = this.$i18n.t('vuejs-jp-ug') as string
+    const titleTemplate = '%s'
+    const description = this.$i18n.t('pages.top') as string
+    const i18nHead = this.$nuxtI18nHead({ addSeoAttributes: true })
 
-    return {
-      title,
-      titleTemplate: '%s',
-      meta: [
-        { hid: 'description', name: 'description', content: description },
-        { hid: 'og:title', property: 'og:title', content: title },
-        { hid: 'og:url', property: 'og:url', content: this.$url() },
-        { hid: 'og:description', property: 'og:description', content: description }
-      ]
-    }
+    return mergeMeta({ name, title, description, url: this.$url(), titleTemplate }, i18nHead)
   }
 })
 </script>

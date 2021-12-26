@@ -2,13 +2,18 @@
   <div class="TheGlobalHeaderNavFlat">
     <ul class="list">
       <li class="item">
-        <NuxtLink class="link" to="/about">
-          About
+        <NuxtLink class="link" :to="localePath('/about')">
+          {{ $t('menu.about') }}
         </NuxtLink>
       </li>
       <li class="item">
-        <NuxtLink class="link" to="/contact">
-          Contact
+        <NuxtLink class="link" :to="localePath('/contact')">
+          {{ $t('menu.contact') }}
+        </NuxtLink>
+      </li>
+      <li class="item">
+        <NuxtLink class="link" :to="switchLocalePath(switchableLocale.code)">
+          {{ switchableLocale.name }}
         </NuxtLink>
       </li>
     </ul>
@@ -21,11 +26,18 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import type { LocaleObject } from '@nuxtjs/i18n'
 import SocialLinkGroup from './SocialLinkGroup.vue'
 
 export default Vue.extend({
   components: {
     SocialLinkGroup
+  },
+  computed: {
+    switchableLocale() {
+      const locales = (this.$i18n.locales as LocaleObject[]).filter((i: LocaleObject) => i.code !== this.$i18n.locale)
+      return locales.length !== 0 ? locales[0] : { code: 'ja', name: '日本語' }
+    }
   }
 })
 </script>

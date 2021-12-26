@@ -1,0 +1,184 @@
+{
+  "vuejs-jp-ug": "Vue.js 日本ユーザーグループ",
+  "logo-text": "Vue.js JP",
+  "menu": {
+    "home": "トップ",
+    "about": "サイトについて",
+    "contact": "連絡",
+    "privacy": "プライバシーポリシー",
+    "code-of-conduct": "行動規範",
+    "sitemap": "サイトマップ"
+  },
+  "sitemap": {
+    "about": "Vue.js JPについて",
+    "inquiry": "お問い合わせ"
+  },
+  "footer": {
+    "copyright": "© 2020 Vue.js Japan Users Group some rights reserved.",
+    "license-text": "Released under the {license}.",
+    "author-text": "Vue.js artworks by {author} is licensed under a {license}.",
+    "site-text": "Proudly created by Vue.js Japan User Group members, powered by {powered}.",
+    "deploy": "Deploys by Netlify"
+  },
+  "components": {
+    "HomeHero": {
+      "welcome": "ようこそ",
+      "japan": "日本最大の Vue.js",
+      "community": "コミュニティに",
+      "title": "{japan}{community}{newline}{welcome}。",
+      "vuefes": "“Vue Fes Japan“",
+      "docs": "Vue.js公式ドキュメントの日本語翻訳",
+      "largest-community": "日本最大のVue.jsコミュニティ",
+      "text": "Vue.js 日本ユーザーグループへようこそ。私たちは、{newline}年に一度の大規模カンファレンス{vuefes}の{newline}運営や、{docs}をはじめ、{newline}日本におけるVue.jsの普及と、Vue.jsエコシステムへの{newline}貢献を行っている{largest-community}です。"
+    },
+    "HomeEvents": {
+      "heading": "イベント",
+      "title": "日本中のVue.jsコミュニティが、あなたに会えるのを楽しみに{newline}しています。",
+      "body1": "Vue.jsの作者であるEvan Youも参加する日本最大のカンファレンス\"Vue Fes Japan\"、定期的に開催されVue.jsユーザーの人気を集める勉強会\"v-tokyo Meetup\"をはじめ、日本各地で多くのイベントを運営しています。",
+      "body2": "Vue.js 3.0を含む最新のVue.js情報から、日々の開発をもっと楽しくする驚きのTips、美味しい食事と楽しいお酒で大盛り上がりのDrink Up Partyまで。さぁ、最高峰のメンバー達と繋がる準備はできましたか？",
+      "connpass": "直近のイベントをみる"
+    },
+    "HomeCommunications": {
+      "heading": "コミュニケーション",
+      "everyone": "みんなが",
+      "you": "あなたを",
+      "wait": "待って",
+      "online": "います。",
+      "title": "いつでも、どこにいても。{newline}{everyone}{you}{wait}{online}",
+      "body1": "Vue.js 日本ユーザーグループの Slack では、{users}人を超えるメンバーが日々楽しいディスカッションを行なっています。複雑な質問や、じっくり意見を交わしたいあなたのために、Vue Forum には日本語カテゴリも用意しました。",
+      "body2": "誰でも自由に、どこからでも、いますぐ参加できます。日本中のコミュニティメンバーがあなたを暖かく迎え入れてくれます。",
+      "slack": "Slackに参加する",
+      "forum": "Forumで質問する",
+      "chats": {
+        "user1": "Vue.js 3 RFC の Composition API みた！？ すごいねー！ 新しい感じ。みんなどう思う？",
+        "user2": "Vue.js 2で試せるプラグイン出てるよ。どんな感じか使ってみて、記事でも書いてみようかな。",
+        "user3": "すごい！ これは賛否両論ありそうだけど、今後どうなっていくのかめっちゃきになる！"
+      }
+    },
+    "HomeProjects": {
+      "heading": "プロジェクト",
+      "title": "誰でも、Vue.js エコシステムの{newline}発展に貢献できます。",
+      "nowrap": "です。",
+      "body": "Vue.js 日本ユーザーグループでは、Vue.js 公式ドキュメントの翻訳活動をはじめ、様々なプロジェクトを通じて Vue.js エコシステムへの貢献を行っています。Vue.js をもっと素晴らしいものにするために、あなたにしかできないことがきっとあるはず{nowrap}どんなに小さなことでも、みんなにとって大きな助けになります。",
+      "projects": {
+        "vue": {
+          "title": "Vue.js{newline}{nowrap}",
+          "official": "公式ドキュメント翻訳",
+          "body": "日々アップデートされる Vue.js 公式ドキュメントの翻訳は、Vue.js 日本ユーザーグループの中で最も重要な役割の1つです。",
+          "link": "翻訳に協力する"
+        },
+        "nuxt": {
+          "title": "Nuxt.js{newline}{nowrap}",
+          "official": "公式ドキュメント翻訳",
+          "body": "ますます注目を集める Nuxt.js。最先端のフロントエンドフレームワークを日本中に届けるお手伝いをしませんか？",
+          "link": "翻訳に協力する"
+        },
+        "vuejsjp": {
+          "title": "Vue.js JP{newline}{nowrap}",
+          "official": "公式ウェブサイト開発",
+          "body": "このウェブサイトも、コミュニティメンバーの協力によって開発されています。 良いアイディアがありますか？ GitHub でお待ちしています。",
+          "link": "開発に協力する"
+        }
+      }
+    },
+    "HomeNews": {
+      "heading": "ニュース",
+      "info" :"情報",
+      "kindly": "どうか、",
+      "miss": "なく。",
+      "title": "もっとも身近な Vue.js {infowrap}を{newline}{kindlywrap}お見逃し{misswrap}",
+      "body": "Vue.js の最新情報や、各種イベント情報、Vue.js 日本ユーザーグループの活動状況に関するニュースをSNSやブログを通じて発信しています。いますぐフォローして、日本の Vue.js 事情を追いかけよう！",
+      "twitter": "Vue.js JP 公式 Twitter",
+      "note": "Vue.js JP 公式 Note"
+    },
+    "HomeAbout": {
+      "heading": "コミュニティについて",
+      "title": "みんなの、みんなによる、{newline}みんなのためのコミュニティ{nowrap}",
+      "title_nowrap": "です。",
+      "body1": "Vue.js は、各国の言語で用意されたドキュメントをはじめ、幅広くコミュニティとの繋がりを持ったプロダクトです。これらはすべて、有志の協力によって成り立っています。Vue.js 日本ユーザーグループもまた、コミュニティとの繋がりをとても大切にしています。",
+      "body2": "日本における Vue.js への普及活動や、各種プロジェクトを通じて、国内だけに止まらず、世界中の Vue.js コミュニティに貢献できると信じています。",
+      "vuejs-jp": "Vue.js JPについて",
+      "code-of-conduct": "行動規範をみる",
+      "author": "Linustock",
+      "copyright": "Illustration by {author}"
+    },
+    "HomeSponsors": {
+      "heading": "スポンサー",
+      "title": "素晴らしい企業のみなさまによって、支えられています。",
+      "body": "日々のコミュニケーションやイベントの運営まで、Vue.js 日本ユーザーグループの活動に用いられる様々なツールについて多くのご支援をいただいています。"
+    },
+    "AboutHero": {
+      "vuejs": "Vue.js",
+      "title": "日本全土にすべての人へ{newline}{vuejs} エコシステムを潤す。",
+      "text": "Vue.js 日本ユーザーグループは、Vue.js を愛するあらゆる人々を支援する、{newline}日本最大の Vue.js コミュニティです。各地でのイベントサポートや{newline}ドキュメントの翻訳プロジェクトを通じて、日本中に Vue.js を{newline}普及させると共に、世界中の Vue.js エコシステム発展に貢献します。"
+    },
+    "AboutDescription": {
+      "message1": "Vue.js 日本ユーザーグループは、2015年5月に kazupon と有志によって立ち上げられました。当時、Vue.js には Nuxt.js や Vuetify といったエコシステムも存在せず、コミュニティもそれほど大きくはありませんでした。それでも、Vue.js のシンプルさと拡張性に未来を感じ、Vue.js コミュニティの立ち上げに至りました。 それから4年、Vue.js の発展とともに当コミュニティも大きく成長してきました。",
+      "message2": "2018年には Vue.js クリエイターである Evan You も来日した日本最大の Vue.js カンファレンス、“Vue Fes Japan”を開催。定期的に行われる Meetup イベントは、いまでは東京だけでなく日本全国で開催されるなど、日本の Vue.js コミュニティはますます盛り上がりを見せてます。",
+      "message3": "Vue.js コミュニティの活況は日本だけにとどまらず、世界各地でカンファレンスが開催されています。 世界中ではもちろん、日本国内でも、ニュース、EC、広告など、幾多の分野に渡って現場での Vue.js 採用・導入実績が増え続けており、今後も伸びていくと考えています。",
+      "message4": "私たち Vue.js 日本ユーザーグループは、今後も引き続き、Vue.js の発展のために、日本全国、そして世界のために活動を続けていきます。"
+    },
+    "CookieAgreementPopup": {
+      "message": "当ウェブサイトではCookieなどのデータを保管することで、アナリティクスなどに役立てています。当ウェブサイトに留まることで、本Cookieの利用に同意したものとみなします。",
+      "format": "詳細については{privacy}をご参照ください。",
+      "ok": "同意します"
+    },
+    "AppAlert": {
+      "close": "閉じる"
+    },
+    "ContactForm": {
+      "form": {
+        "name": {
+          "label": "お名前",
+          "require-input": "お名前を入力してください。"
+        },
+        "email": {
+          "require-address": "Emailアドレスを入力してください。",
+          "invalid-address": "Emailアドレスの形式が正しくありません。"
+        },
+        "message": {
+          "label": "お問い合わせ内容",
+          "placeholder": "お問い合わせ内容をご記入ください。",
+          "require-message": "お問い合わせ内容を入力してください。"
+        },
+        "button": "送信する"
+      },
+      "states": {
+        "progress": "お問い合わせ内容を送信しています。",
+        "fail": {
+          "title": "お問い合わせいただき、ありがとうございます。",
+          "text": "お問い合わせ内容の送信が完了しました。内容を確認の上、追ってスタッフよりご連絡させていただきますので、今しばらくお待ちください。"
+        },
+        "success": {
+          "title": "お問い合わせの送信に失敗しました。",
+          "text": "お問い合わせ内容を送信できませんでした。大変申し訳ありませんが、時間を置いて再度お試しください。"
+        }
+      }
+    }
+  },
+  "pages": {
+    "top": "Vue.js 日本ユーザーグループは、年に一度の大規模カンファレンス“Vue Fes Japan”の運営や、Vue.js公式ドキュメントの日本語翻訳をはじめ、日本におけるVue.jsの普及と、Vue.jsエコシステムへの貢献を行っている日本最大のVue.jsコミュニティです。",
+    "about": "Vue.js Vue.js 日本ユーザーグループは、Vue.js を愛するあらゆる人々を支援する、日本最大の Vue.js コミュニティです。各地でのイベントサポートやドキュメントの翻訳プロジェクトを通じて、日本中に Vue.js を普及させるとともに、世界中の Vue.js エコシステム発展に貢献します。",
+    "contact": {
+      "title": "ご意見を{newline}お聞かせください。",
+      "from": "あなたから",
+      "head": "Vue.js 日本ユーザーグループへのご質問・ご相談は、フォームよりお気軽にお問い合わせください。",
+      "lead": "Vue.js 日本ユーザーグループへの{newline}ご質問・ご相談は、フォームより{newline}お気軽にお問い合わせください。",
+      "social": {
+        "title": "もっと気軽に相談する",
+        "lead": "SlackやTwitterからもお問い合わせを受けつけています。気になることや、ちょっとしたご質問がある場合には、遠慮なくご連絡ください。",
+        "slack": "Slackで質問する",
+        "twitter": "Twitterで質問する"
+      }
+    },
+    "privacy": {
+      "head": "Vue.js 日本ユーザーグループが個人情報をどのように収集、利用、開示、移転、および保存するのかについてご確認ください。",
+      "title": "プライバシーポリシー"
+    },
+    "code-of-conduct": {
+      "head": "Vue.js 日本ユーザーグループが掲げる行動規範をご確認ください。",
+      "title": "行動規範"
+    },
+    "sitemap": "Vue.js 日本ユーザーグループの Web サイトのサイトマップを掲載しています。"
+  }
+}

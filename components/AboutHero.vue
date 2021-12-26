@@ -2,12 +2,15 @@
   <StyleMount class="AboutHero u-wrapper">
     <div class="u-relative u-container">
       <div class="content">
-        <h1 class="title">
-          <span class="u-nowrap">Enrich Vue.js</span> ecosystem for everyone, all over Japan.
-        </h1>
-        <p class="text">
-          Vue.js 日本ユーザーグループは、Vue.js を愛するあらゆる人々を支援する、<br>日本最大の Vue.js コミュニティです。各地でのイベントサポートや<br>ドキュメントの翻訳プロジェクトを通じて、日本中に Vue.js を<br>普及させると共に、世界中の Vue.js エコシステム発展に貢献します。
-        </p>
+        <i18n tag="h1" path="components.AboutHero.title" class="title">
+          <template #newline><br></template>
+          <template #vuejs>
+            <span class="u-nowrap">{{ $t('components.AboutHero.vuejs') }}</span>
+          </template>
+        </i18n>
+        <i18n tag="p" path="components.AboutHero.text" class="text">
+          <template #newline><br></template>
+        </i18n>
       </div>
 
       <div class="image">

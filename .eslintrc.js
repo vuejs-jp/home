@@ -7,10 +7,42 @@ module.exports = {
   extends: [
     '@nuxtjs/eslint-config-typescript',
     'plugin:nuxt/recommended',
+    'plugin:@intlify/vue-i18n/recommended',
     'prettier'
   ],
   plugins: [
   ],
+  settings: {
+    'vue-i18n': {
+      localeDir: './locales/*.{json,json5,yaml,yml}',
+      messageSyntaxVersion: '^8.25.0'
+    }
+  },
+  overrides: [
+    {
+      files: ['*.json', '*.json5'],
+      extends: ['plugin:@intlify/vue-i18n/recommended'],
+    },
+    {
+      files: ['*.yaml', '*.yml'],
+      extends: ['plugin:@intlify/vue-i18n/recommended'],
+    },
+  ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    '@intlify/vue-i18n/no-raw-text': [
+      'warn',
+      {
+        ignoreNodes: ['style']
+      }
+    ],
+    '@intlify/vue-i18n/no-duplicate-keys-in-locale': 'warn',
+    '@intlify/vue-i18n/no-missing-keys-in-other-locales': 'warn',
+    '@intlify/vue-i18n/no-unused-keys': [
+      'warn',
+      {
+        extensions: ['.js', '.ts', '.vue']
+      }
+    ]
+  }
 }

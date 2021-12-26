@@ -1,13 +1,7 @@
 <template>
   <StyleMount class="LegalMedium">
     <div class="container">
-      <p class="title-ja">
-        {{ titleJa }}
-      </p>
-      <h1 class="title-en">
-        {{ titleEn }}
-      </h1>
-
+      <h1 class="title">{{ title }}</h1>
       <div class="body u-medium">
         <slot />
       </div>
@@ -25,8 +19,7 @@ export default Vue.extend({
   },
 
   props: {
-    titleJa: { type: String, required: true },
-    titleEn: { type: String, required: true }
+    title: { type: String, required: true }
   }
 })
 </script>
@@ -47,20 +40,18 @@ export default Vue.extend({
 }
 
 .LegalMedium.mount-active {
-  .title-ja,
-  .title-en,
+  .title,
   .body {
     transition: opacity 0.5s, transform 0.5s;
   }
 
-  .title-ja { transition-delay: 0s; }
-  .title-en { transition-delay: 0.1s; }
+  .title { transition-delay: 0s; }
+  .title { transition-delay: 0.1s; }
   .body     { transition-delay: 0.2s; }
 }
 
 .LegalMedium.mount {
-  .title-ja,
-  .title-en,
+  .title,
   .body {
     opacity: 0;
     transform: translateY(8px);
@@ -72,16 +63,7 @@ export default Vue.extend({
   margin: 0 auto;
 }
 
-.title-ja {
-  padding-bottom: 8px;
-  color: var(--c-gray);
-
-  @media (min-width: 640px) {
-    font-size: 20px;
-  }
-}
-
-.title-en {
+.title {
   font-family: var(--font-family-en);
   font-size: 32px;
   font-weight: 600;

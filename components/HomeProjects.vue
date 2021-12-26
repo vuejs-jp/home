@@ -2,16 +2,14 @@
   <StyleMount class="HomeProjects u-wrapper" tag="section">
     <div class="u-container">
       <div class="content u-section-content u-section-content--center">
-        <p class="u-section-content__heading">
-          PROJECTS
-        </p>
-        <h2 class="title u-section-content__title">
-          誰でも、Vue.js エコシステムの<br>発展に貢献できます。
-        </h2>
+        <p class="u-section-content__heading">{{ $t('components.HomeProjects.heading') }}</p>
+        <i18n tag="h2" path="components.HomeProjects.title" class="title u-section-content__title">
+          <template #newline><br></template>
+        </i18n>
 
-        <p class="u-section-content__body">
-          Vue.js 日本ユーザーグループでは、Vue.js 公式ドキュメントの翻訳活動をはじめ、様々なプロジェクトを通じて Vue.js エコシステムへの貢献を行っています。Vue.js をもっと素晴らしいものにするために、あなたにしかできないことがきっとあるはず<span class="u-nowrap">です。</span>どんなに小さなことでも、みんなにとって大きな助けになります。
-        </p>
+        <i18n tag="p" path="components.HomeProjects.body" class="u-section-content__body">
+          <template #nowrap>{{ $t('components.HomeProjects.nowrap') }}</template>
+        </i18n>
       </div>
 
       <div class="projects">
@@ -21,10 +19,15 @@
               <i class="project-type">
                 <IconEdit3 class="project-icon" />
               </i>
-              <h3 class="project-title">Vue.js<br><span class="u-nowrap">公式ドキュメント翻訳</span></h3>
-              <p class="project-body">日々アップデートされる Vue.js 公式ドキュメントの翻訳は、Vue.js 日本ユーザーグループの中で最も重要な役割の1つです。</p>
+              <i18n tag="h3" path="components.HomeProjects.projects.vue.title" class="project-title">
+                <template #newline><br></template>
+                <template #nowrap>
+                  <span class="u-nowrap">{{ $t('components.HomeProjects.projects.vue.official') }}</span>
+                </template>
+              </i18n>
+              <p class="project-body">{{ $t('components.HomeProjects.projects.vue.body') }}</p>
               <p class="project-link">
-                翻訳に協力する
+                {{ $t('components.HomeProjects.projects.vue.link') }}
                 <IconChevronRight class="project-link-chevron" />
               </p>
             </article>
@@ -35,10 +38,15 @@
               <i class="project-type">
                 <IconEdit3 class="project-icon" />
               </i>
-              <h3 class="project-title">Nuxt.js<br><span class="u-nowrap">公式ドキュメント翻訳</span></h3>
-              <p class="project-body">ますまず注目を集める Nuxt.js。最先端のフロントエンドフレームワークを日本中に届けるお手伝いをしませんか？</p>
+              <i18n tag="h3" path="components.HomeProjects.projects.nuxt.title" class="project-title">
+                <template #newline><br></template>
+                <template #nowrap>
+                  <span class="u-nowrap">{{ $t('components.HomeProjects.projects.nuxt.official') }}</span>
+                </template>
+              </i18n>
+              <p class="project-body">{{ $t('components.HomeProjects.projects.nuxt.body') }}</p>
               <p class="project-link">
-                翻訳に協力する
+                {{ $t('components.HomeProjects.projects.nuxt.link') }}
                 <IconChevronRight class="project-link-chevron" />
               </p>
             </article>
@@ -49,10 +57,15 @@
               <i class="project-type">
                 <IconTerminal class="project-icon" />
               </i>
-              <h3 class="project-title">Vue.js JP<br><span class="u-nowrap">公式ウェブサイト開発</span></h3>
-              <p class="project-body">このウェブサイトも、コミュニティメンバーの協力によって開発されています。 良いアイディアがありますか？ GitHub でお待ちしています。</p>
+              <i18n tag="h3" path="components.HomeProjects.projects.vuejsjp.title" class="project-title">
+                <template #newline><br></template>
+                <template #nowrap>
+                  <span class="u-nowrap">{{ $t('components.HomeProjects.projects.vuejsjp.official') }}</span>
+                </template>
+              </i18n>
+              <p class="project-body">{{ $t('components.HomeProjects.projects.vuejsjp.body') }}</p>
               <p class="project-link">
-                開発に協力する
+                {{ $t('components.HomeProjects.projects.vuejsjp.link') }}
                 <IconChevronRight class="project-link-chevron" />
               </p>
             </article>

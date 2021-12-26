@@ -16,9 +16,7 @@
         </div>
 
         <div class="action">
-          <button class="button" @click="close">
-            閉じる
-          </button>
+          <button class="button" @click="close">{{ $t('components.AppAlert.close') }}</button>
         </div>
       </div>
     </div>

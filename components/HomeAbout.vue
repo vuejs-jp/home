@@ -2,28 +2,24 @@
   <StyleMount class="HomeAbout u-wrapper" tag="section">
     <div class="container u-container">
       <div class="content u-section-content u-section-content--center">
-        <p class="u-section-content__heading">
-          ABOUT
-        </p>
-        <h2 class="title u-section-content__title">
-          みんなの、みんなによる、<br>みんなのためのコミュニティ<span class="u-nowrap">です。</span>
-        </h2>
+        <p class="u-section-content__heading">{{ $t('components.HomeAbout.heading') }}</p>
+        <i18n tag="p" path="components.HomeAbout.title" class="title u-section-content__title">
+          <template #newline><br></template>
+          <template #nowrap>
+            <span class="u-nowrap">{{ $t('components.HomeAbout.title_nowrap') }}</span>
+          </template>
+        </i18n>
 
-        <p class="u-section-content__body">
-          Vue.js は、各国の言語で用意されたドキュメントをはじめ、幅広くコミュニティとの繋がりを持ったプロダクトです。これらはすべて、有志の協力によって成り立っています。Vue.js 日本ユーザーグループもまた、コミュニティとの繋がりをとても大切にしています。
-        </p>
-
-        <p class="u-section-content__body">
-          日本における Vue.js への普及活動や、各種プロジェクトを通じて、国内だけに止まらず、世界中の Vue.js コミュニティに貢献できると信じています。
-        </p>
+        <p class="u-section-content__body">{{ $t('components.HomeAbout.body1') }}</p>
+        <p class="u-section-content__body">{{ $t('components.HomeAbout.body2') }}</p>
 
         <div class="u-section-content__actions">
           <div class="u-section-content__action">
             <ButtonOutline
               tag="nuxt-link"
               :block="true"
-              href="/about"
-              label="Vue.js JPについて"
+              :href="localePath('/about')"
+              :label="$t('components.HomeAbout.vuejs-jp')"
             />
           </div>
 
@@ -31,8 +27,8 @@
             <ButtonOutline
               tag="nuxt-link"
               :block="true"
-              href="/code-of-conduct"
-              label="行動規範をみる"
+              :href="localePath('/code-of-conduct')"
+              :label="$t('components.HomeAbout.code-of-conduct')"
             />
           </div>
         </div>
@@ -41,9 +37,11 @@
       <div class="illust">
         <figure class="figure">
           <img class="img" src="/img/home/hold-hands.svg" alt="仲間">
-          <figcaption class="copyright">
-            Illustration by <a class="copyright-link" href="https://www.linustock.com" target="_blank">Linustock</a>
-          </figcaption>
+          <i18n tag="figcaption" path="components.HomeAbout.copyright" class="copyright">
+            <template #author>
+              <a class="copyright-link" href="https://www.linustock.com" target="_blank">{{ $t('components.HomeAbout.author') }}</a>
+            </template>
+          </i18n>
         </figure>
       </div>
     </div>
