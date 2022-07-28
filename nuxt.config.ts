@@ -54,6 +54,7 @@ const config: NuxtConfig = {
   ],
 
   plugins: [
+    { src: '@/plugins/router.js' },
     { src: '@/plugins/vuelidate.js' },
     { src: '@/plugins/application.js' }
   ],
@@ -68,6 +69,7 @@ const config: NuxtConfig = {
       { code: 'ja', iso: 'ja-JP', name: '日本語', file: 'ja-JP.json' }
     ],
     lazy: true,
+    skipSettingLocaleOnNavigate: true,
     langDir: 'locales/',
     defaultLocale: 'ja',
     vueI18n: {
