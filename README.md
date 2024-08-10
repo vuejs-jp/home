@@ -1,66 +1,75 @@
-<p align="center">
-  <img width="128" src="https://raw.githubusercontent.com/vuejs-jp/home/master/.github/assets/vuejs-jp.png" alt="Vue.js Japan User Group">
-</p>
+# Nuxt 3 Minimal Starter
 
-<h1 align="center">Vue.js 日本ユーザーグループ</h1>
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-<p align="center">
-  <a href="https://github.com/vuejs-jp/home/actions">
-    <img src="https://github.com/vuejs-jp/home/workflows/Test/badge.svg" alt="GitHub Actions">
-  </a>
-  <a href="https://github.com/vuejs-jp/home/blob/master/LICENSE">
-    <img src="https://img.shields.io/npm/l/vue.svg" alt="License">
-  </a>
-</p>
+## Setup
 
-Vue.js 日本ユーザーグループへようこそ。私たちは、年に一度の大規模カンファレンス **“Vue Fes Japan”** の運営や、**Vue.js 公式ドキュメントの日本語翻訳**をはじめ、日本における Vue.js の普及と、Vue.js エコシステムへの貢献を行っている**日本最大の Vue.js コミュニティ**です。
+Make sure to install the dependencies:
 
-Vue.js 日本ユーザグループは、
+```bash
+# npm
+npm install
 
-- 日本における Vue.js の普及
-- 日本語による Vue.js に関する情報の共有、およびディスカッション
-- Vue.js への貢献
+# pnpm
+pnpm install
 
-を目的としています。
+# yarn
+yarn install
 
-Vue.js に興味のある方でしたらどなたでもお気軽にご参加ください。
+# bun
+bun install
+```
 
-## コミュニケーション
+## Development Server
 
-- [Vue.js オフィシャルフォーラム](http://forum.vuejs.org)
-- [Vue.js 日本ユーザーグループ 公式 Slack](https://join.slack.com/t/vuejs-jp/shared_invite/zt-vmg3iysl-~CPGAxFMWwa0Fnu2IqtMdQ)
-- [Vue.js 日本ユーザーグループ 公式 Twitter](https://twitter.com/vuefes)
-- [Vue.js 日本ユーザーグループ 公式 note](https://note.com/vuejs_jp)
+Start the development server on `http://localhost:3000`:
 
-## 活動
+```bash
+# npm
+npm run dev
 
-- [Vue.js 公式ドキュメント 日本語翻訳プロジェクト](https://github.com/vuejs-jp/ja.vuejs.org)
-- [Nuxt.js 公式ドキュメント 日本語翻訳プロジェクト](https://github.com/vuejs-jp/ja.nuxtjs.org/wiki)
-- [Vue.js Meetup イベント](http://vuejs-meetup.connpass.com)
+# pnpm
+pnpm run dev
 
-## ツールスポンサー
+# yarn
+yarn dev
 
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="middle">
-        <a href="https://docs.esa.io/posts/239/" target="_blank">
-          <img width="196px" src="https://raw.githubusercontent.com/vuejs-jp/home/master/.github/assets/esa.png" alt="esa">
-        </a>
-      </td>
-      <td align="center" valign="middle">
-        <a href="http://slack.com/" target="_blank">
-          <img width="196px" src="https://raw.githubusercontent.com/vuejs-jp/home/master/.github/assets/slack.png" alt="Slack">
-        </a>
-      </td>
-    </tr>
-  </tbody>
-</table>
+# bun
+bun run dev
+```
 
-## 行動規範
+## Production
 
-Vue.js 日本ユーザーグループが掲げる[行動規範](https://github.com/vuejs-jp/home/blob/master/.github/CODE_OF_CONDUCT.md)をご確認ください。
+Build the application for production:
 
-## ウェブサイト開発への参加
+```bash
+# npm
+npm run build
 
-Vue.js 日本ユーザーグループの公式ウェブサイトは、コミュニティの支援によって成り立っています。誰でも自由に開発に参加することができます。公式ウェブサイトの環境セットアップや開発の進め方については[コントリビューションガイド](https://github.com/vuejs-jp/home/blob/master/.github/CONTRIBUTING.md)をご確認ください。
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
