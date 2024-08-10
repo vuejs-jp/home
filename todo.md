@@ -15,6 +15,6 @@
   - [ ] Vuex -> Pinia
 - [ ] workflows
 - [ ] migrate to script setup
-- [ ] use corepack
 - [ ] spellcheck
-- [ ] disable auto import
+- [x] use corepack
+- [x] disable auto import
