@@ -20,7 +20,9 @@
   - [ ] support ?
   - [ ] layouts
   - [ ] components
+    - [ ] ./icons
     - [ ] migrate to script setup
+  - [x] postcss
 - [ ] workflows
 - [x] use corepack
 - [x] disable auto import
