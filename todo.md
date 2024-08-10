@@ -26,4 +26,4 @@
 - [x] spellcheck
 - [ ] textlint
 - [x] Nuxt4 compat
-- [ ] LICENSE
+- [x] LICENSE
