@@ -8,15 +8,22 @@
     - [ ] intlify
   - [ ] vuelidate
   - [ ] @nuxtjs/google-analytics
-  - [] cookie-universal-nuxt
+  - [ ] cookie-universal-nuxt
   - [ ] portal-vue
   - [ ] Nuxt Content
   - [ ] Jest -> Vitest
   - [ ] Vuex -> Pinia
+  - [ ] assets
+  - [ ] plugins
+  - [ ] static
+  - [ ] support ?
+  - [ ] layouts
+  - [ ] components
+    - [ ] migrate to script setup
 - [ ] workflows
-- [ ] migrate to script setup
 - [x] use corepack
 - [x] disable auto import
 - [x] spellcheck
 - [ ] textlint
 - [x] Nuxt4 compat
+- [ ] LICENSE
