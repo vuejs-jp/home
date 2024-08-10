@@ -9,7 +9,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { isExternalLink } from '@/support/Url'
+import { isExternalLink } from '~/_legacy/support/Url'
 
 export default Vue.extend({
   props: {
