@@ -19,3 +19,4 @@
 - [x] disable auto import
 - [x] spellcheck
 - [ ] textlint
+- [x] Nuxt4 compat
