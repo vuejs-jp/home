@@ -15,7 +15,7 @@
   - [ ] Vuex -> Pinia
   - [ ] assets
   - [ ] plugins
-  - [ ] static
+  - [x] static
   - [ ] support ?
   - [ ] layouts
   - [ ] components
