@@ -33,6 +33,9 @@ export default defineNuxtConfig({
         { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: 'rgb(0, 0, 0)' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700|Roboto:400,500,700|Source+Sans+Pro:400,600,700|Dosis:600|Inconsolata&display=swap' }
       ]
-    }
-  }
+    },
+  },
+  css: [
+    '~/assets/styles/bootstrap.css'
+  ]
 });

@@ -13,7 +13,7 @@
   - [ ] Nuxt Content
   - [ ] Jest -> Vitest
   - [ ] Vuex -> Pinia
-  - [ ] assets
+  - [x] assets
   - [ ] plugins
   - [x] static
   - [ ] support ?
