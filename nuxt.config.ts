@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
   imports: { autoImport: false },
-  modules: ["@nuxt/eslint"],
+  modules: ["@nuxt/eslint", "@nuxtjs/i18n"],
   eslint: {
     config: {
       stylistic: {
@@ -14,6 +14,16 @@ export default defineNuxtConfig({
         commaDangle: "never",
       },
     },
+  },
+  i18n: { 
+    locales: [
+      { code: 'en', iso: 'en-US', name: 'English', file: 'en-US.json' },
+      { code: 'ja', iso: 'ja-JP', name: '日本語', file: 'ja-JP.json' }
+    ],
+    lazy: true,
+    skipSettingLocaleOnNavigate: true,
+    langDir: 'locales/',
+    defaultLocale: 'ja',
   },
 
   app: {

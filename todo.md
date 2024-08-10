@@ -5,6 +5,7 @@
     - [x] @antfu/eslint-config
     - [x] plugin vue
     - [x] plugin vue a11y
+    - [x] i18n
     - [ ] intlify
   - [ ] vuelidate
   - [ ] @nuxtjs/google-analytics
