@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-app",
+  "name": "vuejs-jp.org",
   "private": true,
   "type": "module",
   "scripts": {
@@ -9,6 +9,7 @@
     "preview": "nuxt preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "check:spell": "cspell lint \"**\" --no-progress --show-suggestions --show-context --cache",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
@@ -17,6 +18,9 @@
     "vue": "latest"
   },
   "devDependencies": {
+    "@cspell/cspell-types": "^8.13.2",
+    "cspell": "^8.13.2",
+    "cspell-dict-de-de": "^1.2.3",
     "eslint-plugin-vuejs-accessibility": "^2.4.1"
   },
   "packageManager": "pnpm@9.7.0"

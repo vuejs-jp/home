@@ -1,0 +1,31 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "version": "0.2",
+  "words": [
+    "corepack",
+    "intlify",
+    "nuxt",
+    "nuxtjs",
+    "textlint",
+    "pinia",
+    "vuejs",
+    "vuelidate",
+    "vuex",
+  ],
+  "dictionaries": [
+    "softwareTerms",
+    "misc",
+    "companies",
+    "typescript",
+    "node",
+    "html",
+    "css",
+    "fonts",
+    "filetypes",
+    "npm",
+  ],
+  "ignorePaths": [
+    "_legacy",
+    "pnpm-lock.yaml",
+  ]
+}

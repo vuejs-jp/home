@@ -1,5 +1,5 @@
-- [ ] migrate to Node.js v20
-- [ ] migrate to pnpm
+- [x] migrate to Node.js v20
+- [x] migrate to pnpm
 - [ ] migrate to Nuxt3 (4)
   - [ ] eslint
     - [x] @antfu/eslint-config
@@ -15,6 +15,7 @@
   - [ ] Vuex -> Pinia
 - [ ] workflows
 - [ ] migrate to script setup
-- [ ] spellcheck
 - [x] use corepack
 - [x] disable auto import
+- [x] spellcheck
+- [ ] textlint
