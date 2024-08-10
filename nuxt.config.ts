@@ -47,5 +47,11 @@ export default defineNuxtConfig({
   },
   css: [
     '~/assets/styles/bootstrap.css'
-  ]
+  ],
+  postcss: {
+    plugins: {
+      'postcss-custom-properties': {},
+      'postcss-nested': {}
+    }
+  },
 });

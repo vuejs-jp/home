@@ -33,6 +33,12 @@ importers:
       eslint-plugin-vuejs-accessibility:
         specifier: ^2.4.1
         version: 2.4.1(eslint@8.57.0)
+      postcss-custom-properties:
+        specifier: ^14.0.0
+        version: 14.0.0(postcss@8.4.41)
+      postcss-nested:
+        specifier: ^6.2.0
+        version: 6.2.0(postcss@8.4.41)
 
 packages:
 
@@ -400,6 +406,29 @@ packages:
   '@cspell/url@8.13.2':
     resolution: {integrity: sha512-IFtiADDLGCp4QXPhsQ0F5/jbVQb0Loeum36wzGLiqXWYDjIA25W8miy0hyy/S8aZhzdEq2aUZjz9dTvkl+5ISQ==}
     engines: {node: '>=18.0'}
+
+  '@csstools/cascade-layer-name-parser@2.0.0':
+    resolution: {integrity: sha512-9GEQIvTMrjXfYaVnw1+FteDX5yF65CZq4ttYP75O3CANQevaCJ9jVVTiZt9YTpjYIk8C1mmf52y2S4Hr/CaE/g==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@csstools/css-parser-algorithms': ^3.0.0
+      '@csstools/css-tokenizer': ^3.0.0
+
+  '@csstools/css-parser-algorithms@3.0.0':
+    resolution: {integrity: sha512-20hEErXV9GEx15qRbsJVzB91ryayx1F2duHPBrfZXQAHz/dJG0u/611URpr28+sFjm3EI7U17Pj9SVA9NSAGJA==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      '@csstools/css-tokenizer': ^3.0.0
+
+  '@csstools/css-tokenizer@3.0.0':
+    resolution: {integrity: sha512-efZvfJyYrqH9hPCKtOBywlTsCXnEzAI9sLHFzUsDpBb+1bQ+bxJnwL9V2bRKv9w4cpIp75yxGeZRaVKoMQnsEg==}
+    engines: {node: '>=18'}
+
+  '@csstools/utilities@2.0.0':
+    resolution: {integrity: sha512-5VdOr0Z71u+Yp3ozOx8T11N703wIFGVRgOWbOZMKgglPJsWA54MRIoMNVMa7shUToIhx5J8vX4sOZgD2XiihiQ==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      postcss: ^8.4
 
   '@es-joy/jsdoccomment@0.46.0':
     resolution: {integrity: sha512-C3Axuq1xd/9VqFZpW4YAzOx5O9q/LP46uIQy/iNDpHG3fmPa6TBtvfglMCs3RBiBxAIi0Go97r8+jvTt55XMyQ==}
@@ -3386,6 +3415,12 @@ packages:
     peerDependencies:
       postcss: ^8.4.31
 
+  postcss-custom-properties@14.0.0:
+    resolution: {integrity: sha512-GD/suWYQAplXJujsyOswYP+oX9xs29eBNwGloPj4Ub+3/Rq1Set+ZeGmHJfN2Y2+x9vUxAX4eeNJFmtk6VBv4A==}
+    engines: {node: '>=18'}
+    peerDependencies:
+      postcss: ^8.4
+
   postcss-discard-comments@7.0.2:
     resolution: {integrity: sha512-/Hje9Ls1IYcB9duELO/AyDUJI6aQVY3h5Rj1ziXgaLYCTi1iVBLnjg/TS0D6NszR/kDG6I86OwLmAYe+bvJjiQ==}
     engines: {node: ^18.12.0 || ^20.9.0 || >=22.0}
@@ -3445,6 +3480,12 @@ packages:
     engines: {node: ^18.12.0 || ^20.9.0 || >=22.0}
     peerDependencies:
       postcss: ^8.4.31
+
+  postcss-nested@6.2.0:
+    resolution: {integrity: sha512-HQbt28KulC5AJzG+cZtj9kvKB93CFCdLvog1WFLf1D+xmMvPGlBstkpTEZfK5+AN9hfJocyBFCNiqyS48bpgzQ==}
+    engines: {node: '>=12.0'}
+    peerDependencies:
+      postcss: ^8.2.14
 
   postcss-normalize-charset@7.0.0:
     resolution: {integrity: sha512-ABisNUXMeZeDNzCQxPxBCkXexvBrUHV+p7/BXOY+ulxkcjUZO0cp8ekGBwvIh2LbCwnWbyMPNJVtBSdyhM2zYQ==}
@@ -4819,6 +4860,21 @@ snapshots:
   '@cspell/strong-weak-map@8.13.2': {}
 
   '@cspell/url@8.13.2': {}
+
+  '@csstools/cascade-layer-name-parser@2.0.0(@csstools/css-parser-algorithms@3.0.0(@csstools/css-tokenizer@3.0.0))(@csstools/css-tokenizer@3.0.0)':
+    dependencies:
+      '@csstools/css-parser-algorithms': 3.0.0(@csstools/css-tokenizer@3.0.0)
+      '@csstools/css-tokenizer': 3.0.0
+
+  '@csstools/css-parser-algorithms@3.0.0(@csstools/css-tokenizer@3.0.0)':
+    dependencies:
+      '@csstools/css-tokenizer': 3.0.0
+
+  '@csstools/css-tokenizer@3.0.0': {}
+
+  '@csstools/utilities@2.0.0(postcss@8.4.41)':
+    dependencies:
+      postcss: 8.4.41
 
   '@es-joy/jsdoccomment@0.46.0':
     dependencies:
@@ -8220,6 +8276,15 @@ snapshots:
       postcss: 8.4.41
       postcss-value-parser: 4.2.0
 
+  postcss-custom-properties@14.0.0(postcss@8.4.41):
+    dependencies:
+      '@csstools/cascade-layer-name-parser': 2.0.0(@csstools/css-parser-algorithms@3.0.0(@csstools/css-tokenizer@3.0.0))(@csstools/css-tokenizer@3.0.0)
+      '@csstools/css-parser-algorithms': 3.0.0(@csstools/css-tokenizer@3.0.0)
+      '@csstools/css-tokenizer': 3.0.0
+      '@csstools/utilities': 2.0.0(postcss@8.4.41)
+      postcss: 8.4.41
+      postcss-value-parser: 4.2.0
+
   postcss-discard-comments@7.0.2(postcss@8.4.41):
     dependencies:
       postcss: 8.4.41
@@ -8273,6 +8338,11 @@ snapshots:
   postcss-minify-selectors@7.0.3(postcss@8.4.41):
     dependencies:
       cssesc: 3.0.0
+      postcss: 8.4.41
+      postcss-selector-parser: 6.1.1
+
+  postcss-nested@6.2.0(postcss@8.4.41):
+    dependencies:
       postcss: 8.4.41
       postcss-selector-parser: 6.1.1
 
