@@ -20,7 +20,9 @@
   - [ ] support ?
   - [ ] layouts
   - [ ] components
-    - [ ] ./icons
+    - [x] base
+    - [] ./icons
+      - [ ] imports
     - [ ] migrate to script setup
   - [x] postcss
 - [ ] nuxt imgae
@@ -32,3 +34,4 @@
 - [ ] textlint
 - [x] Nuxt4 compat
 - [x] LICENSE
+- [x] @/data
