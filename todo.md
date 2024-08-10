@@ -1,0 +1,17 @@
+- [ ] migrate to Node.js v20
+- [ ] migrate to pnpm
+- [ ] migrate to Nuxt3 (4)
+  - [ ] eslint
+    - [ ] @antfu/eslint-config
+    - [ ] intlify
+    - [ ] plugin vue
+    - [ ] plugin vue a11y
+    - [ ] vuelidate
+    - [ ] @nuxtjs/google-analytics
+    - [] cookie-universal-nuxt
+    - [ ] portal-vue
+  - [ ] Nuxt Content
+  - [ ] Jest -> Vitest
+  - [ ] Vuex -> Pinia
+- [ ] workflows
+- [ ] migrate to script setup
