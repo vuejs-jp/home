@@ -2,14 +2,14 @@
 - [ ] migrate to pnpm
 - [ ] migrate to Nuxt3 (4)
   - [ ] eslint
-    - [ ] @antfu/eslint-config
+    - [x] @antfu/eslint-config
+    - [x] plugin vue
+    - [x] plugin vue a11y
     - [ ] intlify
-    - [ ] plugin vue
-    - [ ] plugin vue a11y
-    - [ ] vuelidate
-    - [ ] @nuxtjs/google-analytics
-    - [] cookie-universal-nuxt
-    - [ ] portal-vue
+  - [ ] vuelidate
+  - [ ] @nuxtjs/google-analytics
+  - [] cookie-universal-nuxt
+  - [ ] portal-vue
   - [ ] Nuxt Content
   - [ ] Jest -> Vitest
   - [ ] Vuex -> Pinia
