@@ -1,11 +1,11 @@
 <script lang="ts">
-import { defineComponent } from 'vue'
-import type { PropOptions } from 'vue'
-import IconPreloaderDark from './icons/IconPreloaderDark.vue'
+import { defineComponent } from "vue";
+import type { PropOptions } from "vue";
+import IconPreloaderDark from "./icons/IconPreloaderDark.vue";
 
 interface Image {
-  src: string
-  alt: string
+  src: string;
+  alt: string;
 }
 
 export default defineComponent({
@@ -17,33 +17,39 @@ export default defineComponent({
     image: { type: Object, required: true } as PropOptions<Image>
   },
 
-  data () {
+  data() {
     return {
       loaded: false
-    }
+    };
   },
 
-  mounted () {
+  mounted() {
     // In case the image load event would not fire, we'll force displaying
     // the image after 3 sec.
-    setTimeout(() => { this.loaded = true }, 3000)
+    setTimeout(() => { this.loaded = true; }, 3000);
   }
-})
+});
 </script>
 
 <template>
   <div class="ImageStackItem">
-    <div class="loader" :class="{ loaded }">
+    <div
+      class="loader"
+      :class="{ loaded }"
+    >
       <IconPreloaderDark class="loader-icon" />
     </div>
 
     <figure class="figure">
-      <img class="img" :src="image.src" :alt="image.alt" @load="loaded = true">
+      <img
+        class="img"
+        :src="image.src"
+        :alt="image.alt"
+        @load="loaded = true"
+      >
     </figure>
   </div>
 </template>
-
-
 
 <style lang="postcss" scoped>
 @import '@/assets/styles/variables';

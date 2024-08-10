@@ -1,46 +1,66 @@
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 
 export default defineComponent({
-  data () {
+  data() {
     return {
       show: false
-    }
+    };
   },
 
-  mounted () {
-    const agreed = this.$cookies.get('agreed_on_cookie_usage')
+  mounted() {
+    const agreed = this.$cookies.get("agreed_on_cookie_usage");
 
     if (!agreed) {
-      setTimeout(() => { this.show = true }, 1000)
+      setTimeout(() => { this.show = true; }, 1000);
     }
   },
 
   methods: {
-    hide (): void {
-      this.$cookies.set('agreed_on_cookie_usage', true, {
+    hide(): void {
+      this.$cookies.set("agreed_on_cookie_usage", true, {
         maxAge: 60 * 60 * 24 * 30 // About 1 month.
-      })
+      });
 
-      this.show = false
+      this.show = false;
     }
   }
-})
+});
 </script>
 
 <template>
   <transition name="fade">
-    <div v-if="show" class="CookieAgreementPopup">
+    <div
+      v-if="show"
+      class="CookieAgreementPopup"
+    >
       <div class="container">
-        <p class="body">{{ $t('components.CookieAgreementPopup.message') }}</p>
+        <p class="body">
+          {{ $t('components.CookieAgreementPopup.message') }}
+        </p>
 
-        <i18n tag="p" path="components.CookieAgreementPopup.format" class="note">
+        <i18n
+          tag="p"
+          path="components.CookieAgreementPopup.format"
+          class="note"
+        >
           <template #privacy>
-            <NuxtLink class="link" :to="localePath('/privacy')" @click.native="hide">{{ $t('menu.privacy') }}</NuxtLink>
+            <NuxtLink
+              class="link"
+              :to="localePath('/privacy')"
+              @click.native="hide"
+            >
+              {{ $t('menu.privacy') }}
+            </NuxtLink>
           </template>
         </i18n>
 
-        <button class="button" @click="hide">{{ $t('components.CookieAgreementPopup.ok') }}</button>
+        <button
+          class="button"
+          @click="hide"
+        >
+          {{ $t('components.CookieAgreementPopup.ok') }}
+        </button>
       </div>
     </div>
   </transition>

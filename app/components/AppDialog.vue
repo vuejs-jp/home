@@ -1,7 +1,7 @@
 <script lang="ts">
-import { defineComponent } from 'vue'
-import IconPreloaderDark from './icons/IconPreloaderDark.vue'
-import AppModal from './AppModal.vue'
+import { defineComponent } from "vue";
+import IconPreloaderDark from "./icons/IconPreloaderDark.vue";
+import AppModal from "./AppModal.vue";
 
 export default defineComponent({
   components: {
@@ -10,11 +10,11 @@ export default defineComponent({
   },
 
   computed: {
-    title (): string {
-      return this.$store.state.modal.data.title
+    title(): string {
+      return this.$store.state.modal.data.title;
     }
   }
-})
+});
 </script>
 
 <template>
@@ -32,8 +32,6 @@ export default defineComponent({
     </div>
   </AppModal>
 </template>
-
-
 
 <style lang="postcss" scoped>
 @import '@/assets/styles/variables';

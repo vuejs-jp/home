@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import StyleMount from "./StyleMount.vue";
+
 defineProps<{ title: string }>();
 </script>
 

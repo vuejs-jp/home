@@ -1,9 +1,9 @@
 <script lang="ts">
-import { defineComponent } from 'vue'
-import IconConnpass from './icons/IconConnpass.vue'
-import StyleMount from './StyleMount.vue'
-import ButtonOutline from './ButtonOutline.vue'
-import ImageStack from './ImageStack.vue'
+import { defineComponent } from "vue";
+import IconConnpass from "./icons/IconConnpass.vue";
+import StyleMount from "./StyleMount.vue";
+import ButtonOutline from "./ButtonOutline.vue";
+import ImageStack from "./ImageStack.vue";
 
 export default defineComponent({
   components: {
@@ -12,51 +12,51 @@ export default defineComponent({
     ImageStack
   },
 
-  data () {
+  data() {
     return {
       iconConnpass: IconConnpass,
-      stackImageTo: 'right',
+      stackImageTo: "right",
       images: [
         {
-          src: '/img/home/vue-fes-japan-2018-evan-you.jpg',
-          alt: 'Evan You at Vue Fes Japan 2018.'
+          src: "/img/home/vue-fes-japan-2018-evan-you.jpg",
+          alt: "Evan You at Vue Fes Japan 2018."
         },
         {
-          src: '/img/home/vue-fes-japan-2018-sarah-drasner.jpg',
-          alt: 'Sarah Drasner at Vue Fes Japan 2018.'
+          src: "/img/home/vue-fes-japan-2018-sarah-drasner.jpg",
+          alt: "Sarah Drasner at Vue Fes Japan 2018."
         },
         {
-          src: '/img/home/vue-fes-japan-2018-yoshiya-oki.jpg',
-          alt: 'Yoshiya Oki at Vue Fes Japan 2018.'
+          src: "/img/home/vue-fes-japan-2018-yoshiya-oki.jpg",
+          alt: "Yoshiya Oki at Vue Fes Japan 2018."
         },
         {
-          src: '/img/home/vue-fes-japan-2018-guillaume-chau.jpg',
-          alt: 'Guillaume Chau at Vue Fes Japan 2018.'
+          src: "/img/home/vue-fes-japan-2018-guillaume-chau.jpg",
+          alt: "Guillaume Chau at Vue Fes Japan 2018."
         },
         {
-          src: '/img/home/vue-fes-japan-2018-sebastien-chopin.jpg',
-          alt: 'Sébastien Chopin at Vue Fes Japan 2018.'
+          src: "/img/home/vue-fes-japan-2018-sebastien-chopin.jpg",
+          alt: "Sébastien Chopin at Vue Fes Japan 2018."
         },
         {
-          src: '/img/home/vue-fes-japan-2018-katashin.jpg',
-          alt: 'Katashin at Vue Fes Japan 2018.'
+          src: "/img/home/vue-fes-japan-2018-katashin.jpg",
+          alt: "Katashin at Vue Fes Japan 2018."
         }
       ]
-    }
+    };
   },
 
-  mounted () {
-    this.refreshImageStackDirection()
+  mounted() {
+    this.refreshImageStackDirection();
 
-    window.addEventListener('resize', this.refreshImageStackDirection)
+    window.addEventListener("resize", this.refreshImageStackDirection);
   },
 
   methods: {
     refreshImageStackDirection(): void {
-      this.stackImageTo = window.innerWidth >= 768 ? 'left' : 'right'
+      this.stackImageTo = window.innerWidth >= 768 ? "left" : "right";
     }
   }
-})
+});
 </script>
 
 <template>

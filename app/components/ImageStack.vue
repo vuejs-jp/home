@@ -1,19 +1,19 @@
 <script lang="ts">
-import { defineComponent } from 'vue'
-import type { PropOptions } from 'vue'
-import IconChevronLeft from './icons/IconChevronLeft.vue'
-import IconChevronRight from './icons/IconChevronRight.vue'
-import ImageStackItem from './ImageStackItem.vue'
+import { defineComponent } from "vue";
+import type { PropOptions } from "vue";
+import IconChevronLeft from "./icons/IconChevronLeft.vue";
+import IconChevronRight from "./icons/IconChevronRight.vue";
+import ImageStackItem from "./ImageStackItem.vue";
 
 interface Image {
-  src: string
-  alt: string
+  src: string;
+  alt: string;
 }
 
 interface Classes {
-  right: boolean
-  bottom: boolean
-  left: boolean
+  right: boolean;
+  bottom: boolean;
+  left: boolean;
 }
 
 export default defineComponent({
@@ -29,82 +29,107 @@ export default defineComponent({
     to: { type: String, required: true }
   },
 
-  data () {
+  data() {
     return {
       index: 0,
-      movingTo: 'next'
-    }
+      movingTo: "next"
+    };
   },
 
   computed: {
-    classes (): Classes {
+    classes(): Classes {
       return {
-        right: this.to === 'right',
-        bottom: this.to === 'bottom',
-        left: this.to === 'left'
-      }
+        right: this.to === "right",
+        bottom: this.to === "bottom",
+        left: this.to === "left"
+      };
     },
 
-    currentImage (): Image {
-      return this.images[this.index]
+    currentImage(): Image {
+      return this.images[this.index];
     },
 
-    lastIndex (): number {
-      return this.images.length - 1
+    lastIndex(): number {
+      return this.images.length - 1;
     },
 
-    stacks (): Image[] {
+    stacks(): Image[] {
       return [0, 1, 2].map((n) => {
-        const count = n + this.index
-        const index = count > this.lastIndex ? count - this.lastIndex - 1 : count
+        const count = n + this.index;
+        const index = count > this.lastIndex ? count - this.lastIndex - 1 : count;
 
-        return this.images[index]
-      }).reverse()
+        return this.images[index];
+      }).reverse();
     }
   },
 
   methods: {
-    next (): void {
-      this.movingTo = 'next'
+    next(): void {
+      this.movingTo = "next";
 
-      this.index = this.index === this.lastIndex ? 0 : this.index + 1
+      this.index = this.index === this.lastIndex ? 0 : this.index + 1;
     },
 
-    prev (): void {
-      this.movingTo = 'prev'
+    prev(): void {
+      this.movingTo = "prev";
 
-      this.index = this.index === 0 ? this.lastIndex : this.index - 1
+      this.index = this.index === 0 ? this.lastIndex : this.index - 1;
     }
   }
-})
+});
 </script>
 
 <template>
-  <div class="ImageStack" :class="classes">
-    <ul class="list" :style="{ paddingBottom: `${aspectRatio}%` }" role="button" @click="next">
+  <div
+    class="ImageStack"
+    :class="classes"
+  >
+    <ul
+      class="list"
+      :style="{ paddingBottom: `${aspectRatio}%` }"
+      role="button"
+      @click="next"
+    >
       <TransitionGroup name="slide">
-        <li v-for="(stack, i) in stacks" :key="stack.src" class="item" :class="`item-${i}`">
+        <li
+          v-for="(stack, i) in stacks"
+          :key="stack.src"
+          class="item"
+          :class="`item-${i}`"
+        >
           <ImageStackItem :image="stack" />
         </li>
       </TransitionGroup>
     </ul>
 
     <div class="control">
-      <transition :name="movingTo" mode="out-in">
-        <p :key="currentImage.src" class="caption">
+      <transition
+        :name="movingTo"
+        mode="out-in"
+      >
+        <p
+          :key="currentImage.src"
+          class="caption"
+        >
           {{ currentImage.alt }}
         </p>
       </transition>
 
       <div class="actions">
         <div class="action">
-          <button class="button" @click="prev">
+          <button
+            class="button"
+            @click="prev"
+          >
             <IconChevronLeft class="icon" />
           </button>
         </div>
 
         <div class="action">
-          <button class="button" @click="next">
+          <button
+            class="button"
+            @click="next"
+          >
             <IconChevronRight class="icon" />
           </button>
         </div>
@@ -112,8 +137,6 @@ export default defineComponent({
     </div>
   </div>
 </template>
-
-
 
 <style lang="postcss" scoped>
 @import '@/assets/styles/variables';

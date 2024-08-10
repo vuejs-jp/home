@@ -1,6 +1,6 @@
 <script lang="ts">
-import { defineComponent } from 'vue'
-import SocialLinkGroup from './SocialLinkGroup.vue'
+import { defineComponent } from "vue";
+import SocialLinkGroup from "./SocialLinkGroup.vue";
 
 export default defineComponent({
   components: {
@@ -12,25 +12,36 @@ export default defineComponent({
   },
 
   methods: {
-    jump (path: string): void {
-      this.$router.push(path)
+    jump(path: string): void {
+      this.$router.push(path);
 
-      this.$emit('close')
+      this.$emit("close");
     }
   }
-})
+});
 </script>
 
 <template>
   <transition name="fade">
-    <div v-if="active" class="TheGlobalHeaderNavScreen">
+    <div
+      v-if="active"
+      class="TheGlobalHeaderNavScreen"
+    >
       <div class="container">
         <ul class="list">
           <li class="item">
-            <a class="link" :href="localePath('/about')" @click.prevent="jump('/about')">{{ $t('menu.about') }}</a>
+            <a
+              class="link"
+              :href="localePath('/about')"
+              @click.prevent="jump('/about')"
+            >{{ $t('menu.about') }}</a>
           </li>
           <li class="item">
-            <a class="link" :href="localePath('/contact')" @click.prevent="jump('/contact')">{{ $t('menu.contact') }}</a>
+            <a
+              class="link"
+              :href="localePath('/contact')"
+              @click.prevent="jump('/contact')"
+            >{{ $t('menu.contact') }}</a>
           </li>
         </ul>
 

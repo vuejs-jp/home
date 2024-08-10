@@ -1,10 +1,10 @@
 <script lang="ts">
-import { defineComponent } from 'vue'
-import { isExternalLink } from '~/_legacy/support/Url'
+import { defineComponent } from "vue";
+import { isExternalLink } from "~/_legacy/support/Url";
 
 export default defineComponent({
   props: {
-    tag: { type: String, default: 'button' },
+    tag: { type: String, default: "button" },
     block: { type: Boolean, default: false },
     icon: { type: Object, default: null },
     label: { type: String, required: true },
@@ -13,25 +13,40 @@ export default defineComponent({
   },
 
   computed: {
-    link (): string | null {
-      return this.href || this.to
+    link(): string | null {
+      return this.href || this.to;
     },
 
-    isExternalLink (): boolean {
-      return this.link ? isExternalLink(this.link) : false
+    isExternalLink(): boolean {
+      return this.link ? isExternalLink(this.link) : false;
     },
 
-    target (): string {
-      return this.isExternalLink ? '_blank' : '_self'
+    target(): string {
+      return this.isExternalLink ? "_blank" : "_self";
     }
   }
-})
+});
 </script>
 
 <template>
-  <div class="ButtonOutline" role="button" :class="{ block }" @click="$emit('click')">
-    <Component :is="tag" class="button" :to="href" :href="href" :target="target">
-      <Component :is="icon" v-if="icon" class="icon" />
+  <div
+    class="ButtonOutline"
+    role="button"
+    :class="{ block }"
+    @click="$emit('click')"
+  >
+    <Component
+      :is="tag"
+      class="button"
+      :to="href"
+      :href="href"
+      :target="target"
+    >
+      <Component
+        :is="icon"
+        v-if="icon"
+        class="icon"
+      />
       <span class="label">{{ label }}</span>
     </Component>
   </div>

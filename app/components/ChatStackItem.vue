@@ -1,27 +1,27 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-import type { PropOptions } from 'vue'
-
-interface Chat {
-  direction: 'left' | 'right'
-  avatar: string
-  alt: string
-  name: string
-  time: string
-  body: string
-}
-
-export default defineComponent({
-  props: {
-    chat: { type: Object, required: true } as PropOptions<Chat>
-  }
-})
+<script setup lang="ts">
+defineProps<{
+  chat: {
+    direction: "left" | "right";
+    avatar: string;
+    alt: string;
+    name: string;
+    time: string;
+    body: string;
+  };
+}>();
 </script>
 
 <template>
-  <div class="ChatStackItem" :class="chat.direction">
+  <div
+    class="ChatStackItem"
+    :class="chat.direction"
+  >
     <figure class="avatar">
-      <img class="avatar-img" :src="chat.avatar" :alt="chat.alt">
+      <img
+        class="avatar-img"
+        :src="chat.avatar"
+        :alt="chat.alt"
+      >
     </figure>
 
     <div class="box">

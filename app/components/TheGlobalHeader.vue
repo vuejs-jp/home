@@ -1,11 +1,11 @@
 <script lang="ts">
-import { defineComponent } from 'vue'
-import IconVuejsJpLogo from './icons/IconVuejsJpLogo.vue'
-import StyleMount from './StyleMount.vue'
-import HamburgerMenu from './HamburgerMenu.vue'
-import TheGlobalHeaderNavFlat from './TheGlobalHeaderNavFlat.vue'
-import TheGlobalHeaderNavScreen from './TheGlobalHeaderNavScreen.vue'
-import { scrollToTop } from '~/_legacy/support/Screen'
+import { defineComponent } from "vue";
+import IconVuejsJpLogo from "./icons/IconVuejsJpLogo.vue";
+import StyleMount from "./StyleMount.vue";
+import HamburgerMenu from "./HamburgerMenu.vue";
+import TheGlobalHeaderNavFlat from "./TheGlobalHeaderNavFlat.vue";
+import TheGlobalHeaderNavScreen from "./TheGlobalHeaderNavScreen.vue";
+import { scrollToTop } from "~/_legacy/support/Screen";
 
 export default defineComponent({
   components: {
@@ -16,58 +16,72 @@ export default defineComponent({
     TheGlobalHeaderNavScreen
   },
 
-  data () {
+  data() {
     return {
       isMenuOpen: false,
       transitioning: false
-    }
+    };
   },
 
   watch: {
-    $route () {
-      this.transition()
+    $route() {
+      this.transition();
     }
   },
 
   methods: {
-    closeNav (): void {
-      this.isMenuOpen = false
+    closeNav(): void {
+      this.isMenuOpen = false;
     },
 
-    toggleNav (): void {
-      this.isMenuOpen = !this.isMenuOpen
+    toggleNav(): void {
+      this.isMenuOpen = !this.isMenuOpen;
     },
 
-    transition (): void {
-      const header = document.getElementById('header') as HTMLElement
-      const headerHeight = header.offsetHeight
-      const scrollTop = document.documentElement.scrollTop
+    transition(): void {
+      const header = document.getElementById("header") as HTMLElement;
+      const headerHeight = header.offsetHeight;
+      const scrollTop = document.documentElement.scrollTop;
 
-      scrollTop > headerHeight ? this.performTransition() : scrollToTop()
+      scrollTop > headerHeight ? this.performTransition() : scrollToTop();
     },
 
-    performTransition (): void {
-      this.transitioning = true
+    performTransition(): void {
+      this.transitioning = true;
 
-      setTimeout(() => { this.transitioning = false }, 500)
+      setTimeout(() => { this.transitioning = false; }, 500);
     }
   }
-})
+});
 </script>
 
 <template>
-  <StyleMount id="header" class="TheGlobalHeader" :class="{ transitioning }" tag="header">
-    <TheGlobalHeaderNavScreen :active="isMenuOpen" @close="closeNav" />
+  <StyleMount
+    id="header"
+    class="TheGlobalHeader"
+    :class="{ transitioning }"
+    tag="header"
+  >
+    <TheGlobalHeaderNavScreen
+      :active="isMenuOpen"
+      @close="closeNav"
+    />
 
     <div class="container">
       <p class="logo">
-        <NuxtLink class="logo-link" :to="localePath('/')">
+        <NuxtLink
+          class="logo-link"
+          :to="localePath('/')"
+        >
           <IconVuejsJpLogo class="logo-icon" /> {{ $t('logo-text') }}
         </NuxtLink>
       </p>
 
       <div class="hamburger">
-        <HamburgerMenu :active="isMenuOpen" @click="toggleNav" />
+        <HamburgerMenu
+          :active="isMenuOpen"
+          @click="toggleNav"
+        />
       </div>
 
       <TheGlobalHeaderNavFlat />

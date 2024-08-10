@@ -1,32 +1,26 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-import type { PropOptions } from 'vue'
-import ChatStackItem from './ChatStackItem.vue'
+<script setup lang="ts">
+import ChatStackItem from "./ChatStackItem.vue";
 
-
-interface Chat {
-  direction: 'left' | 'right'
-  avatar: string
-  alt: string
-  name: string
-  time: string
-  body: string
-}
-
-export default defineComponent({
-  components: {
-    ChatStackItem
-  },
-
-  props: {
-    chats: { type: Array, required: true } as PropOptions<Chat[]>
-  }
-})
+defineProps<{
+  chats: {
+    direction: "left" | "right";
+    avatar: string;
+    alt: string;
+    name: string;
+    time: string;
+    body: string;
+  }[];
+}>();
 </script>
 
 <template>
   <div class="ChatStack">
-    <div v-for="(chat, index) in chats" :key="index" class="chat" :class="chat.direction">
+    <div
+      v-for="(chat, index) in chats"
+      :key="index"
+      class="chat"
+      :class="chat.direction"
+    >
       <ChatStackItem :chat="chat" />
     </div>
   </div>

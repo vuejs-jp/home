@@ -1,7 +1,7 @@
 <script lang="ts">
-import { defineComponent } from 'vue'
-import type { LocaleObject } from '@nuxtjs/i18n'
-import SocialLinkGroup from './SocialLinkGroup.vue'
+import { defineComponent } from "vue";
+import type { LocaleObject } from "@nuxtjs/i18n";
+import SocialLinkGroup from "./SocialLinkGroup.vue";
 
 export default defineComponent({
   components: {
@@ -9,28 +9,37 @@ export default defineComponent({
   },
   computed: {
     switchableLocale() {
-      const locales = (this.$i18n.locales as LocaleObject[]).filter((i: LocaleObject) => i.code !== this.$i18n.locale)
-      return locales.length !== 0 ? locales[0] : { code: 'ja', name: '日本語' }
+      const locales = (this.$i18n.locales as LocaleObject[]).filter((i: LocaleObject) => i.code !== this.$i18n.locale);
+      return locales.length !== 0 ? locales[0] : { code: "ja", name: "日本語" };
     }
   }
-})
+});
 </script>
 
 <template>
   <div class="TheGlobalHeaderNavFlat">
     <ul class="list">
       <li class="item">
-        <NuxtLink class="link" :to="localePath('/about')">
+        <NuxtLink
+          class="link"
+          :to="localePath('/about')"
+        >
           {{ $t('menu.about') }}
         </NuxtLink>
       </li>
       <li class="item">
-        <NuxtLink class="link" :to="localePath('/contact')">
+        <NuxtLink
+          class="link"
+          :to="localePath('/contact')"
+        >
           {{ $t('menu.contact') }}
         </NuxtLink>
       </li>
       <li class="item">
-        <NuxtLink class="link" :to="switchLocalePath(switchableLocale.code)">
+        <NuxtLink
+          class="link"
+          :to="switchLocalePath(switchableLocale.code)"
+        >
           {{ switchableLocale.name }}
         </NuxtLink>
       </li>

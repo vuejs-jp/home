@@ -1,7 +1,7 @@
 <script lang="ts">
-import { defineComponent } from 'vue'
-import StyleMount from './StyleMount.vue'
-import SocialLinkGroup from './SocialLinkGroup.vue'
+import { defineComponent } from "vue";
+import StyleMount from "./StyleMount.vue";
+import SocialLinkGroup from "./SocialLinkGroup.vue";
 
 export default defineComponent({
   components: {
@@ -9,30 +9,34 @@ export default defineComponent({
     SocialLinkGroup
   },
 
-  data () {
+  data() {
     return {
       transitioning: false
-    }
+    };
   },
 
   watch: {
-    $route () {
-      this.transition()
+    $route() {
+      this.transition();
     }
   },
 
   methods: {
-    transition (): void {
-      this.transitioning = true
+    transition(): void {
+      this.transitioning = true;
 
-      setTimeout(() => { this.transitioning = false }, 500)
+      setTimeout(() => { this.transitioning = false; }, 500);
     }
   }
-})
+});
 </script>
 
 <template>
-  <StyleMount class="TheGlobalFooter" :class="{ transitioning }" tag="footer">
+  <StyleMount
+    class="TheGlobalFooter"
+    :class="{ transitioning }"
+    tag="footer"
+  >
     <div class="container">
       <div class="social">
         <SocialLinkGroup />
@@ -40,57 +44,106 @@ export default defineComponent({
 
       <ul class="legal">
         <li class="legal-item">
-          <NuxtLink class="legal-link u-link-text" :to="localePath('/privacy')">
+          <NuxtLink
+            class="legal-link u-link-text"
+            :to="localePath('/privacy')"
+          >
             {{ $t('menu.privacy') }}
           </NuxtLink>
         </li>
         <li class="legal-item">
-          <NuxtLink class="legal-link u-link-text" :to="localePath('/code-of-conduct')">
+          <NuxtLink
+            class="legal-link u-link-text"
+            :to="localePath('/code-of-conduct')"
+          >
             {{ $t('menu.code-of-conduct') }}
           </NuxtLink>
         </li>
         <li class="legal-item">
-          <NuxtLink class="legal-link u-link-text" :to="localePath('/sitemap')">
+          <NuxtLink
+            class="legal-link u-link-text"
+            :to="localePath('/sitemap')"
+          >
             {{ $t('menu.sitemap') }}
           </NuxtLink>
         </li>
       </ul>
 
       <div class="copyright">
-        <p class="copyright-text">{{ $t('footer.copyright') }}</p>
-        <i18n tag="p" path="footer.license-text" class="copyright-text">
+        <p class="copyright-text">
+          {{ $t('footer.copyright') }}
+        </p>
+        <i18n
+          tag="p"
+          path="footer.license-text"
+          class="copyright-text"
+        >
           <template #license>
             <!-- eslint-disable-next-line @intlify/vue-i18n/no-raw-text NOTE: ライセンス表記は英語表記が一般的なので ignore -->
-            <a class="u-link-text" href="https://opensource.org/licenses/MIT" target="_blank" rel="noopener noreferrer">MIT License</a>.
+            <a
+              class="u-link-text"
+              href="https://opensource.org/licenses/MIT"
+              target="_blank"
+              rel="noopener noreferrer"
+            >MIT License</a>.
           </template>
         </i18n>
-        <i18n tag="p" path="footer.author-text" class="copyright-text">
+        <i18n
+          tag="p"
+          path="footer.author-text"
+          class="copyright-text"
+        >
           <template #author>
             <!-- eslint-disable-next-line @intlify/vue-i18n/no-raw-text NOTE: 名前表記はそのままにするため ignore -->
-            <a class="u-link-text" href="https://github.com/yyx990803" target="_blank" rel="noopener noreferrer">Evan You</a>
+            <a
+              class="u-link-text"
+              href="https://github.com/yyx990803"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Evan You</a>
           </template>
           <template #license>
             <!-- eslint-disable-next-line @intlify/vue-i18n/no-raw-text NOTE: ライセンス表記は英語表記が一般的なので ignore -->
-            <a class="u-link-text" href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja" target="_blank" rel="noopener noreferrer">Creative Commons Attribution 4.0 Internatinal Licence.</a> 
+            <a
+              class="u-link-text"
+              href="https://creativecommons.org/licenses/by-sa/4.0/deed.ja"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Creative Commons Attribution 4.0 Internatinal Licence.</a>
           </template>
         </i18n>
-        <i18n tag="p" path="footer.site-text" class="copyright-text">
+        <i18n
+          tag="p"
+          path="footer.site-text"
+          class="copyright-text"
+        >
           <template #powered>
             <!-- eslint-disable-next-line @intlify/vue-i18n/no-raw-text NOTE: 固有名で英語以外でもそのまま使うので ignore -->
-            <a class="u-link-text" href="https://vuejs.org/" target="_blank" rel="noopener noreferrer">Vue.js</a>
+            <a
+              class="u-link-text"
+              href="https://vuejs.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Vue.js</a>
           </template>
         </i18n>
 
         <div class="copyright-badge">
-          <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer">
-            <img src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg" :alt="$t('footer.deploy')">
+          <a
+            href="https://www.netlify.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://www.netlify.com/img/global/badges/netlify-color-bg.svg"
+              :alt="$t('footer.deploy')"
+            >
           </a>
         </div>
       </div>
     </div>
   </StyleMount>
 </template>
-
 
 <style lang="postcss" scoped>
 @import '@/assets/styles/variables';

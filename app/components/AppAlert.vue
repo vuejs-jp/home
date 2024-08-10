@@ -1,18 +1,18 @@
 <script lang="ts">
-import { defineComponent } from 'vue'
-import IconCheckCircle from './icons/IconCheckCircle.vue'
-import IconXCircle from './icons/IconXCircle.vue'
-import AppModal from './AppModal.vue'
+import { defineComponent } from "vue";
+import IconCheckCircle from "./icons/IconCheckCircle.vue";
+import IconXCircle from "./icons/IconXCircle.vue";
+import AppModal from "./AppModal.vue";
 
 interface Data {
-  type: 'success' | 'error'
-  title: string
-  text: string
+  type: "success" | "error";
+  title: string;
+  text: string;
 }
 
 interface Classes {
-  success: boolean
-  error: boolean
+  success: boolean;
+  error: boolean;
 }
 
 export default defineComponent({
@@ -21,40 +21,46 @@ export default defineComponent({
   },
 
   computed: {
-    data (): Data {
-      return this.$store.state.modal.data
+    data(): Data {
+      return this.$store.state.modal.data;
     },
 
-    classes (): Classes {
+    classes(): Classes {
       return {
-        success: this.data.type === 'success',
-        error: this.data.type === 'error'
-      }
+        success: this.data.type === "success",
+        error: this.data.type === "error"
+      };
     },
 
-    icon () {
-      if (this.data.type === 'error') {
-        return IconXCircle
+    icon() {
+      if (this.data.type === "error") {
+        return IconXCircle;
       }
 
-      return IconCheckCircle
+      return IconCheckCircle;
     }
   },
 
   methods: {
-    close (): void {
-      this.$store.dispatch('alert/close')
+    close(): void {
+      this.$store.dispatch("alert/close");
     }
   }
-})
+});
 </script>
 
 <template>
   <AppModal name="alert">
-    <div class="AppAlert" :class="classes">
+    <div
+      class="AppAlert"
+      :class="classes"
+    >
       <div class="box">
         <div class="status">
-          <component :is="icon" class="status-icon" />
+          <component
+            :is="icon"
+            class="status-icon"
+          />
         </div>
 
         <div class="body">
@@ -67,14 +73,17 @@ export default defineComponent({
         </div>
 
         <div class="action">
-          <button class="button" @click="close">{{ $t('components.AppAlert.close') }}</button>
+          <button
+            class="button"
+            @click="close"
+          >
+            {{ $t('components.AppAlert.close') }}
+          </button>
         </div>
       </div>
     </div>
   </AppModal>
 </template>
-
-
 
 <style lang="postcss" scoped>
 @import '@/assets/styles/variables';

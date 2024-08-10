@@ -1,5 +1,5 @@
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
 
 export default defineComponent({
   props: {
@@ -8,23 +8,24 @@ export default defineComponent({
 
   computed: {
     show(): boolean {
-      return (this.$store as any).state.modal.name === this.name
+      return (this.$store as any).state.modal.name === this.name;
     }
   }
-})
+});
 </script>
 
 <template>
   <portal to="modal">
     <transition name="fade">
-      <div v-if="show" class="AppModal">
+      <div
+        v-if="show"
+        class="AppModal"
+      >
         <slot />
       </div>
     </transition>
   </portal>
 </template>
-
-
 
 <style lang="postcss" scoped>
 @import '@/assets/styles/variables';
