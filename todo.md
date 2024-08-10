@@ -23,8 +23,8 @@
     - [ ] ./icons
     - [ ] migrate to script setup
   - [x] postcss
-- nuxt imgae
-- nuxt scripts (ga)
+- [ ] nuxt imgae
+- [ ] nuxt scripts (ga)
 - [ ] workflows
 - [x] use corepack
 - [x] disable auto import
