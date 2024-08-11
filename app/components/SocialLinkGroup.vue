@@ -1,10 +1,3 @@
-<script setup lang="ts">
-import IconTwitter from "./icons/IconTwitter.vue";
-import IconNote from "./icons/IconNote.vue";
-import IconYouTube from "./icons/IconYouTube.vue";
-import IconGitHub from "./icons/IconGitHub.vue";
-</script>
-
 <template>
   <ul class="SocialLinkGroup">
     <li class="item item-twitter">
@@ -14,7 +7,11 @@ import IconGitHub from "./icons/IconGitHub.vue";
         target="_blank"
         rel="noopener noreferrer"
       >
-        <IconTwitter class="icon icon-twitter" />
+        <img
+          src="/img/icons/twitter.svg"
+          alt="twitter icon"
+          class="icon icon-twitter"
+        >
       </a>
     </li>
     <li class="item item-note">
@@ -24,7 +21,11 @@ import IconGitHub from "./icons/IconGitHub.vue";
         target="_blank"
         rel="noopener noreferrer"
       >
-        <IconNote class="icon icon-note" />
+        <img
+          src="/img/icons/note.svg"
+          alt="note icon"
+          class="icon icon-note"
+        >
       </a>
     </li>
     <li class="item item-youtube">
@@ -34,7 +35,11 @@ import IconGitHub from "./icons/IconGitHub.vue";
         target="_blank"
         rel="noopener noreferrer"
       >
-        <IconYouTube class="icon icon-youtube" />
+        <img
+          src="/img/icons/youtube.svg"
+          alt="youtube icon"
+          class="icon icon-youtube"
+        >
       </a>
     </li>
     <li class="item item-github">
@@ -44,7 +49,11 @@ import IconGitHub from "./icons/IconGitHub.vue";
         target="_blank"
         rel="noopener noreferrer"
       >
-        <IconGitHub class="icon icon-github" />
+        <img
+          src="/img/icons/github.svg"
+          alt="github icon"
+          class="icon icon-github"
+        >
       </a>
     </li>
   </ul>

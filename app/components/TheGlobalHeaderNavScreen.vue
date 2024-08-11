@@ -1,24 +1,14 @@
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
 import SocialLinkGroup from "./SocialLinkGroup.vue";
+import { navigateTo } from "#app";
 
-export default defineComponent({
-  components: {
-    SocialLinkGroup
-  },
+defineProps<{ active: boolean }>();
+const emit = defineEmits<{ close: [] }>();
 
-  props: {
-    active: { type: Boolean, required: true }
-  },
-
-  methods: {
-    jump(path: string): void {
-      this.$router.push(path);
-
-      this.$emit("close");
-    }
-  }
-});
+function jump(path: string): void {
+  navigateTo(path);
+  emit("close");
+}
 </script>
 
 <template>

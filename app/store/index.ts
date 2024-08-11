@@ -3,6 +3,7 @@ import { useState } from "#app";
 
 export function useBackDropStore() {
   const isShowed = useState("backDrop", () => ref(false));
+
   function show() {
     isShowed.value = true;
   }

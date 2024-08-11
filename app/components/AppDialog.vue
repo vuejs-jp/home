@@ -1,20 +1,8 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-import IconPreloaderDark from "./icons/IconPreloaderDark.vue";
+<script setup lang="ts">
 import AppModal from "./AppModal.vue";
+import { useModalStore } from "~/store";
 
-export default defineComponent({
-  components: {
-    IconPreloaderDark,
-    AppModal
-  },
-
-  computed: {
-    title(): string {
-      return this.$store.state.modal.data.title;
-    }
-  }
-});
+const { state } = useModalStore();
 </script>
 
 <template>
@@ -22,11 +10,15 @@ export default defineComponent({
     <div class="AppDialog">
       <div class="box">
         <p class="title">
-          {{ title }}
+          {{ state.data?.title }}
         </p>
 
         <div class="loader">
-          <IconPreloaderDark class="loader-icon" />
+          <img
+            src="/img/icons/preloader-dark.svg"
+            alt="preloader-dark-icon"
+            class="loader-icon"
+          >
         </div>
       </div>
     </div>

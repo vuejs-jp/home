@@ -1,31 +1,27 @@
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
+import { computed } from "vue";
 import { isExternalLink } from "~/_legacy/support/Url";
 
-export default defineComponent({
-  props: {
-    tag: { type: String, default: "button" },
-    block: { type: Boolean, default: false },
-    icon: { type: Object, default: null },
-    label: { type: String, required: true },
-    to: { type: String, default: null },
-    href: { type: String, default: null }
-  },
-
-  computed: {
-    link(): string | null {
-      return this.href || this.to;
-    },
-
-    isExternalLink(): boolean {
-      return this.link ? isExternalLink(this.link) : false;
-    },
-
-    target(): string {
-      return this.isExternalLink ? "_blank" : "_self";
-    }
-  }
+const props = withDefaults(defineProps<{
+  label: string;
+  tag?: "button" | "nuxt-link" | "a";
+  block?: boolean;
+  icon?: string | null;
+  to?: string | null;
+  href?: string | null;
+}>(), {
+  tag: "button",
+  block: false,
+  icon: null,
+  to: null,
+  href: null
 });
+
+defineEmits<{ click: [] }>();
+
+const link = computed(() => props.href || props.to);
+const isExternalLink = computed(() => link.value ? isExternalLink(link.value) : false);
+const target = computed(() => isExternalLink.value ? "_blank" : "_self");
 </script>
 
 <template>
@@ -42,11 +38,12 @@ export default defineComponent({
       :href="href"
       :target="target"
     >
-      <Component
-        :is="icon"
+      <img
         v-if="icon"
+        :src="icon"
+        alt="icon"
         class="icon"
-      />
+      >
       <span class="label">{{ label }}</span>
     </Component>
   </div>

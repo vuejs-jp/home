@@ -7,6 +7,8 @@
     - [x] plugin vue a11y
     - [ ] intlify
   - [x] i18n
+    - [ ] localePath
+    - [ ] switchLocalePath
   - [ ] vuelidate
   - [ ] @nuxtjs/google-analytics
   - [ ] cookie-universal-nuxt
@@ -24,6 +26,10 @@
     - [] ./icons
       - [ ] imports
     - [ ] migrate to script setup
+    - [ ] review
+      - [ ] ButtonOutline (lint)
+      - [ ] ContactForm (validate)
+      - [ ] CookieAgreementPopup (cookie)
   - [x] postcss
 - [ ] nuxt imgae
 - [ ] nuxt scripts (ga)
@@ -35,3 +41,5 @@
 - [x] Nuxt4 compat
 - [x] LICENSE
 - [x] @/data
+- [ ] portal, PortalTarget
+- [ ] use defineSlots

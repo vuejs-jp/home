@@ -25,7 +25,9 @@ export default defineComponent({
     transition(): void {
       this.transitioning = true;
 
-      setTimeout(() => { this.transitioning = false; }, 500);
+      setTimeout(() => {
+        this.transitioning = false;
+      }, 500);
     }
   }
 });

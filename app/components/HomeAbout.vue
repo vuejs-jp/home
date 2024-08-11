@@ -38,7 +38,7 @@ import StyleMount from "./StyleMount.vue";
             <ButtonOutline
               tag="nuxt-link"
               :block="true"
-              :href="localePath('/about')"
+              :href="$localePath('/about')"
               :label="$t('components.HomeAbout.vuejs-jp')"
             />
           </div>

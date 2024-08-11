@@ -1,8 +1,5 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-import type { PropOptions } from "vue";
-import IconChevronLeft from "./icons/IconChevronLeft.vue";
-import IconChevronRight from "./icons/IconChevronRight.vue";
+<script setup lang="ts">
+import { ref, computed } from "vue";
 import ImageStackItem from "./ImageStackItem.vue";
 
 interface Image {
@@ -16,67 +13,56 @@ interface Classes {
   left: boolean;
 }
 
-export default defineComponent({
-  components: {
-    IconChevronLeft,
-    IconChevronRight,
-    ImageStackItem
-  },
+interface Image {
+  src: string;
+  alt: string;
+}
 
-  props: {
-    images: { type: Array, required: true } as PropOptions<Image[]>,
-    aspectRatio: { type: Number, required: true },
-    to: { type: String, required: true }
-  },
+interface Classes {
+  right: boolean;
+  bottom: boolean;
+  left: boolean;
+}
 
-  data() {
-    return {
-      index: 0,
-      movingTo: "next"
-    };
-  },
+const props = defineProps<{
+  images: Image[];
+  aspectRatio: number;
+  to: string;
+}>();
 
-  computed: {
-    classes(): Classes {
-      return {
-        right: this.to === "right",
-        bottom: this.to === "bottom",
-        left: this.to === "left"
-      };
-    },
+const index = ref(0);
+const movingTo = ref<"next" | "prev">("next");
 
-    currentImage(): Image {
-      return this.images[this.index];
-    },
+const classes = computed<Classes>(() => ({
+  right: props.to === "right",
+  bottom: props.to === "bottom",
+  left: props.to === "left"
+}));
 
-    lastIndex(): number {
-      return this.images.length - 1;
-    },
+const currentImage = computed(() => props.images[index.value]);
 
-    stacks(): Image[] {
-      return [0, 1, 2].map((n) => {
-        const count = n + this.index;
-        const index = count > this.lastIndex ? count - this.lastIndex - 1 : count;
+const lastIndex = computed<number>(() => props.images.length - 1);
 
-        return this.images[index];
-      }).reverse();
-    }
-  },
+const stacks = computed(() =>
+  [0, 1, 2]
+    .map((n) => {
+      const count = n + index.value;
+      const idx = count > lastIndex.value ? count - lastIndex.value - 1 : count;
+      return props.images[idx];
+    })
+    .reverse()
+    .filter((image): image is Image => !!image)
+);
 
-  methods: {
-    next(): void {
-      this.movingTo = "next";
+function next(): void {
+  movingTo.value = "next";
+  index.value = index.value === lastIndex.value ? 0 : index.value + 1;
+};
 
-      this.index = this.index === this.lastIndex ? 0 : this.index + 1;
-    },
-
-    prev(): void {
-      this.movingTo = "prev";
-
-      this.index = this.index === 0 ? this.lastIndex : this.index - 1;
-    }
-  }
-});
+function prev(): void {
+  movingTo.value = "prev";
+  index.value = index.value === 0 ? lastIndex.value : index.value - 1;
+};
 </script>
 
 <template>
@@ -88,7 +74,9 @@ export default defineComponent({
       class="list"
       :style="{ paddingBottom: `${aspectRatio}%` }"
       role="button"
+      tabindex="0"
       @click="next"
+      @keydown="next"
     >
       <TransitionGroup name="slide">
         <li
@@ -108,6 +96,7 @@ export default defineComponent({
         mode="out-in"
       >
         <p
+          v-if="currentImage"
           :key="currentImage.src"
           class="caption"
         >
@@ -121,7 +110,10 @@ export default defineComponent({
             class="button"
             @click="prev"
           >
-            <IconChevronLeft class="icon" />
+            <img
+              src="/img/icons/chevron-left.svg"
+              alt="previous icon"
+            >
           </button>
         </div>
 
@@ -130,7 +122,10 @@ export default defineComponent({
             class="button"
             @click="next"
           >
-            <IconChevronRight class="icon" />
+            <img
+              src="/img/icons/chevron-right.svg"
+              alt="next icon"
+            >
           </button>
         </div>
       </div>

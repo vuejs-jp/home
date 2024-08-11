@@ -1,18 +1,12 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-import type { LocaleObject } from "@nuxtjs/i18n";
+<script setup lang="ts">
+import { computed } from "vue";
 import SocialLinkGroup from "./SocialLinkGroup.vue";
+import { useNuxtApp } from "#app";
 
-export default defineComponent({
-  components: {
-    SocialLinkGroup
-  },
-  computed: {
-    switchableLocale() {
-      const locales = (this.$i18n.locales as LocaleObject[]).filter((i: LocaleObject) => i.code !== this.$i18n.locale);
-      return locales.length !== 0 ? locales[0] : { code: "ja", name: "日本語" };
-    }
-  }
+const { $i18n } = useNuxtApp();
+const switchableLocale = computed(() => {
+  const locales = $i18n.locales.filter(i => i.code !== $i18n.locale);
+  return locales.length !== 0 ? locales[0] : { code: "ja", name: "日本語" };
 });
 </script>
 
@@ -40,7 +34,7 @@ export default defineComponent({
           class="link"
           :to="switchLocalePath(switchableLocale.code)"
         >
-          {{ switchableLocale.name }}
+          {{ switchableLocale?.name }}
         </NuxtLink>
       </li>
     </ul>

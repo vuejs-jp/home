@@ -2,15 +2,27 @@
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "version": "0.2",
   "words": [
+    "Arisa",
+    "Connpass",
     "corepack",
+    "Drasner",
+    "guillaume",
     "intlify",
+    "katashin",
+    "Kenji",
+    "Miyake",
+    "Nakagawa",
     "nuxt",
     "nuxtjs",
-    "textlint",
     "pinia",
+    "sebastien",
+    "Sébastien",
+    "textlint",
     "vuejs",
     "vuelidate",
     "vuex",
+    "Yamadera",
+    "yoshiya"
   ],
   "dictionaries": [
     "softwareTerms",
@@ -22,10 +34,10 @@
     "css",
     "fonts",
     "filetypes",
-    "npm",
+    "npm"
   ],
   "ignorePaths": [
     "_legacy",
-    "pnpm-lock.yaml",
+    "pnpm-lock.yaml"
   ]
 }

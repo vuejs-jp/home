@@ -1,19 +1,16 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-
-export default defineComponent({
-  props: {
-    active: { type: Boolean, required: true }
-  }
-});
+<script setup lang="ts">
+defineProps<{ active: boolean }>();
+defineEmits<{ click: [] }>();
 </script>
 
 <template>
   <div
+    role="button"
+    tabindex="0"
     class="HamburgerMenu"
     :class="{ active }"
-    role="button"
     @click="$emit('click')"
+    @keydown="$emit('click')"
   >
     <div class="container">
       <div class="top" />

@@ -1,74 +1,41 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-import IconCheckCircle from "./icons/IconCheckCircle.vue";
-import IconXCircle from "./icons/IconXCircle.vue";
+<script setup lang="ts">
 import AppModal from "./AppModal.vue";
+import { useModalStore } from "~/store/index";
 
-interface Data {
-  type: "success" | "error";
-  title: string;
-  text: string;
-}
-
-interface Classes {
-  success: boolean;
-  error: boolean;
-}
-
-export default defineComponent({
-  components: {
-    AppModal
-  },
-
-  computed: {
-    data(): Data {
-      return this.$store.state.modal.data;
-    },
-
-    classes(): Classes {
-      return {
-        success: this.data.type === "success",
-        error: this.data.type === "error"
-      };
-    },
-
-    icon() {
-      if (this.data.type === "error") {
-        return IconXCircle;
-      }
-
-      return IconCheckCircle;
-    }
-  },
-
-  methods: {
-    close(): void {
-      this.$store.dispatch("alert/close");
-    }
-  }
-});
+const { state, close } = useModalStore();
 </script>
 
 <template>
   <AppModal name="alert">
     <div
       class="AppAlert"
-      :class="classes"
+      :class="{
+        success: state.data?.type === 'success',
+        error: state.data?.type === 'error'
+      }"
     >
       <div class="box">
         <div class="status">
-          <component
-            :is="icon"
+          <img
+            v-if="state.data?.type === 'success'"
+            src="/img/icons/check-circle.svg"
+            alt="check-circle-icon"
             class="status-icon"
-          />
+          >
+          <img
+            v-else
+            src="/img/icons/x-circle.svg"
+            alt="x-circle-icon"
+            class="status-icon"
+          >
         </div>
 
         <div class="body">
           <p class="title">
-            {{ data.title }}
+            {{ state.data?.title }}
           </p>
           <p class="text">
-            {{ data.text }}
+            {{ state.data?.text }}
           </p>
         </div>
 

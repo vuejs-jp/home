@@ -1,33 +1,19 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-import type { PropOptions } from "vue";
-import IconPreloaderDark from "./icons/IconPreloaderDark.vue";
+<script setup lang="ts">
+import { ref, onMounted } from "vue";
 
-interface Image {
-  src: string;
-  alt: string;
-}
+defineProps<{
+  image: {
+    src: string;
+    alt: string;
+  };
+}>();
 
-export default defineComponent({
-  components: {
-    IconPreloaderDark
-  },
+const loaded = ref(false);
 
-  props: {
-    image: { type: Object, required: true } as PropOptions<Image>
-  },
-
-  data() {
-    return {
-      loaded: false
-    };
-  },
-
-  mounted() {
-    // In case the image load event would not fire, we'll force displaying
-    // the image after 3 sec.
-    setTimeout(() => { this.loaded = true; }, 3000);
-  }
+onMounted(() => {
+  setTimeout(() => {
+    loaded.value = true;
+  }, 3000);
 });
 </script>
 

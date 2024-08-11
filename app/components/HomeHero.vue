@@ -1,12 +1,5 @@
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
 import StyleMount from "./StyleMount.vue";
-
-export default defineComponent({
-  components: {
-    StyleMount
-  }
-});
 </script>
 
 <template>

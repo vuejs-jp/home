@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import IconChevronRight from "./icons/IconChevronRight.vue";
-import IconEdit3 from "./icons/IconEdit3.vue";
-import IconTerminal from "./icons/IconTerminal.vue";
 import StyleMount from "./StyleMount.vue";
 </script>
 
@@ -45,7 +42,11 @@ import StyleMount from "./StyleMount.vue";
           >
             <article class="project-box">
               <i class="project-type">
-                <IconEdit3 class="project-icon" />
+                <img
+                  src="/img/icons/edit.svg"
+                  alt="edit icon"
+                  class="project-icon"
+                >
               </i>
               <i18n
                 tag="h3"
@@ -60,7 +61,11 @@ import StyleMount from "./StyleMount.vue";
               <p class="project-body">{{ $t('components.HomeProjects.projects.vue.body') }}</p>
               <p class="project-link">
                 {{ $t('components.HomeProjects.projects.vue.link') }}
-                <IconChevronRight class="project-link-chevron" />
+                <img
+                  src="/img/icons/chevron-right.svg"
+                  alt="chevron right icon"
+                  class="project-link-chevron"
+                >
               </p>
             </article>
           </a>
@@ -72,7 +77,11 @@ import StyleMount from "./StyleMount.vue";
           >
             <article class="project-box">
               <i class="project-type">
-                <IconEdit3 class="project-icon" />
+                <img
+                  src="/img/icons/edit.svg"
+                  alt="edit icon"
+                  class="project-icon"
+                >
               </i>
               <i18n
                 tag="h3"
@@ -87,7 +96,11 @@ import StyleMount from "./StyleMount.vue";
               <p class="project-body">{{ $t('components.HomeProjects.projects.nuxt.body') }}</p>
               <p class="project-link">
                 {{ $t('components.HomeProjects.projects.nuxt.link') }}
-                <IconChevronRight class="project-link-chevron" />
+                <img
+                  src="/img/icons/chevron-right.svg"
+                  alt="chevron right icon"
+                  class="project-link-chevron"
+                >
               </p>
             </article>
           </a>
@@ -99,7 +112,11 @@ import StyleMount from "./StyleMount.vue";
           >
             <article class="project-box">
               <i class="project-type">
-                <IconTerminal class="project-icon" />
+                <img
+                  src="/img/icons/terminal.svg"
+                  alt="terminal icon"
+                  class="project-link-chevron"
+                >
               </i>
               <i18n
                 tag="h3"
@@ -114,7 +131,11 @@ import StyleMount from "./StyleMount.vue";
               <p class="project-body">{{ $t('components.HomeProjects.projects.vuejsjp.body') }}</p>
               <p class="project-link">
                 {{ $t('components.HomeProjects.projects.vuejsjp.link') }}
-                <IconChevronRight class="project-link-chevron" />
+                <img
+                  src="/img/icons/chevron-right.svg"
+                  alt="chevron right icon"
+                  class="project-link-chevron"
+                >
               </p>
             </article>
           </a>

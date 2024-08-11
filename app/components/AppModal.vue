@@ -1,24 +1,17 @@
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
+import { computed } from "vue";
+import { useModalStore } from "~/store";
 
-export default defineComponent({
-  props: {
-    name: { type: String, required: true }
-  },
-
-  computed: {
-    show(): boolean {
-      return (this.$store as any).state.modal.name === this.name;
-    }
-  }
-});
+const props = defineProps<{ name: string }>();
+const { state } = useModalStore();
+const isShowed = computed(() => state.value.data?.name === props.name);
 </script>
 
 <template>
   <portal to="modal">
     <transition name="fade">
       <div
-        v-if="show"
+        v-if="isShowed"
         class="AppModal"
       >
         <slot />

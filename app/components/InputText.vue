@@ -12,6 +12,11 @@ withDefaults(defineProps<{
   type: "text",
   error: null
 });
+
+defineEmits<{
+  input: [value: string];
+  blur: [];
+}>();
 </script>
 
 <template>
@@ -28,7 +33,7 @@ withDefaults(defineProps<{
       :name="name"
       :placeholder="placeholder"
       :value="value"
-      @input="$emit('input', $event.target.value)"
+      @input="$emit('input', ($event.target as HTMLInputElement).value)"
       @blur="$emit('blur')"
     >
     <transition name="fade">

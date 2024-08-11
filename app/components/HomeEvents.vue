@@ -1,61 +1,52 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-import IconConnpass from "./icons/IconConnpass.vue";
+<script setup lang="ts">
+import { ref, onMounted, onUnmounted } from "vue";
+
 import StyleMount from "./StyleMount.vue";
 import ButtonOutline from "./ButtonOutline.vue";
 import ImageStack from "./ImageStack.vue";
 
-export default defineComponent({
-  components: {
-    StyleMount,
-    ButtonOutline,
-    ImageStack
+const stackImageTo = ref("right");
+const images = [
+  {
+    src: "/img/home/vue-fes-japan-2018-evan-you.jpg",
+    alt: "Evan You at Vue Fes Japan 2018."
   },
-
-  data() {
-    return {
-      iconConnpass: IconConnpass,
-      stackImageTo: "right",
-      images: [
-        {
-          src: "/img/home/vue-fes-japan-2018-evan-you.jpg",
-          alt: "Evan You at Vue Fes Japan 2018."
-        },
-        {
-          src: "/img/home/vue-fes-japan-2018-sarah-drasner.jpg",
-          alt: "Sarah Drasner at Vue Fes Japan 2018."
-        },
-        {
-          src: "/img/home/vue-fes-japan-2018-yoshiya-oki.jpg",
-          alt: "Yoshiya Oki at Vue Fes Japan 2018."
-        },
-        {
-          src: "/img/home/vue-fes-japan-2018-guillaume-chau.jpg",
-          alt: "Guillaume Chau at Vue Fes Japan 2018."
-        },
-        {
-          src: "/img/home/vue-fes-japan-2018-sebastien-chopin.jpg",
-          alt: "Sébastien Chopin at Vue Fes Japan 2018."
-        },
-        {
-          src: "/img/home/vue-fes-japan-2018-katashin.jpg",
-          alt: "Katashin at Vue Fes Japan 2018."
-        }
-      ]
-    };
+  {
+    src: "/img/home/vue-fes-japan-2018-sarah-drasner.jpg",
+    alt: "Sarah Drasner at Vue Fes Japan 2018."
   },
-
-  mounted() {
-    this.refreshImageStackDirection();
-
-    window.addEventListener("resize", this.refreshImageStackDirection);
+  {
+    src: "/img/home/vue-fes-japan-2018-yoshiya-oki.jpg",
+    alt: "Yoshiya Oki at Vue Fes Japan 2018."
   },
-
-  methods: {
-    refreshImageStackDirection(): void {
-      this.stackImageTo = window.innerWidth >= 768 ? "left" : "right";
-    }
+  {
+    src: "/img/home/vue-fes-japan-2018-guillaume-chau.jpg",
+    alt: "Guillaume Chau at Vue Fes Japan 2018."
+  },
+  {
+    src: "/img/home/vue-fes-japan-2018-sebastien-chopin.jpg",
+    alt: "Sébastien Chopin at Vue Fes Japan 2018."
+  },
+  {
+    src: "/img/home/vue-fes-japan-2018-katashin.jpg",
+    alt: "Katashin at Vue Fes Japan 2018."
   }
+] as const satisfies {
+  src: string;
+  alt: string;
+}[];
+
+const refreshImageStackDirection = (): void => {
+  stackImageTo.value = window.innerWidth >= 768 ? "left" : "right";
+};
+
+onMounted(() => {
+  refreshImageStackDirection();
+  window.addEventListener("resize", refreshImageStackDirection);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("resize", refreshImageStackDirection);
 });
 </script>
 
@@ -91,7 +82,7 @@ export default defineComponent({
               tag="a"
               :block="true"
               href="https://vuejs-meetup.connpass.com/"
-              :icon="iconConnpass"
+              icon="/img/icons/connpass.svg"
               :label="$t('components.HomeEvents.connpass')"
             />
           </div>

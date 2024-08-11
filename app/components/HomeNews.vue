@@ -1,16 +1,5 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-import IconTwitter from "./icons/IconTwitter.vue";
-import IconNote from "./icons/IconNote.vue";
+<script setup lang="ts">
 import StyleMount from "./StyleMount.vue";
-
-export default defineComponent({
-  components: {
-    StyleMount,
-    IconTwitter,
-    IconNote
-  }
-});
 </script>
 
 <template>
@@ -52,7 +41,10 @@ export default defineComponent({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <IconTwitter class="icon twitter" />
+            <img
+              src="/img/icons/twitter.svg"
+              alt="twitter icon"
+            >
             {{ $t('components.HomeNews.twitter') }}
           </a>
           <a
@@ -61,7 +53,10 @@ export default defineComponent({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <IconNote class="icon note" />
+            <img
+              src="/img/icons/note.svg"
+              alt="note icon"
+            >
             {{ $t('components.HomeNews.note') }}
           </a>
         </div>

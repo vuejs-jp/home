@@ -1,53 +1,44 @@
-<script lang="ts">
-import { defineComponent } from "vue";
-import IconSlack from "./icons/IconSlack.vue";
-import IconVue from "./icons/IconVue.vue";
+<script setup lang="ts">
 import StyleMount from "./StyleMount.vue";
 import ButtonOutline from "./ButtonOutline.vue";
 import ChatStack from "./ChatStack.vue";
+import { useNuxtApp } from "#app";
 
-export default defineComponent({
-  components: {
-    StyleMount,
-    ButtonOutline,
-    ChatStack
+const { $i18n: { t } } = useNuxtApp();
+
+const chats = [
+  {
+    direction: "left",
+    avatar: "/img/home/avatar-001.jpg",
+    alt: "Avatar 001",
+    name: "Arisa Miyake",
+    time: "3:12 PM",
+    body: t("components.HomeCommunications.chats.user1")
   },
-
-  data() {
-    const $t = this.$t.bind(this);
-    return {
-      iconSlack: IconSlack,
-      iconVue: IconVue,
-
-      chats: [
-        {
-          direction: "left",
-          avatar: "/img/home/avatar-001.jpg",
-          alt: "Avatar 001",
-          name: "Arisa Miyake",
-          time: "3:12 PM",
-          body: $t("components.HomeCommunications.chats.user1")
-        },
-        {
-          direction: "right",
-          avatar: "/img/home/avatar-002.jpg",
-          alt: "Avatar 002",
-          name: "Kenji Yamadera",
-          time: "3:19 PM",
-          body: $t("components.HomeCommunications.chats.user2")
-        },
-        {
-          direction: "left",
-          avatar: "/img/home/avatar-003.jpg",
-          alt: "Avatar 003",
-          name: "Ai Nakagawa",
-          time: "3:25 PM",
-          body: $t("components.HomeCommunications.chats.user3")
-        }
-      ]
-    };
+  {
+    direction: "right",
+    avatar: "/img/home/avatar-002.jpg",
+    alt: "Avatar 002",
+    name: "Kenji Yamadera",
+    time: "3:19 PM",
+    body: t("components.HomeCommunications.chats.user2")
+  },
+  {
+    direction: "left",
+    avatar: "/img/home/avatar-003.jpg",
+    alt: "Avatar 003",
+    name: "Ai Nakagawa",
+    time: "3:25 PM",
+    body: t("components.HomeCommunications.chats.user3")
   }
-});
+] as const satisfies {
+  direction: "left" | "right";
+  avatar: string;
+  alt: string;
+  name: string;
+  time: string;
+  body: string;
+}[];
 </script>
 
 <template>
@@ -94,7 +85,7 @@ export default defineComponent({
               tag="a"
               :block="true"
               href="https://join.slack.com/t/vuejs-jp/shared_invite/zt-vmg3iysl-~CPGAxFMWwa0Fnu2IqtMdQ"
-              :icon="iconSlack"
+              icon="/img/icons/slack.svg"
               :label="$t('components.HomeCommunications.slack')"
             />
           </div>
@@ -104,7 +95,7 @@ export default defineComponent({
               tag="a"
               :block="true"
               href="https://forum.vuejs.org/c/japanese"
-              :icon="iconVue"
+              icon="/img/icons/vue.svg"
               :label="$t('components.HomeCommunications.forum')"
             />
           </div>

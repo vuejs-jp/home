@@ -43,13 +43,16 @@ export default defineComponent({
       const headerHeight = header.offsetHeight;
       const scrollTop = document.documentElement.scrollTop;
 
+      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
       scrollTop > headerHeight ? this.performTransition() : scrollToTop();
     },
 
     performTransition(): void {
       this.transitioning = true;
 
-      setTimeout(() => { this.transitioning = false; }, 500);
+      setTimeout(() => {
+        this.transitioning = false;
+      }, 500);
     }
   }
 });

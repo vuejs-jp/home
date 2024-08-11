@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang="ts" setup>
 import InputBase from "./InputBase.vue";
 
 withDefaults(defineProps<{
@@ -12,6 +12,11 @@ withDefaults(defineProps<{
   rows: 3,
   error: null
 });
+
+defineEmits<{
+  input: [value: string];
+  blur: [];
+}>();
 </script>
 
 <template>
@@ -28,7 +33,7 @@ withDefaults(defineProps<{
       :placeholder="placeholder"
       :rows="rows"
       :value="value"
-      @input="$emit('input', $event.target.value)"
+      @input="$emit('input', ($event.target as HTMLTextAreaElement).value)"
       @blur="$emit('blur')"
     />
     <transition name="fade">

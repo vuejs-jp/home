@@ -1,27 +1,15 @@
-<script lang="ts">
-import { defineComponent } from "vue";
+<script setup lang="ts">
 import AppBackdrop from "./AppBackdrop.vue";
 import AppDialog from "./AppDialog.vue";
 import AppAlert from "./AppAlert.vue";
+import { useBackDropStore } from "~/store";
 
-export default defineComponent({
-  components: {
-    AppBackdrop,
-    AppDialog,
-    AppAlert
-  },
-
-  computed: {
-    showBackdrop() {
-      return this.$store.state.backdrop.show;
-    }
-  }
-});
+const { isShowed } = useBackDropStore();
 </script>
 
 <template>
   <div class="ThePortalModals">
-    <AppBackdrop :show="showBackdrop" />
+    <AppBackdrop :show="isShowed" />
 
     <AppDialog />
     <AppAlert />
