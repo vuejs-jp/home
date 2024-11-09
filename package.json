@@ -12,7 +12,7 @@
     "portal-vue": "^2.1.7",
     "postcss-custom-properties": "^9.1.1",
     "postcss-nested": "^4.2.1",
-    "vue": "^2.6.14",
+    "vue": "^3.0.0",
     "vue-template-compiler": "^2.6.14",
     "vuelidate": "^0.7.6",
     "vuex": "^3.6.2"
