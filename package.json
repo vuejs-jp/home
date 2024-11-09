@@ -1,12 +1,15 @@
 {
   "name": "vuejs-jp.org",
-  "private": true,
   "type": "module",
+  "private": true,
+  "packageManager": "pnpm@9.12.1",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
@@ -14,5 +17,8 @@
     "vue": "latest",
     "vue-router": "latest"
   },
-  "packageManager": "pnpm@9.12.1"
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.8.0",
+    "@nuxt/eslint": "^0.6.1"
+  }
 }
