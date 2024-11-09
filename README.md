@@ -13,9 +13,9 @@
   </a>
 </p>
 
-> [!WARNING]  
+> [!WARNING]
 > このリポジトリは現在大規模な改修を行っています。\
-> 現在， https://vuejs-jp.org に公開中のウェブサイトのソースコードは [`legacy` ブランチ](https://github.com/vuejs-jp/home/tree/legacy)　にあります。\
+> 現在， https://vuejs-jp.org に公開中のウェブサイトのソースコードは [`legacy` ブランチ](https://github.com/vuejs-jp/home/tree/legacy) にあります。\
 > 回収のロードマップについては https://github.com/vuejs-jp/home/discussions/98 をご覧ください。
 
 Vue.js 日本ユーザーグループへようこそ。私たちは、年に一度の大規模カンファレンス **“Vue Fes Japan”** の運営や、**Vue.js 公式ドキュメントの日本語翻訳**をはじめ、日本における Vue.js の普及と、Vue.js エコシステムへの貢献を行っている**日本最大の Vue.js コミュニティ**です。
