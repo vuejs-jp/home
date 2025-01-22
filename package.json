@@ -18,7 +18,7 @@
     "vue-router": "latest"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.12.1",
+    "@antfu/eslint-config": "^3.16.0",
     "@nuxt/eslint": "^0.7.4",
     "@unocss/core": "^0.65.3",
     "@unocss/nuxt": "^0.65.3",
