@@ -25,8 +25,8 @@ importers:
         specifier: ^1.0.1
         version: 1.0.1(@vue/compiler-sfc@3.5.13)(eslint@9.14.0(jiti@2.4.2))(magicast@0.3.5)(typescript@5.6.3)(vite@6.0.11(@types/node@22.13.4)(jiti@2.4.2)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))
       '@unocss/core':
-        specifier: ^65.4.3
-        version: 65.4.3
+        specifier: ^65.5.0
+        version: 65.5.0
       '@unocss/nuxt':
         specifier: ^65.4.3
         version: 65.4.3(magicast@0.3.5)(postcss@8.5.1)(rollup@4.32.1)(vite@6.0.11(@types/node@22.13.4)(jiti@2.4.2)(terser@5.39.0)(tsx@4.19.2)(yaml@2.7.0))(vue@3.5.13(typescript@5.6.3))(webpack@5.96.1(esbuild@0.24.2))
@@ -1262,6 +1262,9 @@ packages:
 
   '@unocss/core@65.4.3':
     resolution: {integrity: sha512-luFgdcchSlNrYSaDvU2176T2PPQZdxqfREVbxEXNXlFEgyEFrx5hOSUXoJtJSZjRhAcE6zkWyLDf/JkQJ5Eeyw==}
+
+  '@unocss/core@65.5.0':
+    resolution: {integrity: sha512-XYWdS09M2XOjZNDotGhI2TIW/6duLNiyssopwjCbv4AlPklF0bZI86SKI55syYDBt6GRadoQbuvUkhSiTV/hzQ==}
 
   '@unocss/extractor-arbitrary-variants@65.4.3':
     resolution: {integrity: sha512-RhSOOzOxkNjJl9zeglaBe0U+o39jleCCNPWJ87DDJA3ckbyylIIf21ZwY1Xu76rmdar5DT9ob7ucuPfEpJLN9A==}
@@ -5994,6 +5997,8 @@ snapshots:
 
   '@unocss/core@65.4.3': {}
 
+  '@unocss/core@65.5.0': {}
+
   '@unocss/extractor-arbitrary-variants@65.4.3':
     dependencies:
       '@unocss/core': 65.4.3
@@ -6094,7 +6099,7 @@ snapshots:
 
   '@unocss/rule-utils@65.4.3':
     dependencies:
-      '@unocss/core': 65.4.3
+      '@unocss/core': 65.5.0
       magic-string: 0.30.17
 
   '@unocss/transformer-attributify-jsx@65.4.3':
