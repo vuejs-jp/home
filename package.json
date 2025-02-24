@@ -22,6 +22,6 @@
     "@nuxt/eslint": "^1.1.0",
     "@unocss/core": "^65.5.0",
     "@unocss/nuxt": "^66.0.0",
-    "unocss": "^65.4.3"
+    "unocss": "^66.0.0"
   }
 }
