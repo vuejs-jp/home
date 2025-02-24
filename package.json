@@ -20,7 +20,7 @@
   "devDependencies": {
     "@antfu/eslint-config": "^4.3.0",
     "@nuxt/eslint": "^1.1.0",
-    "@unocss/core": "^65.5.0",
+    "@unocss/core": "^66.0.0",
     "@unocss/nuxt": "^66.0.0",
     "unocss": "^66.0.0"
   }
