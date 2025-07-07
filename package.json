@@ -21,7 +21,7 @@
     "@antfu/eslint-config": "^4.10.1",
     "@nuxt/eslint": "^1.2.0",
     "@unocss/core": "^66.0.0",
-    "@unocss/nuxt": "^66.1.1",
+    "@unocss/nuxt": "^66.3.3",
     "unocss": "^66.0.0"
   }
 }
