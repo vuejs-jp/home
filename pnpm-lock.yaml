@@ -25,8 +25,8 @@ importers:
         specifier: ^1.5.2
         version: 1.5.2(@vue/compiler-sfc@3.5.17)(eslint-plugin-import-x@4.6.1(eslint@9.14.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.14.0(jiti@2.4.2))(magicast@0.3.5)(typescript@5.8.3)(vite@6.3.5(@types/node@24.0.13)(jiti@2.4.2)(terser@5.43.1)(tsx@4.19.2)(yaml@2.8.0))
       '@unocss/core':
-        specifier: ^66.0.0
-        version: 66.0.0
+        specifier: ^66.3.3
+        version: 66.3.3
       '@unocss/nuxt':
         specifier: ^66.3.3
         version: 66.3.3(magicast@0.3.5)(postcss@8.5.6)(vite@6.3.5(@types/node@24.0.13)(jiti@2.4.2)(terser@5.43.1)(tsx@4.19.2)(yaml@2.8.0))(vue@3.5.17(typescript@5.8.3))(webpack@5.96.1(esbuild@0.25.6))
@@ -1607,9 +1607,6 @@ packages:
   '@unocss/config@66.3.3':
     resolution: {integrity: sha512-D/UxnAmkabapqWU4tF85dWWhNfCUyNutWmd4AD2VsQRZOykufJedLV74r3Z3XhoPJn4IGr3BKZm5/rflf5viDg==}
     engines: {node: '>=14'}
-
-  '@unocss/core@66.0.0':
-    resolution: {integrity: sha512-PdVbSMHNDDkr++9nkqzsZRAkaU84gxMTEgYbqI7dt2p1DXp/5tomVtmMsr2/whXGYKRiUc0xZ3p4Pzraz8TcXA==}
 
   '@unocss/core@66.3.3':
     resolution: {integrity: sha512-6WFLd92TJelVQARtCGaF+EgEoHKIVe43gkGXVoWILu0HUDRWdhv+cpcyX0RTJV22Y976AxeneU7/zmhAh+CXNg==}
@@ -7009,8 +7006,6 @@ snapshots:
     dependencies:
       '@unocss/core': 66.3.3
       unconfig: 7.3.2
-
-  '@unocss/core@66.0.0': {}
 
   '@unocss/core@66.3.3': {}
 
