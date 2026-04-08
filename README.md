@@ -1,18 +1,25 @@
-<p align="center">
-  <img width="128" src="https://raw.githubusercontent.com/vuejs-jp/home/master/.github/assets/vuejs-jp.png" alt="Vue.js Japan User Group">
-</p>
+# vuejs-jp/home
 
-<h1 align="center">Vue.js 日本ユーザーグループ</h1>
+The current production site source lives on the [`legacy` branch](https://github.com/vuejs-jp/home/tree/legacy).
 
-<p align="center">
-  <a href="https://github.com/vuejs-jp/home/actions">
-    <img src="https://github.com/vuejs-jp/home/workflows/Test/badge.svg" alt="GitHub Actions">
-  </a>
-  <a href="https://github.com/vuejs-jp/home/blob/master/LICENSE">
-    <img src="https://img.shields.io/npm/l/vue.svg" alt="License">
-  </a>
-</p>
+This branch is a minimal `Hello world` for the renewal stack.
 
-> [!WARNING]
-> このリポジトリは現在大規模な改修を行っています。\
-> 現在， https://vuejs-jp.org に公開中のウェブサイトのソースコードは [`legacy` ブランチ](https://github.com/vuejs-jp/home/tree/legacy) にあります。
+## Development
+
+```bash
+vp env install
+vp install
+vp dev
+```
+
+## Checks
+
+```bash
+vp check
+vp run check:sfc
+vp run ssg
+```
+
+## Terraform
+
+[infra/terraform/netlify](/Users/nishimura/Code/github.com/vuejs-jp/home/infra/terraform/netlify) contains the initial Netlify Terraform setup.

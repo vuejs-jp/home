@@ -1,0 +1,52 @@
+:root {
+  --ink: #111827;
+  --muted: #4b5563;
+  --line: #d1d5db;
+  --body: "Hiragino Sans", "Yu Gothic", "Noto Sans JP", sans-serif;
+  --mono: "SFMono-Regular", "Cascadia Code", "Source Code Pro", monospace;
+  color: var(--ink);
+  font-family: var(--body);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+img,
+svg,
+canvas {
+  display: block;
+  max-width: 100%;
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.95em;
+}
+
+#app {
+  min-height: 100vh;
+}

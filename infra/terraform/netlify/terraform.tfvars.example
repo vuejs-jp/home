@@ -1,0 +1,7 @@
+netlify_team_slug = "vuejs-jp"
+netlify_site_name = "vuejs-jp-home"
+
+# Optional
+# production_branch = "main"
+# branch_deploy_branches = ["staging"]
+# node_version = "24"
